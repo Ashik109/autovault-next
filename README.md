@@ -51,6 +51,8 @@ Sliders, synchronized galleries, media popups, mobile navigation, search, tabs, 
 
 Cart quantities, removals and saved cars persist in browser storage. Checkout totals use the same cart. The initial cart contains the source template's sample products.
 
+Lenis provides smooth wheel scrolling with the same 1.1-second duration and easing as Touriza. The root-level controller handles anchor links and back-to-top, compensates for shrinking sticky headers, preserves native touch and nested control scrolling, and disables smoothing when reduced motion is requested. Next.js retains control of route scroll restoration.
+
 The HTML source did not include working authentication, mail delivery, newsletter delivery or payment services. These forms validate input and clearly state that the service is not connected; they do not claim to have submitted messages, created accounts, taken payments or placed orders. Connect real backend services before using those features in production. Cart/saved-car storage is local to the browser.
 
 ## Verification

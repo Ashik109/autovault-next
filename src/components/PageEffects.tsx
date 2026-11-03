@@ -9,6 +9,7 @@ import { toggleSavedCar } from "@/lib/saved-cars";
 import { setupStickyFooter } from "@/lib/sticky-footer";
 import { mountNiceSelects } from "@/lib/nice-select";
 import { mountParallax } from "@/lib/parallax";
+import { scrollToTop } from "@/lib/smooth-scroll";
 
 export default function PageEffects({ bodyClass }: { bodyClass: string }) {
   return (
@@ -257,10 +258,7 @@ function Effects({ bodyClass }: { bodyClass: string }) {
         closePanels();
       if (target.closest(".progress-wrap")) {
         event.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: reducedMotion ? "instant" : "smooth",
-        });
+        scrollToTop();
       }
       const accordion = target.closest(".accordion-header");
       if (accordion) {

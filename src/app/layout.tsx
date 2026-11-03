@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "swiper/css/bundle";
 import "jarallax/dist/jarallax.css";
+import "lenis/dist/lenis.css";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,7 +29,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="/assets/fonts/rt-icon.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
       </head>
-      <body className="loaded">{children}</body>
+      <body className="loaded">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }
