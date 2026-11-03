@@ -4,14 +4,15 @@ export default function HomeFiveStatisticsArea2() {
       <div className="container">
         <div className="section-title-area">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration=".8s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
           >
             {"Our Statistics"}
           </p>
 
-          <h2 className="section-title cw wow move-right">
+          <h2 className="section-title cw move-right" data-aos="move-right">
             {" Countdown to Savings: Don’t Miss Out on Exclusive "}
             <span>{"Car"}</span>
             {" Deals "}
@@ -36,9 +37,10 @@ export default function HomeFiveStatisticsArea2() {
 
                 <div className="counter-inner">
                   <div
-                    className="inner wow zoomIn"
-                    data-wow-delay=".2s"
-                    data-wow-duration="1s"
+                    className="inner"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
                   >
                     <div className="text">
                       <h3 className="title">
@@ -51,9 +53,10 @@ export default function HomeFiveStatisticsArea2() {
                   </div>
 
                   <div
-                    className="inner wow zoomIn"
-                    data-wow-delay=".4s"
-                    data-wow-duration="1s"
+                    className="inner"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
                   >
                     <div className="text">
                       <h3 className="title">
@@ -66,9 +69,10 @@ export default function HomeFiveStatisticsArea2() {
                   </div>
 
                   <div
-                    className="inner wow zoomIn"
-                    data-wow-delay=".6s"
-                    data-wow-duration="1s"
+                    className="inner"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
+                    data-aos-duration="1000"
                   >
                     <div className="text">
                       <h3 className="title">
@@ -81,9 +85,10 @@ export default function HomeFiveStatisticsArea2() {
                   </div>
 
                   <div
-                    className="inner wow zoomIn"
-                    data-wow-delay=".8s"
-                    data-wow-duration="1s"
+                    className="inner"
+                    data-aos="zoom-in"
+                    data-aos-delay="800"
+                    data-aos-duration="1000"
                   >
                     <div className="text">
                       <h3 className="title">
@@ -102,9 +107,10 @@ export default function HomeFiveStatisticsArea2() {
       </div>
 
       <div
-        className="shape wow slideInRight"
-        data-wow-delay=".7s"
-        data-wow-duration=".8s"
+        className="shape"
+        data-aos="slide-left"
+        data-aos-delay="700"
+        data-aos-duration="800"
       >
         <img src="/assets/images/about/shape-01.svg" alt="" />
       </div>

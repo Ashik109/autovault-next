@@ -25,14 +25,18 @@ export default function ServiceService() {
               <div className="service-content-area">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration="1s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
                   >
                     {"Car Dealer Service"}
                   </p>
 
-                  <h2 className="section-title wow move-right">
+                  <h2
+                    className="section-title move-right"
+                    data-aos="move-right"
+                  >
                     {"Autovault "}
                     <span>{"Service"}</span>
                     {" Center "}
@@ -40,9 +44,10 @@ export default function ServiceService() {
                 </div>
 
                 <p
-                  className="desc wow fadeInUp"
-                  data-wow-delay=".4s"
-                  data-wow-duration="1s"
+                  className="desc"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
                 >
                   {
                     "Welcome to Autovault where innovation drives every journey. Discover a range of designed to elevate your driving experience.Please arrive a few minutes early, and if you need to make any changes to your appointment, don't hesitate to give us a call at. We look forward to servicing your for vehicle and keeping it running smoothly. We look forward to providing it top-quality care for your vehicle!"
@@ -60,9 +65,10 @@ export default function ServiceService() {
 
                   <a
                     href="tel:+12505550199"
-                    className="rts-btn call-btn wow fadeInUp"
-                    data-wow-delay=".6s"
-                    data-wow-duration="1s"
+                    className="rts-btn call-btn"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                    data-aos-duration="1000"
                   >
                     <span>
                       <i className="fa-regular fa-phone"></i>

@@ -5,14 +5,15 @@ export default function HomeFiveAbout() {
       <div className="container">
         <div className="section-title-area">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration="1s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
           >
             {"About Us"}
           </p>
 
-          <h2 className="section-title cw wow move-right">
+          <h2 className="section-title cw move-right" data-aos="move-right">
             {"Get Your Shine On Visit Our "}
             <span>{"Car"}</span>
             {" Wash Today "}
@@ -21,9 +22,10 @@ export default function HomeFiveAbout() {
 
         <div className="section-inner d-flex align-items-start mt--80">
           <div
-            className="about-image-area wow fadeInLeft"
-            data-wow-delay=".5s"
-            data-wow-duration="1s"
+            className="about-image-area"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1000"
           >
             <img src="/assets/images/about/08.webp" width="704" alt="" />
 

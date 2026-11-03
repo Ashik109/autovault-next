@@ -43,14 +43,15 @@ export default function HomeSixTeam() {
             <div className="col-lg-6 order-change">
               <div className="section-title-area">
                 <p
-                  className="sub-title wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-wow-duration="1s"
+                  className="sub-title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
                 >
                   {"Our Team"}
                 </p>
 
-                <h2 className="section-title wow move-right">
+                <h2 className="section-title move-right" data-aos="move-right">
                   {"Let’s Meet Our "}
                   <span>{"Expert"}</span>
                   {" Mechanic"}

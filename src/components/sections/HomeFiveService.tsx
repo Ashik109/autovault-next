@@ -6,14 +6,18 @@ export default function HomeFiveService() {
         <div className="section-top d-flex justify-content-between align-items-end">
           <div className="section-title-area">
             <p
-              className="sub-title wow fadeInUp"
-              data-wow-delay=".1s"
-              data-wow-duration=".8s"
+              className="sub-title"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
             >
               {"Our Service"}
             </p>
 
-            <h2 className="section-title wow move-right mb--0">
+            <h2
+              className="section-title move-right mb--0"
+              data-aos="move-right"
+            >
               {"Our Washing "}
               <span>{"Service"}</span>
             </h2>

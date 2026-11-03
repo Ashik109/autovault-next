@@ -9,9 +9,10 @@ export default function HomeTwoBanner() {
             <div className="banner-area-two">
               <div className="banner-content-area">
                 <h1
-                  className="title wow fadeInUp"
-                  data-wow-delay=".2s"
-                  data-wow-duration="1s"
+                  className="title"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
                 >
                   {" Unleash the Road: Discover Your Perfect "}
                   <span>{"Cars"}</span>
@@ -19,9 +20,10 @@ export default function HomeTwoBanner() {
                 </h1>
 
                 <h2
-                  className="price wow fadeInUp"
-                  data-wow-delay=".4s"
-                  data-wow-duration="1s"
+                  className="price"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
                 >
                   <span className="currency">{"$"}</span>
                   {"122 "}
@@ -31,9 +33,10 @@ export default function HomeTwoBanner() {
                 <Link
                   prefetch={false}
                   href="/about"
-                  className="rts-btn radius-small btn-primary wow fadeInUp"
-                  data-wow-delay=".6s"
-                  data-wow-duration="1s"
+                  className="rts-btn radius-small btn-primary"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
                 >
                   {"Learn More"}
                 </Link>
@@ -43,9 +46,10 @@ export default function HomeTwoBanner() {
 
           <div className="col-lg-4">
             <div
-              className="banner-right-side-two wow fadeInRight"
-              data-wow-delay=".8s"
-              data-wow-duration="1s"
+              className="banner-right-side-two"
+              data-aos="fade-left"
+              data-aos-delay="800"
+              data-aos-duration="1000"
             >
               <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">

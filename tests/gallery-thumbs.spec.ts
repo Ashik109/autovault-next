@@ -2,9 +2,9 @@ import { test, expect, type Locator } from "@playwright/test";
 
 type GalleryElement = HTMLElement & {
   swiper: {
+    animating: boolean;
     realIndex: number;
     slideToLoop(index: number, speed: number): void;
-    slideNext(speed: number): void;
   };
 };
 
@@ -42,6 +42,11 @@ async function expectSynchronized(
     })
     .toBe(true);
   await expect(main.locator(".swiper-slide-active")).toHaveCount(1);
+  await expect
+    .poll(() =>
+      main.evaluate((element) => (element as GalleryElement).swiper.animating),
+    )
+    .toBe(false);
 }
 
 for (const [name, path, mainSelector, thumbSelector] of [
@@ -63,10 +68,14 @@ for (const [name, path, mainSelector, thumbSelector] of [
       await expect(thumbs).toHaveClass(/swiper-initialized/);
       await expectSynchronized(main, thumbs, 0);
 
+      await root.locator(".thumb-next").click();
+      await expectSynchronized(main, thumbs, 1);
+      await root.locator(".thumb-prev").click();
+      await expectSynchronized(main, thumbs, 0);
+
       await thumbs.locator(".swiper-slide").nth(2).click();
       await expectSynchronized(main, thumbs, 2);
-      // Exercise the same public Swiper navigation API used by arrows/autoplay,
-      // including the loop boundary, independently of thumbnail clicks.
+      // Move to the last image and test both loop boundaries with real arrows.
       const lastIndex = (await thumbs.locator(".swiper-slide").count()) - 1;
       await main.evaluate(
         (element, index) =>
@@ -74,10 +83,10 @@ for (const [name, path, mainSelector, thumbSelector] of [
         lastIndex,
       );
       await expectSynchronized(main, thumbs, lastIndex);
-      await main.evaluate((element) =>
-        (element as GalleryElement).swiper.slideNext(0),
-      );
+      await root.locator(".thumb-next").click();
       await expectSynchronized(main, thumbs, 0);
+      await root.locator(".thumb-prev").click();
+      await expectSynchronized(main, thumbs, lastIndex);
       await page.setViewportSize({
         width: width === 390 ? 1440 : 390,
         height: 1000,

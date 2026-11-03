@@ -8,14 +8,18 @@ export default function HomeSixWhyChooseUs4() {
               <div className="left-side-content">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration="1s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
                   >
                     {"Why Choose Us"}
                   </p>
 
-                  <h2 className="section-title wow move-right">
+                  <h2
+                    className="section-title move-right"
+                    data-aos="move-right"
+                  >
                     {"Why We're the Right "}
                     <span>{"Choice"}</span>
                     {" for You"}

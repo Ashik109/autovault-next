@@ -4,14 +4,15 @@ export default function HomeEightTestimonials() {
       <div className="container">
         <div className="section-title-area">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration=".8s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
           >
             {"Testimonial"}
           </p>
 
-          <h2 className="section-title wow move-right">
+          <h2 className="section-title move-right" data-aos="move-right">
             {"What Our "}
             <span>{"Client"}</span>
             {" Says "}
@@ -21,27 +22,30 @@ export default function HomeEightTestimonials() {
         <div className="section-inner mt--80">
           <div className="row align-items-center justify-content-end">
             <div
-              className="col-xl-5 col-lg-6 wow fadeIn"
-              data-wow-delay=".2s"
-              data-wow-duration="1s"
+              className="col-xl-5 col-lg-6"
+              data-aos="fade"
+              data-aos-delay="200"
+              data-aos-duration="1000"
             >
               <div className="left-side-image text-end">
                 <img
                   src="/assets/images/testimonials/02.webp"
                   width="423"
                   alt=""
-                  className="main-image wow scaleIn"
-                  data-wow-delay=".5s"
-                  data-wow-duration="1.5s"
+                  className="main-image"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                  data-aos-duration="1500"
                 />
 
                 <img
                   src="/assets/images/testimonials/01.webp"
                   width="373"
                   alt=""
-                  className="floating-img wow scaleIn"
-                  data-wow-delay=".5s"
-                  data-wow-duration="1.5s"
+                  className="floating-img"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                  data-aos-duration="1500"
                 />
               </div>
             </div>

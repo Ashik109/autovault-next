@@ -10,6 +10,7 @@ import { setupStickyFooter } from "@/lib/sticky-footer";
 import { mountNiceSelects } from "@/lib/nice-select";
 import { mountParallax } from "@/lib/parallax";
 import { scrollToTop } from "@/lib/smooth-scroll";
+import { mountAnimations } from "@/lib/animations";
 
 export default function PageEffects({ bodyClass }: { bodyClass: string }) {
   return (
@@ -47,6 +48,7 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     const animationFrames = new Set<number>();
     const disposers: (() => void)[] = [];
     const plugins = new AbortController();
+    void mountAnimations(root, plugins.signal);
     void mountNiceSelects(root, plugins.signal).then((dispose) => {
       if (cancelled) dispose();
       else disposers.push(dispose);
@@ -75,6 +77,15 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     for (const [selector, sourceOptions] of Object.entries(sliderOptions)) {
       root.querySelectorAll<HTMLElement>(selector).forEach((element) => {
         const options = structuredClone(sourceOptions);
+        // Gallery arrows select an image, rather than only moving the thumb strip.
+        if (selector === ".SlideThumb" || selector === ".SlideThumb2")
+          options.navigation = false;
+        if (selector === ".rts-heroSlider" || selector === ".rts-heroSlider2")
+          options.navigation = {
+            nextEl: ".thumb-next",
+            prevEl: ".thumb-prev",
+            addIcons: false,
+          };
         // Bind controls to their own section, including controls outside the slider.
         const scope =
           element.closest('section, [class*="rts-"][class*="-area"]') ||
@@ -157,29 +168,6 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     const reducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    const reveal = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(({ target, isIntersecting }) => {
-          if (!isIntersecting) return;
-          const element = target as HTMLElement;
-          element.style.visibility = "visible";
-          if (!reducedMotion) {
-            element.classList.add("animated");
-            element.style.animationDelay = element.dataset.wowDelay || "0s";
-            element.style.animationDuration =
-              element.dataset.wowDuration || "1s";
-          }
-          element.classList.add("sal-animate");
-          reveal.unobserve(target);
-        });
-      },
-      { threshold: 0.05 },
-    );
-    document
-      .querySelectorAll<HTMLElement>(".wow, [data-sal]")
-      .forEach((node) => reveal.observe(node));
-    observers.push(reveal);
-
     const counter = new IntersectionObserver((entries) => {
       entries.forEach(({ target, isIntersecting }) => {
         if (!isIntersecting) return;

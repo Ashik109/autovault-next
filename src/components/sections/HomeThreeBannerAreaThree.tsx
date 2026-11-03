@@ -7,14 +7,15 @@ export default function HomeThreeBannerAreaThree() {
           <div className="col-lg-7">
             <div className="section-title-area">
               <p
-                className="sub-title wow fadeInUp"
-                data-wow-delay=".1s"
-                data-wow-duration=".8s"
+                className="sub-title"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="800"
               >
                 {"Shop With Confidence – Quality Vehicles"}
               </p>
 
-              <h1 className="section-title wow move-right">
+              <h1 className="section-title move-right" data-aos="move-right">
                 {"Where Meets the Road: Discover Next "}
                 <span>{"Car"}</span>
                 {" Today "}
@@ -33,9 +34,10 @@ export default function HomeThreeBannerAreaThree() {
           <div className="col-lg-12">
             <div className="select-inner">
               <div
-                className="select-area-down wow fadeInUp"
-                data-wow-delay=".8s"
-                data-wow-duration="1s"
+                className="select-area-down"
+                data-aos="fade-up"
+                data-aos-delay="800"
+                data-aos-duration="1000"
               >
                 <TemplateForm acceptCharset="utf-8" context="/home-three">
                   <select
@@ -137,12 +139,14 @@ export default function HomeThreeBannerAreaThree() {
 
       <div className="banner-hero">
         <img
-          className="wow slideInRight"
-          data-wow-delay=".5s"
-          data-wow-duration="2s"
+          className=""
+
           src="/assets/images/portfolio/10.webp"
           width="1555"
           alt=""
+          data-aos="slide-left"
+          data-aos-delay="500"
+          data-aos-duration="2000"
         />
       </div>
     </section>

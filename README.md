@@ -53,6 +53,10 @@ Cart quantities, removals and saved cars persist in browser storage. Checkout to
 
 Lenis provides smooth wheel scrolling with the same 1.1-second duration and easing as Touriza. The root-level controller handles anchor links and back-to-top, compensates for shrinking sticky headers, preserves native touch and nested control scrolling, and disables smoothing when reduced motion is requested. Next.js retains control of route scroll restoration.
 
+Car gallery arrows control the main image; Swiper's Thumbs module updates the selected thumbnail alongside it. Thumbnail clicks also select the main image, including after responsive layout changes and cached navigation.
+
+Scroll reveals use AOS with native `data-aos` attributes, preserving the template's per-element delays and durations. The `move-right` class uses a custom left-to-right clip reveal triggered by AOS. The controller initializes once and refreshes on route, image and font changes; reduced-motion styles keep all content visible without animation. `scripts/migrate-animations.mjs` also applies this migration after template regeneration.
+
 The HTML source did not include working authentication, mail delivery, newsletter delivery or payment services. These forms validate input and clearly state that the service is not connected; they do not claim to have submitted messages, created accounts, taken payments or placed orders. Connect real backend services before using those features in production. Cart/saved-car storage is local to the browser.
 
 ## Verification

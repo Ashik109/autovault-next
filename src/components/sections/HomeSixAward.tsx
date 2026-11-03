@@ -5,9 +5,10 @@ export default function HomeSixAward() {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div
-              className="left wow scaleIn"
-              data-wow-delay=".5s"
-              data-wow-duration="1s"
+              className="left"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             >
               <img src="/assets/images/about/11.webp" width="478" alt="" />
             </div>
@@ -17,14 +18,15 @@ export default function HomeSixAward() {
             <div className="right">
               <div className="section-title-area">
                 <p
-                  className="sub-title wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-wow-duration="1s"
+                  className="sub-title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
                 >
                   {"Award"}
                 </p>
 
-                <h2 className="section-title wow move-right">
+                <h2 className="section-title move-right" data-aos="move-right">
                   {
                     "Best in Repair and Service of Excellence Provider Winners for "
                   }

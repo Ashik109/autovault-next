@@ -19,26 +19,29 @@ export default function HomeEightBanner() {
             <div className="banner-area-one bg_image position-relative">
               <div className="banner-content-area">
                 <div
-                  className="pre-title wow fadeInUp"
-                  data-wow-delay=".2s"
-                  data-wow-duration="1s"
+                  className="pre-title"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
                 >
                   <span>{"Shop With Confidence – Quality Vehicles"}</span>
                 </div>
 
                 <h1
-                  className="title wow fadeInUp"
-                  data-wow-delay=".4s"
-                  data-wow-duration="1s"
+                  className="title"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
                 >
                   {"Discover Our Best Deals On New And Used "}
                   <span>{"Cars"}</span>
                 </h1>
 
                 <div
-                  className="select-area-down wow fadeInUp"
-                  data-wow-delay=".8s"
-                  data-wow-duration="1s"
+                  className="select-area-down"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                  data-aos-duration="1000"
                 >
                   <TemplateForm acceptCharset="utf-8" context="/home-eight">
                     <select

@@ -7,14 +7,15 @@ export default function HomeTwoPopularCar() {
         <div className="section-top d-flex justify-content-between align-items-end">
           <div className="section-title-area">
             <p
-              className="sub-title wow fadeInUp"
-              data-wow-delay=".1s"
-              data-wow-duration=".8s"
+              className="sub-title"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
             >
               {"Popular Car"}
             </p>
 
-            <h2 className="section-title cw wow move-right">
+            <h2 className="section-title cw move-right" data-aos="move-right">
               {"Popular "}
               <span>{"Makes"}</span>
             </h2>
@@ -90,9 +91,10 @@ export default function HomeTwoPopularCar() {
         </div>
 
         <div
-          className="section-inner mt--80 wow fadeInUp"
-          data-wow-delay=".3s"
-          data-wow-duration="1s"
+          className="section-inner mt--80"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
         >
           <div className=" tab-content" id="myTabContent2">
             <div

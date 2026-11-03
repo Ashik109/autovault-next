@@ -10,23 +10,28 @@ export default function HomeEightBlog() {
               <div className="left-side-content">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration=".8s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                   >
                     {" Latest Blog"}
                   </p>
 
-                  <h2 className="section-title wow move-right">
+                  <h2
+                    className="section-title move-right"
+                    data-aos="move-right"
+                  >
                     {"Our Latest "}
                     <span>{"Blog"}</span>
                   </h2>
                 </div>
 
                 <p
-                  className="desc wow fadeIn"
-                  data-wow-delay=".3s"
-                  data-wow-duration="1s"
+                  className="desc"
+                  data-aos="fade"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
                 >
                   {
                     "Welcome to Autovault where innovation drives every journey. Discover a range of designed to elevate your driving experience."
@@ -36,9 +41,10 @@ export default function HomeEightBlog() {
                 <Link
                   prefetch={false}
                   href="/blog"
-                  className="text-btn wow fadeIn"
-                  data-wow-delay=".5s"
-                  data-wow-duration="1s"
+                  className="text-btn"
+                  data-aos="fade"
+                  data-aos-delay="500"
+                  data-aos-duration="1000"
                 >
                   {"Read All Blog"}
                 </Link>
@@ -47,9 +53,10 @@ export default function HomeEightBlog() {
 
             <div className="col-xl-8">
               <div
-                className="right-side-blog wow fadeInRight"
-                data-wow-delay=".6s"
-                data-wow-duration="1s"
+                className="right-side-blog"
+                data-aos="fade-left"
+                data-aos-delay="600"
+                data-aos-duration="1000"
               >
                 <div className="row g-5">
                   <div className="col-lg-6">

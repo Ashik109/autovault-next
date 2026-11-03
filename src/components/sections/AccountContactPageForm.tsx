@@ -8,9 +8,9 @@ export default function AccountContactPageForm() {
             <div className="mian-wrapper-form">
               <div
                 className="title-mid-wrapper-home-two sal-animate"
-                data-sal="slide-up"
-                data-sal-delay="150"
-                data-sal-duration="800"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="800"
               >
                 <h3 className="title">{"Login"}</h3>
               </div>
@@ -61,9 +61,9 @@ export default function AccountContactPageForm() {
             <div className="mian-wrapper-form">
               <div
                 className="title-mid-wrapper-home-two sal-animate"
-                data-sal="slide-up"
-                data-sal-delay="150"
-                data-sal-duration="800"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="800"
               >
                 <h3 className="title">{"Registration"}</h3>
               </div>

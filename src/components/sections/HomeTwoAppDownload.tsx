@@ -8,14 +8,18 @@ export default function HomeTwoAppDownload() {
               <div className="left-side-content">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration=".8s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                   >
                     {"App Download"}
                   </p>
 
-                  <h2 className="section-title cw wow move-right">
+                  <h2
+                    className="section-title cw move-right"
+                    data-aos="move-right"
+                  >
                     {"Download Our App Today For "}
                     <span>{"IOS"}</span>
                     {" and "}
@@ -24,9 +28,10 @@ export default function HomeTwoAppDownload() {
                 </div>
 
                 <p
-                  className="desc cg wow fadeInUp"
-                  data-wow-delay=".4s"
-                  data-wow-duration=".8s"
+                  className="desc cg"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="800"
                 >
                   {
                     "Welcome to Autovault where innovation drives every journey. Discover a range of designed to elevate your driving experience."
@@ -47,9 +52,10 @@ export default function HomeTwoAppDownload() {
 
             <div className="col-lg-6 order-change">
               <div
-                className="right-side-image wow scaleOut"
-                data-wow-delay=".5s"
-                data-wow-duration="1s"
+                className="right-side-image"
+                data-aos="zoom-out"
+                data-aos-delay="500"
+                data-aos-duration="1000"
               >
                 <img
                   src="/assets/images/about/app_img.webp"

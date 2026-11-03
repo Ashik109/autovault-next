@@ -45,7 +45,10 @@ export default function HomeSixBannerSliderArea3() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="section-title-area">
-                    <h1 className="section-title wow move-right">
+                    <h1
+                      className="section-title move-right"
+                      data-aos="move-right"
+                    >
                       {"Fast, Affordable And Expert Auto "}
                       <span>{" Car"}</span>
                       {" Repair"}
@@ -69,7 +72,10 @@ export default function HomeSixBannerSliderArea3() {
 
                 <div className="swiper-slide">
                   <div className="section-title-area">
-                    <h1 className="section-title wow move-right">
+                    <h1
+                      className="section-title move-right"
+                      data-aos="move-right"
+                    >
                       {"Fast, Affordable And Expert Auto "}
                       <span>{" Car"}</span>
                       {" Repair"}

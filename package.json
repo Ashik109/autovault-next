@@ -12,6 +12,7 @@
     "test:dev": "playwright test --config playwright.dev.config.ts"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "jarallax": "^3.1.0",
     "jquery": "^3.7.1",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.64.1",
+    "@types/aos": "^3.0.8",
     "@types/bootstrap": "^5.2.11",
     "@types/jquery": "^4.0.1",
     "@types/node": "^20",

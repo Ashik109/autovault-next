@@ -5,23 +5,25 @@ export default function HomeFourCategoryArea2() {
       <div className="container">
         <div className="section-title-area2">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration=".8s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
           >
             {"Parts Category"}
           </p>
 
-          <h2 className="section-title wow move-right">
+          <h2 className="section-title move-right" data-aos="move-right">
             {"Shop By "}
             <span>{"Categories"}</span>
           </h2>
         </div>
 
         <div
-          className="section-inner wow fadeInUp"
-          data-wow-delay=".3s"
-          data-wow-duration="1s"
+          className="section-inner"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
         >
           <div className="swiper categorySlider2">
             <div className="swiper-wrapper">

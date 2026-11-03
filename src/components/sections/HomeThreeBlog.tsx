@@ -5,14 +5,15 @@ export default function HomeThreeBlog() {
     <section className="rts-blog-area rts-section-gapTop">
       <div className="section-title-area2">
         <p
-          className="sub-title wow fadeInUp"
-          data-wow-delay=".1s"
-          data-wow-duration="1s"
+          className="sub-title"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="1000"
         >
           {"Latest Blog"}
         </p>
 
-        <h2 className="section-title wow move-right">
+        <h2 className="section-title move-right" data-aos="move-right">
           {"Our Latest "}
           <span>{"Blog"}</span>
         </h2>

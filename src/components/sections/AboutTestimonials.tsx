@@ -4,9 +4,10 @@ export default function AboutTestimonials() {
       <div className="bg-shape-area"></div>
 
       <div
-        className="shape wow slideInLeft"
-        data-wow-delay=".5s"
-        data-wow-duration="2s"
+        className="shape"
+        data-aos="slide-right"
+        data-aos-delay="500"
+        data-aos-duration="2000"
       >
         <img src="/assets/images/testimonials/03.webp" width="1107" alt="" />
       </div>
@@ -17,14 +18,15 @@ export default function AboutTestimonials() {
             <div className="col-xl-5">
               <div className="section-title-area">
                 <p
-                  className="sub-title wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-wow-duration=".8s"
+                  className="sub-title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
                 >
                   {"Testimonial"}
                 </p>
 
-                <h2 className="section-title wow move-right">
+                <h2 className="section-title move-right" data-aos="move-right">
                   {"What Our "}
                   <span>{"Client"}</span>
                   {" Says "}

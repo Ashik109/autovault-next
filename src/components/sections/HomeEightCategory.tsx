@@ -4,14 +4,15 @@ export default function HomeEightCategory() {
       <div className="container">
         <div className="section-title-area">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration=".8s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
           >
             {"Car Category"}
           </p>
 
-          <h2 className="section-title wow move-right">
+          <h2 className="section-title move-right" data-aos="move-right">
             {"Browse By "}
             <span>{"Car"}</span>
             {" Type"}
@@ -19,9 +20,10 @@ export default function HomeEightCategory() {
         </div>
 
         <div
-          className="section-inner wow fadeInUp"
-          data-wow-delay=".3s"
-          data-wow-duration="1s"
+          className="section-inner"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
         >
           <div className="swiper category-slider">
             <div className="swiper-wrapper">

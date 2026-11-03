@@ -18,14 +18,18 @@ export default function HomeThreeAboutAreaThree() {
               <div className="about-content-area">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration=".8s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                   >
                     {"About Us"}
                   </p>
 
-                  <h2 className="section-title wow move-right">
+                  <h2
+                    className="section-title move-right"
+                    data-aos="move-right"
+                  >
                     {" Fuel Your Passion: Top "}
                     <span>{"Car"}</span>
                     {" Exclusive Offers, and Be A Expert Advice "}

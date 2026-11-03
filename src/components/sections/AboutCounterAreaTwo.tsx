@@ -4,9 +4,10 @@ export default function AboutCounterAreaTwo() {
       <div className="container">
         <div className="counter-inner">
           <div
-            className="inner wow zoomIn"
-            data-wow-delay=".2s"
-            data-wow-duration="1s"
+            className="inner"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
           >
             <div className="icon">
               <img src="/assets/images/counter/icon-01.svg" width="74" alt="" />
@@ -23,9 +24,10 @@ export default function AboutCounterAreaTwo() {
           </div>
 
           <div
-            className="inner wow zoomIn"
-            data-wow-delay=".4s"
-            data-wow-duration="1s"
+            className="inner"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
           >
             <div className="icon">
               <img src="/assets/images/counter/icon-02.svg" alt="" />
@@ -42,9 +44,10 @@ export default function AboutCounterAreaTwo() {
           </div>
 
           <div
-            className="inner wow zoomIn"
-            data-wow-delay=".6s"
-            data-wow-duration="1s"
+            className="inner"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            data-aos-duration="1000"
           >
             <div className="icon">
               <img src="/assets/images/counter/icon-03.svg" alt="" />
@@ -61,9 +64,10 @@ export default function AboutCounterAreaTwo() {
           </div>
 
           <div
-            className="inner wow zoomIn"
-            data-wow-delay=".8s"
-            data-wow-duration="1s"
+            className="inner"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            data-aos-duration="1000"
           >
             <div className="icon">
               <img src="/assets/images/counter/icon-04.svg" alt="" />

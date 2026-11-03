@@ -4,14 +4,15 @@ export default function HomeTwoTestimonials() {
       <div className="container">
         <div className="section-title-area2">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration=".8s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
           >
             {"Testimonial"}
           </p>
 
-          <h2 className="section-title wow move-right cw">
+          <h2 className="section-title move-right cw" data-aos="move-right">
             {"What Our "}
             <span>{"Clients"}</span>
             {" Say"}

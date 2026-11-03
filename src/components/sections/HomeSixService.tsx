@@ -8,14 +8,15 @@ export default function HomeSixService() {
       <div className="container">
         <div className="section-title-area2">
           <p
-            className="sub-title wow fadeInUp"
-            data-wow-delay=".1s"
-            data-wow-duration="1s"
+            className="sub-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
           >
             {"Our Service"}
           </p>
 
-          <h2 className="section-title cw wow move-right">
+          <h2 className="section-title cw move-right" data-aos="move-right">
             {"Our Car "}
             <span>{"Service"}</span>
           </h2>

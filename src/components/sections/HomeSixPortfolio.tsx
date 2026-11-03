@@ -39,14 +39,15 @@ export default function HomeSixPortfolio() {
             <div className="col-lg-7 order-change">
               <div className="section-title-area3 mb--60">
                 <p
-                  className="sub-title wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-wow-duration="1s"
+                  className="sub-title"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
                 >
                   {"Our Project"}
                 </p>
 
-                <h2 className="section-title wow move-right">
+                <h2 className="section-title move-right" data-aos="move-right">
                   {"Car Repair "}
                   <span>{"Project"}</span>
                 </h2>

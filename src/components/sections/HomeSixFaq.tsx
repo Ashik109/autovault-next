@@ -10,7 +10,10 @@ export default function HomeSixFaq() {
           <div className="row g-5">
             <div className="col-xl-7 col-lg-6">
               <div className="section-title-area">
-                <h5 className="section-title wow cw move-right mb--40">
+                <h5
+                  className="section-title cw move-right mb--40"
+                  data-aos="move-right"
+                >
                   {"Frequently Asked Question"}
                 </h5>
               </div>

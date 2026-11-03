@@ -8,23 +8,28 @@ export default function HomeTwoWhyChooseUs2() {
               <div className="left-side-content">
                 <div className="section-title-area">
                   <p
-                    className="sub-title wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration=".8s"
+                    className="sub-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                   >
                     {"Why Choose Us"}
                   </p>
 
-                  <h2 className="section-title cw wow move-right">
+                  <h2
+                    className="section-title cw move-right"
+                    data-aos="move-right"
+                  >
                     {"Why Choose "}
                     <span>{"Us"}</span>
                   </h2>
                 </div>
 
                 <ul
-                  className="why-choose-feature-list wow fadeInUp"
-                  data-wow-delay=".4s"
-                  data-wow-duration=".8s"
+                  className="why-choose-feature-list"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  data-aos-duration="800"
                 >
                   <li>
                     <i className="rt-icon-check-circle"></i>
@@ -67,21 +72,25 @@ export default function HomeTwoWhyChooseUs2() {
             <div className="col-lg-6 order-change">
               <div className="right-side-image">
                 <img
-                  className="wow scaleIn"
-                  data-wow-delay=".2s"
-                  data-wow-duration="1s"
+                  className=""
+
                   src="/assets/images/why-choose/01.webp"
                   width="308"
                   alt=""
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
                 />
 
                 <img
-                  className="wow scaleIn"
-                  data-wow-delay=".2s"
-                  data-wow-duration="1s"
+                  className=""
+
                   src="/assets/images/why-choose/02.webp"
                   width="308"
                   alt=""
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
                 />
               </div>
             </div>

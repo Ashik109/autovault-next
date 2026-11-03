@@ -8,14 +8,18 @@ export default function HomeFiveTestimonials() {
               <div className="left-side-content">
                 <div className="section-title-area">
                   <p
-                    className="sub-title cw wow fadeInUp"
-                    data-wow-delay=".1s"
-                    data-wow-duration=".8s"
+                    className="sub-title cw"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
                   >
                     {"Testimonial"}
                   </p>
 
-                  <h2 className="section-title cw wow move-right">
+                  <h2
+                    className="section-title cw move-right"
+                    data-aos="move-right"
+                  >
                     {"Trusted From Over "}
                     <span className="cd">{"2500+"}</span>
                     {" Customer "}

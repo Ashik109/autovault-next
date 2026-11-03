@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "swiper/css/bundle";
 import "jarallax/dist/jarallax.css";
 import "lenis/dist/lenis.css";
+import "aos/dist/aos.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 

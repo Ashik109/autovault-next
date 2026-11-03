@@ -6,14 +6,15 @@ export default function HomeSixPricing() {
         <div className="section-top">
           <div className="section-title-area2">
             <p
-              className="sub-title wow fadeInUp"
-              data-wow-delay=".1s"
-              data-wow-duration=".8s"
+              className="sub-title"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
             >
               {"Pricing"}
             </p>
 
-            <h2 className="section-title wow move-right">
+            <h2 className="section-title move-right" data-aos="move-right">
               {"Choose the Perfect "}
               <span>{"Plan"}</span>
             </h2>

@@ -5,9 +5,10 @@ export default function PortfolioSelect() {
       <div className="container">
         <div className="select-inner">
           <div
-            className="select-area-down wow fadeInUp"
-            data-wow-delay=".8s"
-            data-wow-duration="1s"
+            className="select-area-down"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="1000"
           >
             <TemplateForm acceptCharset="utf-8" context="/portfolio">
               <select
