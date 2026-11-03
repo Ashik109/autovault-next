@@ -6,6 +6,7 @@ import Swiper from "swiper/bundle";
 import { sliderOptions } from "@/lib/sliders";
 import { addCartItem } from "@/lib/cart";
 import { toggleSavedCar } from "@/lib/saved-cars";
+import { setupStickyFooter } from "@/lib/sticky-footer";
 
 export default function PageEffects({ bodyClass }: { bodyClass: string }) {
   return (
@@ -385,12 +386,12 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     });
 
     const updateScroll = () => {
-      document
+      root
         .querySelectorAll(".header--sticky")
         .forEach((node) =>
           node.classList.toggle("sticky", window.scrollY > 150),
         );
-      document
+      root
         .querySelector(".progress-wrap")
         ?.classList.toggle("active-progress", window.scrollY > 50);
       const progress = root.querySelector<SVGPathElement>(
@@ -406,11 +407,6 @@ function Effects({ bodyClass }: { bodyClass: string }) {
       }
     };
     const updateFooter = () => {
-      const footer = root.querySelector<HTMLElement>("#rts-footer");
-      const wrapper = root.querySelector<HTMLElement>(".rts-wrapper");
-      if (footer && wrapper)
-        wrapper.style.paddingBottom =
-          innerWidth >= 992 ? `${footer.offsetHeight}px` : "";
       instances.forEach((slider) => slider.update());
     };
     const min = root.querySelector<HTMLInputElement>("#minRange");
@@ -486,12 +482,10 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     document.addEventListener("shown.bs.tab", updateFooter);
     updateScroll();
     updateFooter();
-    const resize = new ResizeObserver(updateFooter);
-    const footer = root.querySelector("#rts-footer");
-    if (footer) resize.observe(footer);
+    const cleanupFooter = setupStickyFooter(root);
     return () => {
       cancelled = true;
-      resize.disconnect();
+      cleanupFooter();
       observers.forEach((observer) => observer.disconnect());
       animationFrames.forEach(cancelAnimationFrame);
       instances.reverse().forEach((instance) => {
