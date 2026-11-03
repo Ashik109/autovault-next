@@ -55,9 +55,18 @@ for (const [kind, records] of Object.entries(catalog))
     asset(record.image, `${kind}/${slug}`);
     record.gallery.forEach((image) => asset(image, `${kind}/${slug}`));
   }
+const standalonePages = new Set([
+  "public/landing/index.html",
+  "public/documentation/index.html",
+]);
 for (const file of [...sourceFiles, ...assets])
-  if (/\.html?$/i.test(file))
-    errors.add(`HTML file must not be shipped: ${file}`);
+  if (
+    /\.html?$/i.test(file) &&
+    !standalonePages.has(file.split(path.sep).join("/"))
+  )
+    errors.add(
+      `Unexpected HTML outside the standalone landing/documentation pages: ${file}`,
+    );
 for (const file of sourceFiles.filter((file) => file.endsWith(".tsx"))) {
   const content = fs.readFileSync(file, "utf8");
   if (/dangerouslySetInnerHTML|html-react-parser|\.html["']/.test(content))
@@ -148,5 +157,5 @@ if (errors.size) {
   process.exit(1);
 }
 console.log(
-  `Verified ${routes.size} native routes, ${assets.length} assets, clean local links, no HTML files and no Tailwind dependencies.`,
+  `Verified ${routes.size} native routes, ${assets.length} public files, clean local links, standalone HTML exceptions only and no Tailwind dependencies.`,
 );

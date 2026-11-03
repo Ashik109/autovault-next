@@ -2,7 +2,7 @@
 
 AutoVault's complete car dealership template converted to Next.js App Router, TypeScript, Bootstrap and ordinary CSS. Tailwind is not installed.
 
-Open [documentation/index.html](documentation/index.html) directly in a browser for the standalone setup, customization and maintenance guide.
+Open [public/documentation/index.html](public/documentation/index.html) directly in a browser for the standalone setup, customization and maintenance guide. Next.js also serves it at `/documentation/index.html`; the demo landing page is available at `/landing/index.html` from `public/landing/`.
 
 ## Run locally
 
@@ -22,7 +22,7 @@ Open http://localhost:3000. On Windows PowerShell, use `npm.cmd` if script execu
 - `public/assets/`: original images, videos, fonts, Bootstrap/plugin styles and SCSS source.
 - `src/data/routes.json`: source-page route inventory.
 
-The application does not read, parse, embed or serve the original HTML files at runtime. Page content is real JSX. Internal page navigation uses Next.js links and clean URLs. The original main.js and PHP form actions are not shipped. jQuery 3 is loaded for the Nice Select plugin. No `.html` files are kept in the source or public assets. Next.js creates its normal prerendered build output under `.next/`.
+The application does not read, parse or embed the original template HTML at runtime. Page content is real JSX. Internal page navigation uses Next.js links and clean URLs. The original main.js and PHP form actions are not shipped. jQuery 3 is loaded for the Nice Select plugin. The standalone landing and documentation pages are the only intentional public HTML files; application pages remain native TSX. Next.js creates its normal prerendered build output under `.next/`.
 
 ## Routes
 

@@ -478,8 +478,9 @@
         <p>
           The application lives in <code>src/</code>, and its static assets live
           in <code>public/assets/</code>. This standalone guide lives in
-          <code>documentation/index.html</code>, outside the application routes
-          and public assets.
+          <code>public/documentation/index.html</code>, served at
+          <code>/documentation/index.html</code> alongside the standalone
+          landing page at <code>/landing/index.html</code>.
         </p>
       </section>
 
@@ -521,9 +522,10 @@ npm run dev</code></pre>
           <span class="number">03</span>Project structure
         </h2>
         <pre><code>autovault-nextJS/
-├── documentation/
-│   └── index.html             This standalone guide
-├── public/assets/             Images, fonts, CSS and SCSS
+├── public/
+│   ├── assets/                Application images, fonts, CSS and SCSS
+│   ├── documentation/        This guide, served at /documentation/index.html
+│   └── landing/              Demo landing page at /landing/index.html
 ├── scripts/                   Conversion and verification utilities
 ├── src/
 │   ├── app/                   Routes, root layout and global CSS
@@ -1022,9 +1024,10 @@ npm run start</code></pre>
           changing version-specific configuration.
         </p>
         <p>
-          This documentation folder is separate from the app and is not exposed
-          as a Next.js URL. Open its HTML file directly, or publish it
-          separately if a hosted documentation page is required.
+          Next.js serves the standalone pages from the public folder. Open
+          <code>/landing/index.html</code> for the demo landing page and
+          <code>/documentation/index.html</code> for this guide. Both pages and
+          their local assets are included in the same deployment.
         </p>
       </section>
 
