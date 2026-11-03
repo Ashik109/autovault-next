@@ -77,14 +77,11 @@
         font-weight: 800;
         text-decoration: none;
       }
-      .mark {
-        display: grid;
-        place-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        background: #ff3600;
-        font-size: 15px;
+      .brand img {
+        display: block;
+        width: 176px;
+        max-width: 100%;
+        height: auto;
       }
       .edition {
         margin: 12px 0 28px;
@@ -406,9 +403,9 @@
   <body>
     <a class="skip" href="#content">Skip to documentation</a>
     <aside aria-label="Documentation sidebar">
-      <a class="brand" href="#overview"
-        ><span class="mark" aria-hidden="true">AV</span>AutoVault</a
-      >
+      <a class="brand" href="#overview">
+        <img src="assets/images/logo.svg" alt="AutoVault" />
+      </a>
       <p class="edition">Next.js project documentation · v0.1.0</p>
       <p class="nav-label">Getting started</p>
       <nav aria-label="Documentation contents">
