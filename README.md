@@ -20,7 +20,7 @@ Open http://localhost:3000. On Windows PowerShell, use `npm.cmd` if script execu
 - `public/assets/`: original images, videos, fonts, Bootstrap/plugin styles and SCSS source.
 - `src/data/routes.json`: source-page route inventory.
 
-The application does not read, parse, embed or serve the original HTML files at runtime. Page content is real JSX. Internal page navigation uses Next.js links and clean URLs. Original jQuery scripts and PHP form actions are not shipped. No `.html` files are kept in the source or public assets. Next.js creates its normal prerendered build output under `.next/`.
+The application does not read, parse, embed or serve the original HTML files at runtime. Page content is real JSX. Internal page navigation uses Next.js links and clean URLs. The original main.js and PHP form actions are not shipped. jQuery 3 is loaded for the Nice Select plugin. No `.html` files are kept in the source or public assets. Next.js creates its normal prerendered build output under `.next/`.
 
 ## Routes
 
@@ -32,7 +32,7 @@ Broken source-template links to `portfolio-two`, `portfolio-three`, `single-prod
 
 ## Interactions and backend scope
 
-Sliders, synchronized galleries, media popups, mobile navigation, search, tabs, accordions, price-range controls, counters and scroll controls initialize on client navigation and clean up when leaving a page. Native selects preserve keyboard access. The loan calculator includes a loan term, zero-interest handling and down-payment validation.
+Sliders, synchronized galleries, media popups, mobile navigation, search, tabs, accordions, price-range controls, counters and scroll controls initialize on client navigation and clean up when leaving a page. Nice Select uses the original dropdown styling, supports keyboard access and keeps the underlying form fields synchronized. Jarallax restores desktop background parallax; mobile and reduced-motion layouts keep static backgrounds. Both plugins initialize within the active route and are destroyed on navigation. The loan calculator includes a loan term, zero-interest handling and down-payment validation.
 
 Cart quantities, removals and saved cars persist in browser storage. Checkout totals use the same cart. The initial cart contains the source template's sample products.
 

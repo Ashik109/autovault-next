@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "swiper/css/bundle";
+import "jarallax/dist/jarallax.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

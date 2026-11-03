@@ -7,6 +7,8 @@ import { sliderOptions } from "@/lib/sliders";
 import { addCartItem } from "@/lib/cart";
 import { toggleSavedCar } from "@/lib/saved-cars";
 import { setupStickyFooter } from "@/lib/sticky-footer";
+import { mountNiceSelects } from "@/lib/nice-select";
+import { mountParallax } from "@/lib/parallax";
 
 export default function PageEffects({ bodyClass }: { bodyClass: string }) {
   return (
@@ -43,6 +45,15 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     const observers: IntersectionObserver[] = [];
     const animationFrames = new Set<number>();
     const disposers: (() => void)[] = [];
+    const plugins = new AbortController();
+    void mountNiceSelects(root, plugins.signal).then((dispose) => {
+      if (cancelled) dispose();
+      else disposers.push(dispose);
+    });
+    void mountParallax(root, plugins.signal).then((dispose) => {
+      if (cancelled) dispose();
+      else disposers.push(dispose);
+    });
     const cleanupBootstrap: (() => void)[] = [];
     void import("bootstrap").then(({ Collapse, Tab }) => {
       if (cancelled) return;
@@ -485,6 +496,7 @@ function Effects({ bodyClass }: { bodyClass: string }) {
     const cleanupFooter = setupStickyFooter(root);
     return () => {
       cancelled = true;
+      plugins.abort();
       cleanupFooter();
       observers.forEach((observer) => observer.disconnect());
       animationFrames.forEach(cancelAnimationFrame);
