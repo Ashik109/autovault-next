@@ -140,7 +140,12 @@ function Effects({ bodyClass }: { bodyClass: string }) {
       const main = bySelector.get(mainSelector),
         thumb = bySelector.get(thumbSelector);
       if (main && thumb) {
-        main.params.thumbs = { swiper: thumb };
+        // Keep Swiper's active-class and container defaults when linking thumbs.
+        main.params.thumbs = {
+          ...main.params.thumbs,
+          swiper: thumb,
+          multipleActiveThumbs: false,
+        };
         main.thumbs.init();
         main.thumbs.update();
       }
