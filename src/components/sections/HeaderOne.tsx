@@ -1,0 +1,566 @@
+import Link from "next/link";
+export default function HeaderOne() {
+  return (
+    <header className="header-one header--sticky">
+      <div className="row">
+        <div className="col-lg-12">
+          <div className="header-wrapper-1">
+            <div className="logo-area-start">
+              <Link prefetch={false} href="/" className="logo">
+                <img src="/assets/images/logo/logo.svg" alt="logo_area" />
+              </Link>
+            </div>
+
+            <div className="header-right d-block">
+              <div className="top">
+                <div className="left d-flex align-items-center">
+                  <div className="map-area">
+                    <div className="icon">
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9688 12.1562L15.2188 15.3125C15.125 15.7812 14.75 16.0938 14.2812 16.0938C6.40625 16.0625 0 9.65625 0 1.78125C0 1.3125 0.28125 0.9375 0.75 0.84375L3.90625 0.09375C4.34375 0 4.8125 0.25 5 0.65625L6.46875 4.0625C6.625 4.46875 6.53125 4.9375 6.1875 5.1875L4.5 6.5625C5.5625 8.71875 7.3125 10.4688 9.5 11.5312L10.875 9.84375C11.125 9.53125 11.5938 9.40625 12 9.5625L15.4062 11.0312C15.8125 11.25 16.0625 11.7188 15.9688 12.1562Z"
+                          fill="#FF3600"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div className="text">
+                      <p>{"Call Us Now"}</p>
+
+                      <a href="tel:12505550199">{"+12505550199"}</a>
+                    </div>
+                  </div>
+
+                  <div className="map-area">
+                    <div className="icon">
+                      <svg
+                        width="16"
+                        height="12"
+                        viewBox="0 0 16 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.5 0C15.3125 0 16 0.6875 16 1.5C16 2 15.75 2.4375 15.375 2.71875L8.59375 7.8125C8.21875 8.09375 7.75 8.09375 7.375 7.8125L0.59375 2.71875C0.21875 2.4375 0 2 0 1.5C0 0.6875 0.65625 0 1.5 0H14.5ZM6.78125 8.625C7.5 9.15625 8.46875 9.15625 9.1875 8.625L16 3.5V10C16 11.125 15.0938 12 14 12H2C0.875 12 0 11.125 0 10V3.5L6.78125 8.625Z"
+                          fill="#FF3600"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div className="text">
+                      <p>{"Send US Email"}</p>
+
+                      <a href="mailto:Autovault@gmail.com">
+                        {"Autovault@gmail.com"}
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="map-area">
+                    <div className="icon">
+                      <svg
+                        width="12"
+                        height="17"
+                        viewBox="0 0 12 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.25 15.625C3.625 13.5938 0 8.75 0 6C0 2.6875 2.65625 0 6 0C9.3125 0 12 2.6875 12 6C12 8.75 8.34375 13.5938 6.71875 15.625C6.34375 16.0938 5.625 16.0938 5.25 15.625ZM6 8C7.09375 8 8 7.125 8 6C8 4.90625 7.09375 4 6 4C4.875 4 4 4.90625 4 6C4 7.125 4.875 8 6 8Z"
+                          fill="#FF3600"
+                        ></path>
+                      </svg>
+                    </div>
+
+                    <div className="text">
+                      <p>{"Our Location"}</p>
+
+                      <a href="#">{"M5T 2L9 Toronto, Canada"}</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="right">
+                  <div className="social-area-transparent">
+                    <ul className="d-flex align-items-center">
+                      <li>
+                        <p>{"Follow Us On:"}</p>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg
+                            width="9"
+                            height="15"
+                            viewBox="0 0 9 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5293 8.4375H5.33203V15H2.40234V8.4375H0V5.74219H2.40234V3.66211C2.40234 1.31836 3.80859 0 5.94727 0C6.97266 0 8.05664 0.205078 8.05664 0.205078V2.51953H6.85547C5.68359 2.51953 5.33203 3.22266 5.33203 3.98438V5.74219H7.93945L7.5293 8.4375Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg
+                            width="15"
+                            height="13"
+                            viewBox="0 0 15 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.6404 0H13.8987L8.94012 5.5166L14.7333 13H10.1871L6.6278 8.4524L2.55293 13H0.294568L5.5477 7.09963L0 0H4.65909L7.8748 4.15425L11.6404 0ZM10.85 11.7048H12.1018L4.00122 1.24723H2.65603L10.85 11.7048Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.5918 3.19336C8.4375 3.19336 9.96094 4.7168 9.96094 6.5625C9.96094 8.4375 8.4375 9.93164 6.5918 9.93164C4.7168 9.93164 3.22266 8.4375 3.22266 6.5625C3.22266 4.7168 4.7168 3.19336 6.5918 3.19336ZM6.5918 8.75977C7.79297 8.75977 8.75977 7.79297 8.75977 6.5625C8.75977 5.36133 7.79297 4.39453 6.5918 4.39453C5.36133 4.39453 4.39453 5.36133 4.39453 6.5625C4.39453 7.79297 5.39062 8.75977 6.5918 8.75977ZM10.8691 3.07617C10.8691 2.63672 10.5176 2.28516 10.0781 2.28516C9.63867 2.28516 9.28711 2.63672 9.28711 3.07617C9.28711 3.51562 9.63867 3.86719 10.0781 3.86719C10.5176 3.86719 10.8691 3.51562 10.8691 3.07617ZM13.0957 3.86719C13.1543 4.95117 13.1543 8.20312 13.0957 9.28711C13.0371 10.3418 12.8027 11.25 12.041 12.041C11.2793 12.8027 10.3418 13.0371 9.28711 13.0957C8.20312 13.1543 4.95117 13.1543 3.86719 13.0957C2.8125 13.0371 1.9043 12.8027 1.11328 12.041C0.351562 11.25 0.117188 10.3418 0.0585938 9.28711C0 8.20312 0 4.95117 0.0585938 3.86719C0.117188 2.8125 0.351562 1.875 1.11328 1.11328C1.9043 0.351562 2.8125 0.117188 3.86719 0.0585938C4.95117 0 8.20312 0 9.28711 0.0585938C10.3418 0.117188 11.2793 0.351562 12.041 1.11328C12.8027 1.875 13.0371 2.8125 13.0957 3.86719ZM11.6895 10.4297C12.041 9.58008 11.9531 7.5293 11.9531 6.5625C11.9531 5.625 12.041 3.57422 11.6895 2.69531C11.4551 2.13867 11.0156 1.66992 10.459 1.46484C9.58008 1.11328 7.5293 1.20117 6.5918 1.20117C5.625 1.20117 3.57422 1.11328 2.72461 1.46484C2.13867 1.69922 1.69922 2.13867 1.46484 2.69531C1.11328 3.57422 1.20117 5.625 1.20117 6.5625C1.20117 7.5293 1.11328 9.58008 1.46484 10.4297C1.69922 11.0156 2.13867 11.4551 2.72461 11.6895C3.57422 12.041 5.625 11.9531 6.5918 11.9531C7.5293 11.9531 9.58008 12.041 10.459 11.6895C11.0156 11.4551 11.4844 11.0156 11.6895 10.4297Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg
+                            width="17"
+                            height="11"
+                            viewBox="0 0 17 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6.79688 4.74609C8.05664 5.09766 8.67188 6.06445 8.67188 7.35352C8.67188 9.46289 6.91406 10.3711 5.00977 10.3711H0V0H4.89258C6.65039 0 8.20312 0.498047 8.20312 2.57812C8.20312 3.60352 7.70508 4.27734 6.79688 4.74609ZM2.25586 1.75781V4.18945H4.57031C5.39062 4.18945 5.97656 3.83789 5.97656 2.95898C5.97656 1.99219 5.24414 1.75781 4.42383 1.75781H2.25586ZM4.7168 8.61328C5.625 8.61328 6.38672 8.29102 6.38672 7.23633C6.38672 6.18164 5.77148 5.74219 4.74609 5.74219H2.25586V8.61328H4.7168ZM15.2051 1.55273V0.527344H11.0156V1.55273H15.2051ZM16.875 6.73828C16.875 6.85547 16.8457 7.00195 16.8457 7.11914H11.4258C11.4258 8.32031 12.0703 9.02344 13.2715 9.02344C13.8867 9.02344 14.707 8.70117 14.9121 8.05664H16.7285C16.1719 9.75586 15 10.5762 13.2129 10.5762C10.8398 10.5762 9.3457 8.96484 9.3457 6.62109C9.3457 4.36523 10.8984 2.63672 13.2129 2.63672C15.5566 2.63672 16.875 4.51172 16.875 6.73828ZM11.4258 5.80078H14.7949C14.707 4.80469 14.1797 4.21875 13.125 4.21875C12.1582 4.21875 11.4844 4.83398 11.4258 5.80078Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <svg
+                            width="17"
+                            height="12"
+                            viewBox="0 0 17 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.6738 1.78711C16.0254 3.01758 16.0254 5.6543 16.0254 5.6543C16.0254 5.6543 16.0254 8.26172 15.6738 9.52148C15.498 10.2246 14.9414 10.752 14.2676 10.9277C13.0078 11.25 8.02734 11.25 8.02734 11.25C8.02734 11.25 3.01758 11.25 1.75781 10.9277C1.08398 10.752 0.527344 10.2246 0.351562 9.52148C0 8.26172 0 5.6543 0 5.6543C0 5.6543 0 3.01758 0.351562 1.78711C0.527344 1.08398 1.08398 0.527344 1.75781 0.351562C3.01758 0 8.02734 0 8.02734 0C8.02734 0 13.0078 0 14.2676 0.351562C14.9414 0.527344 15.498 1.08398 15.6738 1.78711ZM6.38672 8.02734L10.5469 5.6543L6.38672 3.28125V8.02734Z"
+                              fill="white"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bottom d-flex align-items-center justify-content-between">
+                <div className="nav-area">
+                  <ul className="">
+                    <li className="has-dropdown main-nav">
+                      <a className="main-menu" href="#">
+                        {"Home"}
+                      </a>
+
+                      <ul className="submenu parent-nav">
+                        <li>
+                          <Link prefetch={false} href="/">
+                            {"Dealer One"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-two">
+                            {"Dealer Two"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-three">
+                            {"Dealer Three"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-four">
+                            {"Shop Demo"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-seven">
+                            {"Dealer Slider"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-eight">
+                            {"Dealer Video"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-five">
+                            {"Wash Demo"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/home-six">
+                            {"Repair Demo"}
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="main-nav">
+                      <Link
+                        prefetch={false}
+                        className="main-menu"
+                        href="/about"
+                      >
+                        {"About Us"}
+                      </Link>
+                    </li>
+
+                    <li className="main-nav has-dropdown">
+                      <a className="main-menu" href="#">
+                        {"Listing"}
+                      </a>
+
+                      <ul className="submenu parent-nav">
+                        <li>
+                          <Link prefetch={false} href="/portfolio">
+                            {"Cars One"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/portfolio-2">
+                            {"Cars Two"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/portfolio-3">
+                            {"Cars Three"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Car Single"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/portfolio-details-2">
+                            {"Car Single Two"}
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="main-nav has-dropdown">
+                      <a className="main-menu" href="#">
+                        {"Page"}
+                      </a>
+
+                      <ul className="submenu mega-menu parent-nav">
+                        <li>
+                          <Link prefetch={false} href="/service">
+                            {"Service"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/blog">
+                            {"Blog"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/pricing">
+                            {"Pricing"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/blog-2">
+                            {"Blog Two"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/faq">
+                            {"FAQ"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/blog-details">
+                            {"Blog Single"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/sold-car">
+                            {"Sold Car"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/team">
+                            {"Team"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/calculator">
+                            {"Calculator"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/car-dealer">
+                            {"Car Dealer"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/account">
+                            {"Account"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/car-dealer-details">
+                            {"Dealer Single"}
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="main-nav has-dropdown">
+                      <a className="main-menu" href="#">
+                        {"Shop"}
+                      </a>
+
+                      <ul className="submenu parent-nav">
+                        <li>
+                          <Link prefetch={false} href="/shop">
+                            {"Shop"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/shop-2">
+                            {"Shop Two"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/shop-3">
+                            {"Shop Three"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/cart">
+                            {"Cart"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/checkout">
+                            {"Checkout"}
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link prefetch={false} href="/shop-details">
+                            {"Shop Single"}
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li className="main-nav">
+                      <Link
+                        prefetch={false}
+                        className="main-menu"
+                        href="/contact"
+                      >
+                        {"Contact"}
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bottom-right">
+                  <div className="button-area">
+                    <Link
+                      prefetch={false}
+                      href="/account"
+                      className="rts-btn btn-border radius-small icon"
+                    >
+                      {" Sign In "}
+                      <svg
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect
+                          width="19"
+                          height="19"
+                          fill="url(#pattern0_2295_364)"
+                        ></rect>
+
+                        <defs>
+                          <pattern
+                            id="pattern0_2295_364"
+                            patternContentUnits="objectBoundingBox"
+                            width="1"
+                            height="1"
+                          >
+                            <use
+                              xlinkHref="#image0_2295_364"
+                              transform="scale(0.0111111)"
+                            ></use>
+                          </pattern>
+
+                          <image
+                            id="image0_2295_364"
+                            width="90"
+                            height="90"
+                            preserveAspectRatio="none"
+                            xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2dQXLTQBREexWOgIEtq2zxDBQXoFhwEQhsHW4AF0tgEeASZE8lVVirpmQEpArwxl/5PaN+Vb2V5r8ajyTrewwYY4wxxhhjzFLgQ9xhwRsWfGDFNSvYSK6nMZ/wGEdQhk/wgAVfBKTxwHwea4HwTO5BMqd8kpzZu+UiXw6D8wpqsOKjgBiGpuAcarDgqkPRV1AjXUqdJ1AjWwgtuu1AjWwhtOi2AzWyhdCi2w7UyBZCi247UCNbCC267UCNbCG06LYDNbKF0KLbDtQILG5gwYYFqykbVmwteiKsuILNX8de43mWbHQsevXP4xc8Y8F3i55ZdJZsdCz6dO95bnkZgRqBxW1HmSqyoUZwgQPXeLH3fLe0jECNGYocFGRDjZkKHbJlQ40ZZ9WQKRtqzPnxZaJsLEw0s2THCTrGEQves+JSYkAHEn3rFzewindSAwpgfOhRFH3ZnejHuKsnuuCr1IAC4FPc1xPd49JR8VbzYjjKPnBmQwSqXgyjiCqMvd7eRdGjZC5M9OBH8Bv0KJkLET1kS16C6EFBcu+it36VtYc5+zpu4pezcaJX/z2H2w3cQNNFXwfdEvaH4CbHUz7CvV1+frfsJsdfZImgRfcRqJEthBbddqBGthBadNuBGtlCaNFtB2pkC6FFtx2okS2EFt12oEa2EFp024Ea2UK4GNF9bgL7DWpM27azs5xBDRa8FhDD0KzxEpJbz49742fLqUEpuJDcev73nyn0ILvgYvzVAJSZGttPxvWtqQtk2Y31bFwuZGeyMcYYY4wxxmAGfgAEuwTcQtFEYgAAAABJRU5ErkJggg=="
+                          ></image>
+                        </defs>
+                      </svg>
+                    </Link>
+
+                    <a
+                      href="#"
+                      className="rts-btn btn-primary radius-small icon"
+                    >
+                      {" Add Car "}
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect
+                          width="16"
+                          height="16.3902"
+                          fill="url(#pattern0_2295_360)"
+                        ></rect>
+
+                        <defs>
+                          <pattern
+                            id="pattern0_2295_360"
+                            patternContentUnits="objectBoundingBox"
+                            width="1"
+                            height="1"
+                          >
+                            <use
+                              xlinkHref="#image0_2295_360"
+                              transform="matrix(0.0111111 0 0 0.0108466 0 0.0119048)"
+                            ></use>
+                          </pattern>
+
+                          <image
+                            id="image0_2295_360"
+                            width="90"
+                            height="90"
+                            preserveAspectRatio="none"
+                            xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEDElEQVR4nO3cS4wNWRzH8UOiZ8IkhkksEBI9HiuJxKtJhIQlVhYGsROJJmQ0FjRiQeK1IfHYj47VxEhHxmyEjHgOsZJ4LLBgROL96PCVE/9Odzr31K2qe+vUOeX/STq94Fb9zq9vbp2qOnWNUUoppZRSSimllFKpAROBTuAf4DHwnvK9lyznJduvJlbAZOAs8IXw2Yx/AZNMTIB24CPx+QCsMzEADhO/AyZkQAfV8bsJETAV+ER19ADTTGiAiwmh3wGHgJnA8ACy/gzMko85m83lggkJMCMh7ANgggmUndoBDxPyzzChAE44Qr4CxpnAAeOB144xnDQhAFqA546QnSYSwC7HGF4AP4QQcKkjoD0w/mIiAYxImPsvDSFglyPcGRMZvp0d1tJVdrBhwBtHuOUmMsBvjrG8BX4qM9iKIIM19sZxHRRXmLLIRaNa/jCRAk45xnS2rEAjEw4ei02kgCUJZ4qjygi0NmE61GIiBQxJmK6uLSPQBUeY4yZyuE/A/J6SA6OBz44w803kgAUJNwjG+wyy2RHkCTDYRA4YLGOppcNnkBuOEH+aigDOOMZ40+e9QJenwNA689TJwDw5OdgE7AWOybSqG7gE3AHuA4/k4Nr7Y4/8vXoG/Nsjec0d2Ua3bPOY7GOjPYmSfdsMwxJyDgWeJYxzSmEFp7j40usasBJYDeyRwV6TMkJjM121837JulqyX6/zut0+ir7rqYSQ3QMGFVny9LJHGJDpZcwvv0cniyj4x4TLod+zU7abZt5B+bvsEQXsnD1tb0bRdnqkkh1ttOSFdXag+k7NFzRSdL35pOpzNW/Jc/ttRKXTlqfogyk3rvrsz1P0v6Rj7w/uAFplhtIqi7uTlloNZO/UbLGXXzMHTb6UuzXj8uFGx3IpT9D/Uwab7Xh9W4aAW5tRriOHLRtPY3mWJ2D/K2UuO+psY2fKQY7OHDDbOxtPY+nJEzCN1hQLCGMpuiljyRMwjcSbsHbNWgAfHdt8jiVPwGa8C+wTWWl8lM/SMg+GTRlLnqBpdDZ4kyAkTRlLUUW/c03SgTkZp3hla8pYiiq6N+BOOVi0yO9dgTy4mVXDYymyaNWPFu2JFu2JFu2JFu2JFu2JFu2JFu2JFu2JFu2JFl2hou2640XAMmAVsEa+KGU7sA84Yp9vkaVlp2X98nn5+gm7rOG2rG++L9828GLAT60HR9/U+H8P+23ntmz7ouyrW/bdJVmOSLbtknWNZF8mY5kXXNGmotCi/dCiK1S065noWl6aiqLoHoArGXZw2VQURfcAbMiwg3ZTURTdg9xev5Vi4//F/Ox3ED0AY+vsxG58jKk4fPQgf9H19vNHDgyvZQFke5XfyQNpD0oppZRSSimllFJKKWUa8RUyWTLDvAIciwAAAABJRU5ErkJggg=="
+                          ></image>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div className="menu-btn" id="menu-btn">
+                    <svg
+                      width="55"
+                      height="55"
+                      viewBox="0 0 55 55"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="55"
+                        height="55"
+                        rx="15"
+                        fill="#FF3600"
+                      ></rect>
+
+                      <rect
+                        x="18"
+                        y="33"
+                        width="10"
+                        height="2"
+                        fill="#ffffff"
+                      ></rect>
+
+                      <rect
+                        x="18"
+                        y="26"
+                        width="20"
+                        height="2"
+                        fill="#ffffff"
+                      ></rect>
+
+                      <rect
+                        x="18"
+                        y="19"
+                        width="10"
+                        height="2"
+                        fill="#ffffff"
+                      ></rect>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}

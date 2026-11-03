@@ -1,0 +1,172 @@
+[
+  {
+    "route": "/about",
+    "title": "About",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/account",
+    "title": "Account",
+    "bodyClass": "account-page-body"
+  },
+  {
+    "route": "/blog-2",
+    "title": "Blog",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/blog-details",
+    "title": "Seasonal Car Care Tips to Keep Your Vehicle Best Running Smoothly",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/blog",
+    "title": "Blog",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/calculator",
+    "title": "Car Loan Calculator",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/car-dealer-details",
+    "title": "Car Toys",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/car-dealer",
+    "title": "Dealer List",
+    "bodyClass": ""
+  },
+  {
+    "route": "/cart",
+    "title": "Cart",
+    "bodyClass": "cart-page"
+  },
+  {
+    "route": "/checkout",
+    "title": "Checkout",
+    "bodyClass": "cart-page"
+  },
+  {
+    "route": "/contact",
+    "title": "Get In Touch",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/faq",
+    "title": "Faq",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/home-eight",
+    "title": "Discover Our Best Deals On New And Used Cars",
+    "bodyClass": ""
+  },
+  {
+    "route": "/home-five",
+    "title": "Clean with Our Exclusive Car Wash",
+    "bodyClass": ""
+  },
+  {
+    "route": "/home-four",
+    "title": "Shop for Quality Car Parts",
+    "bodyClass": "home-four"
+  },
+  {
+    "route": "/home-seven",
+    "title": "Mazda MX-5 Miata",
+    "bodyClass": ""
+  },
+  {
+    "route": "/home-six",
+    "title": "Fast, Affordable And Expert Auto Car Repair",
+    "bodyClass": "home-six"
+  },
+  {
+    "route": "/home-three",
+    "title": "Where Meets the Road: Discover Next Car Today",
+    "bodyClass": ""
+  },
+  {
+    "route": "/home-two",
+    "title": "Unleash the Road: Discover Your Perfect Cars Ride Today",
+    "bodyClass": "home-two"
+  },
+  {
+    "route": "/",
+    "title": "Car Dealer One",
+    "bodyClass": ""
+  },
+  {
+    "route": "/portfolio-2",
+    "title": "Cars",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/portfolio-3",
+    "title": "Cars",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/portfolio-details-2",
+    "title": "Mercedes-Benz E-Class",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/portfolio-details",
+    "title": "Mercedes-Benz E-Class",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/portfolio",
+    "title": "Cars",
+    "bodyClass": ""
+  },
+  {
+    "route": "/pricing",
+    "title": "Pricing",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/service",
+    "title": "Service",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/shop-copy",
+    "title": "Shop",
+    "bodyClass": ""
+  },
+  {
+    "route": "/shop-2",
+    "title": "Shop",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/shop-3",
+    "title": "Shop",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/shop-details",
+    "title": "Reveiw",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/shop",
+    "title": "Shop",
+    "bodyClass": ""
+  },
+  {
+    "route": "/sold-car",
+    "title": "Sold",
+    "bodyClass": "with-sidebar"
+  },
+  {
+    "route": "/team",
+    "title": "Team",
+    "bodyClass": "with-sidebar"
+  }
+]

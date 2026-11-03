@@ -1,0 +1,103 @@
+import Link from "next/link";
+export default function HomeFourBlog() {
+  return (
+    <section className="rts-blog-area rts-section-gap">
+      <div className="container">
+        <div className="section-title-area2">
+          <p
+            className="sub-title wow fadeInUp"
+            data-wow-delay=".1s"
+            data-wow-duration="1s"
+          >
+            {"Latest Blog"}
+          </p>
+
+          <h2 className="section-title wow move-right">
+            {"Our Latest "}
+            <span>{"Blog"}</span>
+          </h2>
+        </div>
+
+        <div className="section-inner mt--80">
+          <div className="row g-5">
+            <div className="col-lg-6">
+              <div className="blog-wrapper">
+                <div className="image-area">
+                  <Link prefetch={false} href="/blog-details">
+                    <img src="/assets/images/blog/05.webp" alt="" />
+                  </Link>
+                </div>
+
+                <div className="content">
+                  <p className="blog-meta">{"March 26, 2024"}</p>
+
+                  <h5>
+                    <Link prefetch={false} href="/blog-details">
+                      {
+                        "Braking It Down Understanding the Key Parts of Your Car's Brake Parts System "
+                      }
+                    </Link>
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="blog-list-style mb--30">
+                <div className="blog-wrapper d-flex align-items-center">
+                  <div className="image-area">
+                    <Link prefetch={false} href="/blog-details">
+                      <img
+                        src="/assets/images/blog/03.webp"
+                        width="263"
+                        alt=""
+                      />
+                    </Link>
+                  </div>
+
+                  <div className="content mt-0">
+                    <p className="blog-meta">{"March 26, 2024"}</p>
+
+                    <h6>
+                      <Link prefetch={false} href="/blog-details">
+                        {
+                          "A Beginner's Guide to Understanding Your Car's Engine Components"
+                        }
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+              <div className="blog-list-style">
+                <div className="blog-wrapper d-flex align-items-center">
+                  <div className="image-area">
+                    <Link prefetch={false} href="/blog-details">
+                      <img
+                        src="/assets/images/blog/04.webp"
+                        width="263"
+                        alt=""
+                      />
+                    </Link>
+                  </div>
+
+                  <div className="content mt-0">
+                    <p className="blog-meta">{"March 26, 2024"}</p>
+
+                    <h6>
+                      <Link prefetch={false} href="/blog-details">
+                        {
+                          "The Ultimate Guide to Car Suspension: What You Need to Know"
+                        }
+                      </Link>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,1855 @@
+import Link from "next/link";
+export default function HomeThreePortfolio() {
+  return (
+    <section className="rts-portfolio-area area-4 rts-section-gap">
+      <div className="container">
+        <div className="section-top d-flex justify-content-between align-items-end">
+          <div className="section-title-area">
+            <p
+              className="sub-title wow fadeInUp"
+              data-wow-delay=".1s"
+              data-wow-duration=".8s"
+            >
+              {"Popular Car"}
+            </p>
+
+            <h2 className="section-title wow move-right">
+              {"Popular "}
+              <span>{"Make"}</span>
+            </h2>
+          </div>
+
+          <div className="tab-area">
+            <ul className="nav nav-tabs" id="myTab2" role="tablist">
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link active"
+                  id="bmw-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#bmw"
+                  type="button"
+                  role="tab"
+                  aria-controls="bmw"
+                  aria-selected="true"
+                >
+                  <img src="/assets/images/brand/04.svg" alt="" />
+                  {"BMW"}
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="mazda-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#mazda"
+                  type="button"
+                  role="tab"
+                  aria-controls="mazda"
+                  aria-selected="false"
+                >
+                  <img src="/assets/images/brand/03.svg" alt="" />
+                  {"Mazda"}
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="honda-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#honda"
+                  type="button"
+                  role="tab"
+                  aria-controls="honda"
+                  aria-selected="false"
+                >
+                  <img src="/assets/images/brand/05.svg" alt="" />
+                  {"Honda"}
+                </button>
+              </li>
+
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="nissan-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nissan"
+                  type="button"
+                  role="tab"
+                  aria-controls="nissan"
+                  aria-selected="false"
+                >
+                  <img src="/assets/images/brand/07.svg" alt="" />
+                  {"Nissan"}
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="section-inner mt--80 wow fadeInUp"
+        data-wow-delay=".3s"
+        data-wow-duration="1s"
+      >
+        <div className=" tab-content" id="myTabContent2">
+          <div
+            className="tab-pane fade show active"
+            id="bmw"
+            role="tabpanel"
+            aria-labelledby="bmw-tab"
+          >
+            <div className="slider-area">
+              <div className="swiper projectSlider2">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/04.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/04.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Thunderbolt Car"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/05.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Stocks"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/05.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mercedes-Benz E-Class"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/06.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Featured"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/06.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Ford Mustang Convertible"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/07.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/07.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mazda MX-5 Miata"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/08.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/08.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Honda Civic Hatchback"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/09.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Stocks"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/09.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Hyundai Veloster"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="tab-pane fade"
+            id="mazda"
+            role="tabpanel"
+            aria-labelledby="mazda-tab"
+          >
+            <div className="slider-area">
+              <div className="swiper projectSlider2">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/07.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Used"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/07.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mazda MX-5 Miata"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/08.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/08.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Honda Civic Hatchback"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/09.webp" alt="" />
+                        </Link>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Hyundai Veloster"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/04.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/04.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Thunderbolt Car"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/05.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/05.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mercedes-Benz E-Class"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/06.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/06.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Ford Mustang Convertible"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="tab-pane fade"
+            id="honda"
+            role="tabpanel"
+            aria-labelledby="honda-tab"
+          >
+            <div className="slider-area">
+              <div className="swiper projectSlider2">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/04.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Stocks"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/04.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Thunderbolt Car"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/05.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/05.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mercedes-Benz E-Class"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/06.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/06.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Ford Mustang Convertible"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/07.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/07.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mazda MX-5 Miata"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/08.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/08.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Honda Civic Hatchback"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/09.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/09.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Hyundai Veloster"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="tab-pane fade"
+            id="nissan"
+            role="tabpanel"
+            aria-labelledby="nissan-tab"
+          >
+            <div className="slider-area">
+              <div className="swiper projectSlider2">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/07.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/07.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mazda MX-5 Miata"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/08.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Stocks"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/08.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Honda Civic Hatchback"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/09.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/09.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 7 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Hyundai Veloster"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/04.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"New"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/04.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Thunderbolt Car"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/05.webp" alt="" />
+                        </Link>
+
+                        <span className="tag">{"Trending"}</span>
+
+                        <a href="/wishlist" className="wishlist">
+                          <i className="fa-regular fa-heart"></i>
+                        </a>
+
+                        <a
+                          href="/assets/images/portfolio/05.webp"
+                          className="gallery-image"
+                        >
+                          <img src="/assets/images/icon/image.svg" alt="" />
+                          {" 5 "}
+                        </a>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Mercedes-Benz E-Class"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="swiper-slide">
+                    <div className="project-wrapper2">
+                      <div className="image-area">
+                        <Link prefetch={false} href="/portfolio-details">
+                          <img src="/assets/images/portfolio/06.webp" alt="" />
+                        </Link>
+                      </div>
+
+                      <span className="price">{"14,000$"}</span>
+
+                      <div className="content-area">
+                        <h6 className="title ">
+                          <Link prefetch={false} href="/portfolio-details">
+                            {"Ford Mustang Convertible"}
+                          </Link>
+                        </h6>
+
+                        <ul className="feature-area">
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/01.svg"
+                              alt=""
+                            />
+                            {" 100 Miles "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/02.svg"
+                              alt=""
+                            />
+                            {" Petrol "}
+                          </li>
+
+                          <li>
+                            <img
+                              src="/assets/images/portfolio/feature-icon/03.svg"
+                              alt=""
+                            />
+                            {" Autometic "}
+                          </li>
+                        </ul>
+
+                        <div className="button-area">
+                          <p className="">{"$400"}</p>
+
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details"
+                            className="rts-btn btn-primary radius-small"
+                          >
+                            {"View Details"}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="swiper-pagination-2"></div>
+        </div>
+      </div>
+    </section>
+  );
+}

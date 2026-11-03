@@ -1,69 +1,67 @@
-import Image from "next/image";
-
-export default function Home() {
+import LoaderWrapper from "@/components/sections/LoaderWrapper";
+import SearchInput from "@/components/sections/SearchInput";
+import Overlay from "@/components/sections/Overlay";
+import ProgressWrap from "@/components/sections/ProgressWrap";
+import HeaderOne from "@/components/sections/HeaderOne";
+import HomeOneBanner from "@/components/sections/HomeOneBanner";
+import HomeOneCategory from "@/components/sections/HomeOneCategory";
+import HomeEightPortfolio from "@/components/sections/HomeEightPortfolio";
+import HomeEightAbout from "@/components/sections/HomeEightAbout";
+import HomeEightVideo from "@/components/sections/HomeEightVideo";
+import HomeEightBrand from "@/components/sections/HomeEightBrand";
+import HomeEightWhyChooseUs from "@/components/sections/HomeEightWhyChooseUs";
+import HomeEightFeature from "@/components/sections/HomeEightFeature";
+import HomeEightTestimonials from "@/components/sections/HomeEightTestimonials";
+import HomeEightBlog from "@/components/sections/HomeEightBlog";
+import HomeEightCta from "@/components/sections/HomeEightCta";
+import AboutFooter from "@/components/sections/AboutFooter";
+import MobileMenu from "@/components/sections/MobileMenu";
+import PageEffects from "@/components/PageEffects";
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "Car Dealer One | AutoVault" };
+export default function HomeOnePage() {
   return (
-    <div className="page">
-      <main className="main">
-        <Image
-          className="logo"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="intro">
-          <h1 className="heading">
-            To get started, edit the{" "}
-            <code className="code">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="description">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              className="text-link"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              className="text-link"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div data-autovault-page>
+      <PageEffects bodyClass="" />
+      <LoaderWrapper />
+
+      <SearchInput />
+
+      <Overlay />
+
+      <ProgressWrap />
+
+      <div className="rts-wrapper">
+        <div className="rts-wrapper-inner">
+          <HeaderOne />
+
+          <HomeOneBanner />
+
+          <HomeOneCategory />
+
+          <HomeEightPortfolio />
+
+          <HomeEightAbout />
+
+          <HomeEightVideo />
+
+          <HomeEightBrand />
+
+          <HomeEightWhyChooseUs />
+
+          <HomeEightFeature />
+
+          <HomeEightTestimonials />
+
+          <HomeEightBlog />
+
+          <HomeEightCta />
         </div>
-        <div className="actions">
-          <a
-            className="primary"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="logo"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="secondary"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+
+      <AboutFooter />
+
+      <MobileMenu />
     </div>
   );
 }
