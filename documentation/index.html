@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Setup, customization and maintenance guide for the AutoVault Next.js project."
+    />
+    <title>AutoVault Next.js — Documentation</title>
+    <style>
+      :root {
+        --accent: #e63200;
+        --ink: #162033;
+        --muted: #596579;
+        --line: #e3e7ed;
+        --surface: #f5f7fa;
+        --sidebar: #101827;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 32px;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font:
+          16px/1.75 system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+      a {
+        color: var(--accent);
+        text-underline-offset: 3px;
+      }
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #ff8f6b;
+        outline-offset: 4px;
+      }
+      .skip {
+        position: fixed;
+        top: 10px;
+        left: 12px;
+        z-index: 5;
+        padding: 8px 16px;
+        background: #fff;
+        transform: translateY(-150%);
+      }
+      .skip:focus {
+        transform: none;
+      }
+      aside {
+        position: fixed;
+        inset: 0 auto 0 0;
+        width: 270px;
+        padding: 34px 25px;
+        overflow-y: auto;
+        background: var(--sidebar);
+        color: #fff;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+        font-size: 23px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background: #ff3600;
+        font-size: 15px;
+      }
+      .edition {
+        margin: 12px 0 28px;
+        color: #a7b4c7;
+        font-size: 13px;
+      }
+      .nav-label {
+        margin: 22px 12px 8px;
+        color: #a7b4c7;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      nav a {
+        display: block;
+        margin: 3px 0;
+        padding: 7px 12px;
+        border-radius: 7px;
+        color: #c5cfdd;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      nav a:hover,
+      nav a[aria-current="location"] {
+        background: #263144;
+        color: #fff;
+      }
+      nav a[aria-current="location"] {
+        box-shadow: inset 3px 0 #ff572b;
+      }
+      .sidebar-note {
+        padding-top: 24px;
+        margin-top: 28px;
+        border-top: 1px solid #344054;
+        font-size: 12px;
+        color: #a7b4c7;
+      }
+      main {
+        max-width: 1360px;
+        margin-left: 270px;
+        padding: 50px 6vw 32px;
+      }
+      .topline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      button {
+        padding: 8px 15px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: white;
+        color: var(--ink);
+        font: inherit;
+        cursor: pointer;
+      }
+      .eyebrow {
+        margin: 45px 0 12px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 780px;
+        margin: 0 0 18px;
+        font-size: clamp(36px, 4vw, 58px);
+        line-height: 1.12;
+        letter-spacing: -0.045em;
+      }
+      .lead {
+        max-width: 710px;
+        margin-bottom: 25px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .tag {
+        padding: 4px 11px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      section {
+        padding: 36px 0;
+        border-bottom: 1px solid var(--line);
+        scroll-margin-top: 18px;
+      }
+      h2 {
+        margin: 0 0 16px;
+        font-size: 27px;
+        line-height: 1.3;
+        letter-spacing: -0.025em;
+      }
+      h2 .number {
+        margin-right: 12px;
+        color: #a2abb8;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      h3 {
+        margin: 24px 0 10px;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      p {
+        margin: 10px 0 16px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      ul,
+      ol {
+        padding-left: 23px;
+      }
+      code {
+        padding: 2px 5px;
+        border-radius: 4px;
+        background: #eef1f5;
+        color: #a62c10;
+        font:
+          0.87em/1.6 ui-monospace,
+          SFMono-Regular,
+          Consolas,
+          monospace;
+        overflow-wrap: anywhere;
+      }
+      pre {
+        margin: 16px 0 20px;
+        padding: 20px 22px;
+        overflow-x: auto;
+        border: 1px solid #29374b;
+        border-radius: 10px;
+        background: #121c2d;
+        color: #e5edf8;
+        font-size: 14px;
+        line-height: 1.7;
+        tab-size: 2;
+      }
+      pre code {
+        padding: 0;
+        color: inherit;
+        background: none;
+        font-size: inherit;
+        overflow-wrap: normal;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 22px 0;
+      }
+      .card {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      .card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .note {
+        margin: 20px 0;
+        padding: 16px 20px;
+        border-left: 3px solid var(--accent);
+        border-radius: 0 8px 8px 0;
+        background: #fff5f0;
+      }
+      .note p {
+        margin: 0;
+      }
+      .table-scroll {
+        max-width: 100%;
+        overflow-x: auto;
+        margin: 20px 0;
+        border: 1px solid var(--line);
+        border-radius: 9px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        text-align: left;
+      }
+      th,
+      td {
+        padding: 13px 16px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        background: var(--surface);
+        font-weight: 650;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      footer {
+        padding-top: 28px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      @media (min-width: 1700px) {
+        main {
+          padding-right: 100px;
+          padding-left: 100px;
+        }
+      }
+      @media (max-width: 900px) {
+        aside {
+          position: relative;
+          width: 100%;
+          padding: 24px;
+        }
+        .edition {
+          margin-bottom: 16px;
+        }
+        nav {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+        nav a {
+          font-size: 13px;
+          padding: 6px 10px;
+        }
+        .nav-label,
+        .sidebar-note {
+          display: none;
+        }
+        main {
+          margin-left: 0;
+          padding: 28px 24px;
+        }
+        .eyebrow {
+          margin-top: 28px;
+        }
+      }
+      @media (max-width: 540px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        main {
+          padding: 24px 18px;
+        }
+        .topline {
+          align-items: flex-start;
+        }
+        th,
+        td {
+          padding: 10px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      @media print {
+        aside,
+        .skip,
+        .print-button {
+          display: none;
+        }
+        main {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          font-size: 11pt;
+        }
+        h1 {
+          font-size: 32pt;
+        }
+        section {
+          padding: 20px 0;
+        }
+        h2,
+        h3 {
+          break-after: avoid;
+        }
+        pre,
+        .card,
+        tr,
+        .note {
+          break-inside: avoid;
+        }
+        pre {
+          white-space: pre-wrap;
+          overflow-wrap: anywhere;
+          border-color: #ccc;
+          background: #f5f5f5;
+          color: #111;
+        }
+        .table-scroll {
+          overflow: visible;
+        }
+        a {
+          color: #111;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to documentation</a>
+    <aside aria-label="Documentation sidebar">
+      <a class="brand" href="#overview"
+        ><span class="mark" aria-hidden="true">AV</span>AutoVault</a
+      >
+      <p class="edition">Next.js project documentation · v0.1.0</p>
+      <p class="nav-label">Getting started</p>
+      <nav aria-label="Documentation contents">
+        <a href="#overview">01 · Overview</a>
+        <a href="#installation">02 · Installation</a>
+        <a href="#structure">03 · Project structure</a>
+        <a href="#routes">04 · Pages &amp; routes</a>
+        <a href="#details">05 · Slug-based details</a>
+        <a href="#customization">06 · Customization</a>
+        <a href="#animations">07 · AOS animations</a>
+        <a href="#plugins">08 · Sliders &amp; plugins</a>
+        <a href="#features">09 · Forms, cart &amp; saved cars</a>
+        <a href="#verification">10 · Quality checks</a>
+        <a href="#deployment">11 · Production</a>
+        <a href="#troubleshooting">12 · Troubleshooting</a>
+      </nav>
+      <p class="sidebar-note">
+        A standalone, offline guide. Open this file directly in your browser; no
+        server is required to read it.
+      </p>
+    </aside>
+    <main id="content">
+      <div class="topline">
+        <span>Developer guide / AutoVault Next.js</span
+        ><button class="print-button" type="button" id="print-guide">
+          Print / Save PDF
+        </button>
+      </div>
+      <header>
+        <p class="eyebrow">Build. Customize. Maintain.</p>
+        <h1>Your guide to<br />AutoVault Next.js.</h1>
+        <p class="lead">
+          Everything you need to run the dealership template, edit its content,
+          manage detail pages and maintain the original design in Next.js.
+        </p>
+        <div class="tags" aria-label="Project technologies">
+          <span class="tag">Next.js 16.4.4</span
+          ><span class="tag">React 19.3</span><span class="tag">TypeScript</span
+          ><span class="tag">Bootstrap 5</span
+          ><span class="tag">Ordinary CSS</span>
+        </div>
+      </header>
+
+      <section id="overview" aria-labelledby="overview-title">
+        <h2 id="overview-title">
+          <span class="number">01</span>Project overview
+        </h2>
+        <p>
+          AutoVault is a car dealership website built with the Next.js App
+          Router. It includes eight homepage designs, vehicle listings, car
+          details, dealers, articles, a shop, a loan calculator, a cart and
+          saved cars.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>Native Next.js pages</h3>
+            <p>
+              Editable TSX components, shared sections and clean application
+              URLs. The app does not parse or embed the source template's HTML.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Original template styling</h3>
+            <p>
+              Bootstrap, the original CSS, local fonts and image assets.
+              Tailwind is not installed.
+            </p>
+          </div>
+        </div>
+        <p>
+          The application lives in <code>src/</code>, and its static assets live
+          in <code>public/assets/</code>. This standalone guide lives in
+          <code>documentation/index.html</code>, outside the application routes
+          and public assets.
+        </p>
+      </section>
+
+      <section id="installation" aria-labelledby="installation-title">
+        <h2 id="installation-title">
+          <span class="number">02</span>Installation &amp; local development
+        </h2>
+        <p>
+          Install Node.js <strong>20.9.0 or newer</strong> and npm. Run commands
+          from the project root, the folder containing
+          <code>package.json</code>.
+        </p>
+        <pre><code>cd D:\projects\projects_2026\autovault-nextJS
+npm ci
+npm run dev</code></pre>
+        <p>
+          Open <code>http://localhost:3000</code>. The development server
+          updates pages as you edit components and styles. An initial
+          environment file is not required for the current template features.
+        </p>
+        <div class="note">
+          <p>
+            <strong>Windows PowerShell:</strong> if execution policy blocks npm
+            scripts, use <code>npm.cmd ci</code>,
+            <code>npm.cmd run dev</code> and <code>npx.cmd</code> in place of
+            <code>npx</code>.
+          </p>
+        </div>
+        <p>
+          Use <code>npm ci</code> for a clean installation from the committed
+          lockfile. After deliberately changing dependencies with
+          <code>npm install</code>, commit both <code>package.json</code> and
+          <code>package-lock.json</code>.
+        </p>
+      </section>
+
+      <section id="structure" aria-labelledby="structure-title">
+        <h2 id="structure-title">
+          <span class="number">03</span>Project structure
+        </h2>
+        <pre><code>autovault-nextJS/
+├── documentation/
+│   └── index.html             This standalone guide
+├── public/assets/             Images, fonts, CSS and SCSS
+├── scripts/                   Conversion and verification utilities
+├── src/
+│   ├── app/                   Routes, root layout and global CSS
+│   ├── components/            Interactive and shared components
+│   │   └── sections/          Editable page sections
+│   ├── data/                  Route inventory and detail catalog
+│   ├── lib/                   Shared helpers and plugin integrations
+│   ├── types/                 Additional TypeScript declarations
+│   └── proxy.ts               Detail validation and legacy redirects
+├── tests/                     Playwright browser checks
+├── next.config.ts             Next.js configuration
+├── package.json               Dependencies and commands
+└── README.md                  Short project reference</code></pre>
+        <p>
+          <code>src/app/layout.tsx</code> imports shared styles, declares
+          default metadata and mounts smooth scrolling. Each route composes
+          sections from <code>src/components/sections/</code>.
+          <code>PageEffects.tsx</code> initializes page interactions and cleans
+          them up during navigation.
+        </p>
+      </section>
+
+      <section id="routes" aria-labelledby="routes-title">
+        <h2 id="routes-title">
+          <span class="number">04</span>Pages &amp; routes
+        </h2>
+        <p>
+          The homepage layouts are <code>/</code>, <code>/home-two</code>,
+          <code>/home-three</code>, <code>/home-four</code>,
+          <code>/home-five</code>, <code>/home-six</code>,
+          <code>/home-seven</code> and <code>/home-eight</code>.
+          <code>/home-one</code> is an alias for the first homepage.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Page group</th>
+                <th scope="col">Routes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Company &amp; help</td>
+                <td>
+                  <code>/about</code>, <code>/service</code>,
+                  <code>/pricing</code>, <code>/faq</code>, <code>/team</code>,
+                  <code>/contact</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Vehicles</td>
+                <td>
+                  <code>/portfolio</code>, <code>/portfolio-2</code>,
+                  <code>/portfolio-3</code>, <code>/sold-car</code>,
+                  <code>/calculator</code>, <code>/wishlist</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Dealers &amp; articles</td>
+                <td>
+                  <code>/car-dealer</code>, <code>/blog</code>,
+                  <code>/blog-2</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Shop &amp; account</td>
+                <td>
+                  <code>/shop</code>, <code>/shop-2</code>,
+                  <code>/shop-3</code>, <code>/shop-copy</code>,
+                  <code>/cart</code>, <code>/checkout</code>,
+                  <code>/account</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Use <code>next/link</code> for internal navigation. Asset URLs start
+          with <code>/assets/</code>; application links use clean paths without
+          an HTML extension.
+        </p>
+        <pre><code>import Link from "next/link";
+
+&lt;Link href="/about"&gt;About AutoVault&lt;/Link&gt;</code></pre>
+      </section>
+
+      <section id="details" aria-labelledby="details-title">
+        <h2 id="details-title">
+          <span class="number">05</span>Slug-based detail pages
+        </h2>
+        <p>
+          Detail records are stored in
+          <code>src/data/detail-catalog.json</code>. The catalog currently
+          contains 8 cars, 16 articles, 9 dealers and 10 products.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Content</th>
+                <th scope="col">Canonical route</th>
+                <th scope="col">Catalog key</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Car, first layout</td>
+                <td><code>/car/[slug]</code></td>
+                <td><code>car</code></td>
+              </tr>
+              <tr>
+                <td>Car, second layout</td>
+                <td><code>/car-two/[slug]</code></td>
+                <td><code>car</code></td>
+              </tr>
+              <tr>
+                <td>Article</td>
+                <td><code>/blog/[slug]</code></td>
+                <td><code>blog</code></td>
+              </tr>
+              <tr>
+                <td>Dealer</td>
+                <td><code>/dealer/[slug]</code></td>
+                <td><code>dealer</code></td>
+              </tr>
+              <tr>
+                <td>Product</td>
+                <td><code>/product/[slug]</code></td>
+                <td><code>product</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Edit or add a record</h3>
+        <ol>
+          <li>
+            Find a record of the same kind in the catalog and copy its complete
+            field structure.
+          </li>
+          <li>
+            Choose a unique, lowercase, hyphen-separated slug. Keep the object
+            key and the record's <code>slug</code> identical, and preserve its
+            <code>kind</code>.
+          </li>
+          <li>
+            Update titles, descriptions, prices, specifications, image URLs and
+            galleries. Place new assets under <code>public/assets/</code>.
+          </li>
+          <li>
+            Update the corresponding listing cards and related links in the
+            relevant section components; listings are not generated
+            automatically from the catalog.
+          </li>
+          <li>
+            Run project verification and a production build. Check the record's
+            page, metadata, gallery and related links.
+          </li>
+        </ol>
+        <p>Use the shared helper to keep links consistent:</p>
+        <pre><code>import { detailPath } from "@/lib/detail-paths";
+
+detailPath("car", "thunderbolt-car");
+// /car/thunderbolt-car
+
+detailPath("car", "thunderbolt-car", true);
+// /car-two/thunderbolt-car</code></pre>
+        <p>
+          Record-specific metadata and static parameters are generated by the
+          detail routes. Legacy detail URLs redirect to the canonical routes.
+          Default records are configured in
+          <code>src/data/detail-defaults.json</code>; unknown slugs return HTTP
+          404 through validation in <code>src/proxy.ts</code>.
+        </p>
+        <div class="note">
+          <p>
+            <strong>Keep URL-dependent work inside Suspense.</strong> Detail
+            pages await <code>params</code> inside the suspended detail
+            component. Keep the shared <code>DetailShell</code> independent of
+            URL data to preserve instant navigation.
+          </p>
+        </div>
+      </section>
+
+      <section id="customization" aria-labelledby="customization-title">
+        <h2 id="customization-title">
+          <span class="number">06</span>Customize the design &amp; content
+        </h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Change</th>
+                <th scope="col">Where to edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Text, page sections &amp; listing cards</td>
+                <td>
+                  Route composition in <code>src/app/</code> and sections in
+                  <code>src/components/sections/</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Logo, header links &amp; footer content</td>
+                <td>
+                  The relevant <code>Header*.tsx</code> and
+                  <code>*Footer.tsx</code> section components
+                </td>
+              </tr>
+              <tr>
+                <td>Images &amp; local fonts</td>
+                <td>
+                  <code>public/assets/</code>; keep URL filename capitalization
+                  exact
+                </td>
+              </tr>
+              <tr>
+                <td>Original theme rules</td>
+                <td>
+                  <code>public/assets/css/style.css</code> and the retained SCSS
+                  sources
+                </td>
+              </tr>
+              <tr>
+                <td>Custom CSS &amp; animation overrides</td>
+                <td><code>src/app/globals.css</code></td>
+              </tr>
+              <tr>
+                <td>Default title, description &amp; favicon</td>
+                <td>
+                  <code>src/app/layout.tsx</code>; detail routes also supply
+                  record-specific metadata
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The original theme uses <code>--color-primary: #FF3600</code> and the
+          Outfit font. Add focused overrides in <code>globals.css</code>; use
+          selectors with enough specificity to override the linked theme
+          stylesheet. Shared sections may appear on several routes, so check the
+          affected layouts after editing them.
+        </p>
+        <h3>Template regeneration</h3>
+        <p>
+          <code>scripts/convert-template.mjs</code> records the original
+          migration from the sibling HTML project. Normal development and
+          production builds do not run it. Intentional regeneration with
+          <code>node scripts/convert-template.mjs ../autovault</code> overwrites
+          generated routes and sections, so preserve custom edits first. The
+          conversion also applies detail-route and AOS migrations.
+        </p>
+      </section>
+
+      <section id="animations" aria-labelledby="animations-title">
+        <h2 id="animations-title">
+          <span class="number">07</span>AOS &amp; the move-right animation
+        </h2>
+        <p>
+          Scroll reveals use AOS in place of WOW. Add
+          <code>data-aos</code> attributes directly to JSX. Delay and duration
+          values are expressed in milliseconds; AOS's supplied styles support 50
+          ms steps up to 3000 ms.
+        </p>
+        <pre><code>&lt;div
+  data-aos="fade-up"
+  data-aos-delay="100"
+  data-aos-duration="1000"
+&gt;
+  Your content
+&lt;/div&gt;
+
+&lt;h2 className="section-title move-right" data-aos="move-right"&gt;
+  Your section heading
+&lt;/h2&gt;</code></pre>
+        <p>
+          The custom <code>move-right</code> class reveals content from left to
+          right with a CSS clip transition. Both the class and
+          <code>data-aos="move-right"</code> are required. Its rules live in
+          <code>src/app/globals.css</code>.
+        </p>
+        <p>
+          <code>src/lib/animations.ts</code> initializes AOS once, with a 1000
+          ms default duration, <code>ease-out-cubic</code> easing, a 60 px
+          offset and one-time reveals. It refreshes for route content, image
+          loads and fonts. Reduced-motion styles keep content readable without
+          movement, and server-rendered content remains visible before AOS
+          initializes.
+        </p>
+        <p>
+          <code>scripts/migrate-animations.mjs</code> converts legacy reveal
+          attributes when regenerating template sections. Edit the current TSX
+          attributes directly for day-to-day changes.
+        </p>
+      </section>
+
+      <section id="plugins" aria-labelledby="plugins-title">
+        <h2 id="plugins-title">
+          <span class="number">08</span>Sliders, scrolling &amp; plugins
+        </h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Integration</th>
+                <th scope="col">Behavior &amp; source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Swiper</td>
+                <td>
+                  Options in <code>src/lib/sliders.ts</code>; initialization in
+                  <code>PageEffects.tsx</code>. Controls are scoped to their
+                  page section. Car gallery arrows select the main image, and
+                  the Thumbs module updates
+                  <code>swiper-slide-thumb-active</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>Lenis</td>
+                <td>
+                  <code>src/components/SmoothScroll.tsx</code> provides smooth
+                  wheel scrolling, hash anchors and sticky-header offsets.
+                  Back-to-top uses <code>src/lib/smooth-scroll.ts</code>. Native
+                  touch and nested control scrolling are retained; smoothing is
+                  disabled for reduced motion.
+                </td>
+              </tr>
+              <tr>
+                <td>Jarallax</td>
+                <td>
+                  <code>src/lib/parallax.ts</code> provides desktop background
+                  parallax. Mobile and reduced-motion layouts use static
+                  backgrounds.
+                </td>
+              </tr>
+              <tr>
+                <td>Nice Select</td>
+                <td>
+                  <code>src/lib/nice-select.ts</code> enhances native selects
+                  using jQuery 3 and the original dropdown design, synchronizing
+                  selection, keyboard interaction and form values.
+                </td>
+              </tr>
+              <tr>
+                <td>Bootstrap</td>
+                <td>
+                  Layout styles are loaded globally. Tab and collapse
+                  interactions initialize within page effects.
+                </td>
+              </tr>
+              <tr>
+                <td>Sticky footer</td>
+                <td>
+                  <code>src/lib/sticky-footer.ts</code> preserves
+                  <code>dim-fixed</code> and <code>dim-static</code> behavior on
+                  desktop and resets it on mobile. Footer space is measured
+                  dynamically.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Keep route-specific integrations inside the page lifecycle. Register
+          cleanup when adding event listeners, observers or plugin instances so
+          cached navigation does not create duplicate handlers.
+        </p>
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <h2 id="features-title">
+          <span class="number">09</span>Forms, calculator, cart &amp; saved cars
+        </h2>
+        <ul>
+          <li>
+            <strong>Loan calculator:</strong> supports loan terms, down
+            payments, interest and zero-interest calculations. The shared
+            calculation logic lives in <code>src/lib/</code>.
+          </li>
+          <li>
+            <strong>Cart:</strong> quantities, removals and totals use
+            <code>src/lib/cart.ts</code>. Cart state persists in the current
+            browser's local storage; checkout reads the same cart.
+          </li>
+          <li>
+            <strong>Saved cars:</strong> the wishlist uses
+            <code>src/lib/saved-cars.ts</code> and browser storage. Saved-car
+            links open the matching slug-based details.
+          </li>
+          <li>
+            <strong>Forms:</strong> contact, newsletter, account and checkout
+            interfaces validate input. Authentication, email delivery and
+            payment processing are not connected.
+          </li>
+        </ul>
+        <div class="note">
+          <p>
+            <strong>Backend scope:</strong> connect real services before
+            accepting messages, user accounts or payments. The current template
+            does not send mail, authenticate users or place orders. Browser
+            storage is not a shared database.
+          </p>
+        </div>
+      </section>
+
+      <section id="verification" aria-labelledby="verification-title">
+        <h2 id="verification-title">
+          <span class="number">10</span>Quality checks
+        </h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>npm run lint</code></td>
+                <td>Check TypeScript/React source with ESLint.</td>
+              </tr>
+              <tr>
+                <td><code>npm run verify:project</code></td>
+                <td>
+                  Validate route links, catalog records, asset paths and the
+                  application migration constraints.
+                </td>
+              </tr>
+              <tr>
+                <td><code>npm run build</code></td>
+                <td>Compile, type-check and generate the production build.</td>
+              </tr>
+              <tr>
+                <td><code>npm run test:e2e</code></td>
+                <td>
+                  Run production browser tests against port 3100. Build first.
+                </td>
+              </tr>
+              <tr>
+                <td><code>npm run test:dev</code></td>
+                <td>
+                  Check development detail navigation for InstantServer/Suspense
+                  insights on port 3000.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Install the browser once with
+          <code>npx playwright install chromium</code>. Run the browser suites
+          sequentially because their default output directory is shared. The
+          development test reuses a running development server when available.
+        </p>
+        <pre><code>npm run lint
+npm run verify:project
+npm run build
+npm run test:e2e
+npm run test:dev</code></pre>
+        <p>
+          Browser checks cover routes, asset errors, navigation, dynamic
+          records, gallery synchronization, AOS, reduced motion, smooth
+          scrolling, footer behavior, plugins, cart, saved cars and forms.
+        </p>
+      </section>
+
+      <section id="deployment" aria-labelledby="deployment-title">
+        <h2 id="deployment-title">
+          <span class="number">11</span>Production build &amp; hosting
+        </h2>
+        <p>
+          Use a hosting environment that supports the installed Next.js version
+          and a Node.js runtime meeting its requirements. The project uses
+          request Proxy behavior, dynamic routes and Cache Components; the
+          current configuration is not a plain static HTML export.
+        </p>
+        <pre><code>npm ci
+npm run build
+npm run start</code></pre>
+        <p>
+          <code>npm run start</code> serves the generated production build on
+          port 3000 by default. Set the host's start command and port
+          configuration as required by your deployment environment.
+        </p>
+        <p>
+          <code>next.config.ts</code> enables <code>cacheComponents</code> and
+          <code>partialPrefetching</code>. Retain the existing Suspense
+          boundaries when changing URL-dependent components. Check the installed
+          documentation under <code>node_modules/next/dist/docs/</code> before
+          changing version-specific configuration.
+        </p>
+        <p>
+          This documentation folder is separate from the app and is not exposed
+          as a Next.js URL. Open its HTML file directly, or publish it
+          separately if a hosted documentation page is required.
+        </p>
+      </section>
+
+      <section id="troubleshooting" aria-labelledby="troubleshooting-title">
+        <h2 id="troubleshooting-title">
+          <span class="number">12</span>Troubleshooting
+        </h2>
+        <h3>PowerShell says npm.ps1 cannot run</h3>
+        <p>
+          Use the Windows executable commands <code>npm.cmd</code> and
+          <code>npx.cmd</code>.
+        </p>
+        <h3>An image or font works locally but fails on the host</h3>
+        <p>
+          Check the exact filename capitalization and the
+          <code>/assets/</code> prefix. Run
+          <code>npm run verify:project</code> to detect missing local asset
+          references.
+        </p>
+        <h3>A new detail URL returns 404</h3>
+        <p>
+          Confirm the record exists under the correct catalog kind, with a
+          matching key and slug. Check listing links and rebuild after editing
+          the catalog.
+        </p>
+        <h3>Next.js reports URL data outside Suspense</h3>
+        <p>
+          Keep <code>await params</code> inside the suspended detail component.
+          Use the existing <code>DetailShell</code> pattern rather than moving
+          URL data into its shared static shell.
+        </p>
+        <h3>A gallery arrow does not update the selected image</h3>
+        <p>
+          Keep gallery arrows bound to the main Swiper instance. The thumbnail
+          Swiper manages its strip, while the Thumbs module manages the selected
+          thumbnail class. Verify both desktop and mobile layouts after changing
+          options.
+        </p>
+        <h3>A move-right heading does not animate</h3>
+        <p>
+          Use both <code>className="move-right"</code> and
+          <code>data-aos="move-right"</code>. Confirm the AOS styles are
+          imported and the page effects run. Reduced-motion preferences
+          intentionally disable movement.
+        </p>
+        <h3>Mail, login or checkout does not submit to a service</h3>
+        <p>
+          These interfaces currently have no backend integration. Connect the
+          appropriate service and implement server-side validation and error
+          handling.
+        </p>
+        <h3>Playwright reports missing trace files</h3>
+        <p>
+          Run <code>test:e2e</code> and <code>test:dev</code> sequentially so
+          they do not clean up each other's output files.
+        </p>
+      </section>
+      <footer>
+        AutoVault Next.js · Project documentation · Open locally, navigate by
+        section, or print this guide.
+      </footer>
+    </main>
+    <script>
+      document
+        .getElementById("print-guide")
+        .addEventListener("click", function () {
+          window.print();
+        });
+      const links = Array.from(document.querySelectorAll("nav a"));
+      function highlight(id) {
+        links.forEach(function (link) {
+          if (link.getAttribute("href") === "#" + id)
+            link.setAttribute("aria-current", "location");
+          else link.removeAttribute("aria-current");
+        });
+      }
+      highlight(location.hash.slice(1) || "overview");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          function (entries) {
+            const visible = entries.filter(function (entry) {
+              return entry.isIntersecting;
+            });
+            if (visible.length) highlight(visible[0].target.id);
+          },
+          { rootMargin: "-5% 0px -70% 0px", threshold: 0 },
+        );
+        document
+          .querySelectorAll("main section[id]")
+          .forEach(function (section) {
+            observer.observe(section);
+          });
+      }
+    </script>
+  </body>
+</html>

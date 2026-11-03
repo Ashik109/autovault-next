@@ -2,6 +2,8 @@
 
 AutoVault's complete car dealership template converted to Next.js App Router, TypeScript, Bootstrap and ordinary CSS. Tailwind is not installed.
 
+Open [documentation/index.html](documentation/index.html) directly in a browser for the standalone setup, customization and maintenance guide.
+
 ## Run locally
 
 ```bash
