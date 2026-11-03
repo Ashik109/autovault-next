@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getDetail } from "@/data/details";
 import type { DetailKind } from "@/lib/detail-paths";
+import { detailPath } from "@/lib/detail-paths";
 
 const families: Record<string, DetailKind> = {
   car: "car",
@@ -25,8 +26,27 @@ export function proxy(request: NextRequest) {
   } catch {
     slug = "";
   }
-  if (!rest.filter(Boolean).length && getDetail(families[family], slug))
+  if (!rest.filter(Boolean).length && getDetail(families[family], slug)) {
+    // Redirect compatibility URLs before a Suspense boundary can start streaming.
+    if (
+      [
+        "portfolio-details",
+        "portfolio-details-2",
+        "blog-details",
+        "car-dealer-details",
+        "shop-details",
+      ].includes(family)
+    ) {
+      return NextResponse.redirect(
+        new URL(
+          detailPath(families[family], slug, family === "portfolio-details-2"),
+          request.url,
+        ),
+        308,
+      );
+    }
     return NextResponse.next();
+  }
   // Reject missing records before streaming begins, retaining a real HTTP 404
   // while Cache Components remains enabled. The page also calls notFound().
   const target = request.nextUrl.clone();

@@ -1,18 +1,10 @@
-import LoaderWrapper from "@/components/sections/LoaderWrapper";
-import SearchInput from "@/components/sections/SearchInput";
-import Overlay from "@/components/sections/Overlay";
-import ProgressWrap from "@/components/sections/ProgressWrap";
-import HeaderThree from "@/components/sections/HeaderThree";
-import BlogDetailsBreadcrumb from "@/components/sections/BlogDetailsBreadcrumb";
-import BlogDetailsPortfolio from "@/components/sections/BlogDetailsPortfolio";
-import AboutCta from "@/components/sections/AboutCta";
-import AboutFooter from "@/components/sections/AboutFooter";
-import MobileMenu from "@/components/sections/MobileMenu";
-import PageEffects from "@/components/PageEffects";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import DetailShell from "@/components/DetailShell";
+import PageEffects from "@/components/PageEffects";
 import { getDetail, getDetails } from "@/data/details";
-
+import BlogDetailsBreadcrumb from "@/components/sections/BlogDetailsBreadcrumb";
+import BlogDetailsPortfolio from "@/components/sections/BlogDetailsPortfolio";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() {
   return getDetails("blog").map(({ slug }) => ({ slug }));
@@ -27,40 +19,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: "/blog/" + record.slug },
   };
 }
-export default async function BlogDetailsPage({ params }: Props) {
+export default function Page({ params }: Props) {
+  return (
+    <DetailShell>
+      <Details params={params} />
+    </DetailShell>
+  );
+}
+async function Details({ params }: Props) {
   const { slug } = await params;
   const record = getDetail("blog", slug);
   if (!record) notFound();
   return (
-    <div
-      data-autovault-page
-      data-detail-kind={record.kind}
-      data-detail-slug={record.slug}
-    >
+    <div data-detail-kind={record.kind} data-detail-slug={record.slug}>
       <PageEffects bodyClass="with-sidebar" />
-      <LoaderWrapper />
-
-      <SearchInput />
-
-      <Overlay />
-
-      <ProgressWrap />
-
-      <div className="rts-wrapper">
-        <div className="rts-wrapper-inner">
-          <HeaderThree />
-
-          <BlogDetailsBreadcrumb record={record} />
-
-          <BlogDetailsPortfolio record={record} />
-
-          <AboutCta />
-        </div>
-      </div>
-
-      <AboutFooter />
-
-      <MobileMenu />
+      <BlogDetailsBreadcrumb record={record} />
+      <BlogDetailsPortfolio record={record} />
     </div>
   );
 }

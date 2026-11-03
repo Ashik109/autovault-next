@@ -43,6 +43,8 @@ The catalog contains 8 cars, 16 articles, 9 dealers and 10 products. Pages use `
 
 As in Jobpath and Touriza, listing images, titles, buttons, related cards, cart items and saved cars use the shared `detailPath` helper and clean entity URLs. The former `*-details/[slug]` URLs permanently redirect to the corresponding clean URL, and bare detail URLs redirect to their default record from `src/data/detail-defaults.json`. Unknown slugs return HTTP 404; `src/proxy.ts` validates records before streamed rendering begins.
 
+Detail routes keep the shared header, footer and loading skeleton independent of URL params. Only the suspended `Details` component awaits params, preserving the reusable App Shell for instant navigation. Compatibility redirects run in Proxy before streaming starts.
+
 ## Interactions and backend scope
 
 Sliders, synchronized galleries, media popups, mobile navigation, search, tabs, accordions, price-range controls, counters and scroll controls initialize on client navigation and clean up when leaving a page. Nice Select uses the original dropdown styling, supports keyboard access and keeps the underlying form fields synchronized. Jarallax restores desktop background parallax; mobile and reduced-motion layouts keep static backgrounds. Both plugins initialize within the active route and are destroyed on navigation. The loan calculator includes a loan term, zero-interest handling and down-payment validation.
@@ -58,8 +60,11 @@ npm run lint
 npm run verify:project
 npm run build
 npm run test:e2e
+npm run test:dev
 ```
 
 Browser tests require Playwright Chromium (`npx playwright install chromium`) and use the production build on port 3100. They cover every route and local link, missing images/assets, hydration/runtime errors, client navigation, tabs, accordion, mobile menu, gallery, saved cars, search, range controls, calculator, persistent cart totals and contact-form behavior.
+
+`test:dev` reuses a development server on port 3000, or starts one if needed, and checks detail loads/navigation for dev-only InstantServer insights in the browser and new server logs.
 
 `scripts/convert-template.mjs` records the one-time conversion process. To intentionally regenerate sections from the original sibling project, run `node scripts/convert-template.mjs ../autovault`. This overwrites generated routes/sections; back up later customizations first. It is not used by development, production or builds.

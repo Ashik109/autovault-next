@@ -2,6 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
+  testIgnore: "**/instant-navigation.spec.ts",
   timeout: 90_000,
   fullyParallel: false,
   workers: 1,

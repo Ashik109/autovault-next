@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "verify:project": "node scripts/verify-project.mjs",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:dev": "playwright test --config playwright.dev.config.ts"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",

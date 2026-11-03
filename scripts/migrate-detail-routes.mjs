@@ -4,6 +4,7 @@ import { parseDocument } from "htmlparser2";
 import { textContent } from "domutils";
 import ts from "typescript";
 import prettier from "prettier";
+import { writeDetailPage } from "./write-detail-page.mjs";
 
 const clean = (text) => text.replace(/\s+/g, " ").trim();
 const slugify = (text) =>
@@ -593,34 +594,16 @@ export async function migrateDetails(source) {
     const alternate = template.base === "portfolio-details-2";
     const canonicalBase = alternate ? "car-two" : canonicalBases[template.kind];
     const filename = `src/app/${template.base}/page.tsx`;
-    let content = fs.readFileSync(filename, "utf8");
-    content = content.replace(
-      /export const metadata: Metadata = \{[\s\S]*?\};/,
-      "",
-    );
-    content = content.replace(
-      'import type { Metadata } from "next";',
-      'import type { Metadata } from "next";\nimport { notFound } from "next/navigation";\nimport { getDetail, getDetails } from "@/data/details";',
-    );
-    content = content.replace(
-      /export default function (\w+)\(\) \{/,
-      `type Props = { params: Promise<{ slug: string }> };\nexport function generateStaticParams() { return getDetails(${q(template.kind)}).map(({slug}) => ({slug})); }\nexport async function generateMetadata({params}: Props): Promise<Metadata> { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound(); return {title: record.title + " | AutoVault", description: record.description, alternates: {canonical: ${q("/" + canonicalBase + "/")} + record.slug}}; }\nexport default async function $1({params}: Props) { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound();`,
-    );
-    for (const [name, section] of modules)
-      if (section.dynamic)
-        content = content.replaceAll(
-          `<${name} />`,
-          `<${name} record={record} />`,
-        );
-    content = content.replace(
-      "<div data-autovault-page>",
-      "<div data-autovault-page data-detail-kind={record.kind} data-detail-slug={record.slug}>",
-    );
-    await write(`src/app/${canonicalBase}/[slug]/page.tsx`, content);
-    await write(
-      `src/app/${template.base}/[slug]/page.tsx`,
-      `import { notFound, permanentRedirect } from "next/navigation";\nimport { getDetail, getDetails } from "@/data/details";\nimport { detailPath } from "@/lib/detail-paths";\ntype Props = {params: Promise<{slug:string}>};\nexport function generateStaticParams(){return getDetails(${q(template.kind)}).map(({slug})=>({slug}));}\nexport default async function Page({params}:Props){ const {slug}=await params; if(!getDetail(${q(template.kind)},slug))notFound(); permanentRedirect(detailPath(${q(template.kind)},slug,${alternate})); }`,
-    );
+    const sections =
+      template.kind === "dealer" || template.kind === "product"
+        ? [template.prefix + "Portfolio"]
+        : [template.prefix + "Breadcrumb", template.prefix + "Portfolio"];
+    await writeDetailPage({
+      kind: template.kind,
+      canonicalBase,
+      legacyBase: template.base,
+      sections,
+    });
     await write(
       filename,
       `import { permanentRedirect } from "next/navigation";\nexport default function Page(){permanentRedirect(${q("/" + canonicalBase + "/" + defaults[template.kind])});}`,

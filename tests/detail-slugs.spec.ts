@@ -91,7 +91,10 @@ test("different detail records have their own headings, images, prices and canon
       const url = `/${base}/${record.slug}`;
       await page.goto(url);
       const root = page.locator("[data-autovault-page]:visible");
-      await expect(root).toHaveAttribute("data-detail-slug", record.slug);
+      await expect(root.locator("[data-detail-slug]")).toHaveAttribute(
+        "data-detail-slug",
+        record.slug,
+      );
       await expect(root.locator(heading).first()).toHaveText(record.title);
       await expect(root.locator(image).first()).toHaveAttribute(
         "src",
@@ -111,7 +114,10 @@ test("different detail records have their own headings, images, prices and canon
           root.locator(".woocommerce-Price-amount").first(),
         ).toContainText(record.price.toLocaleString("en-US"));
       await page.reload();
-      await expect(root).toHaveAttribute("data-detail-slug", record.slug);
+      await expect(root.locator("[data-detail-slug]")).toHaveAttribute(
+        "data-detail-slug",
+        record.slug,
+      );
     }
   }
   expect(errors).toEqual([]);
@@ -140,10 +146,9 @@ test("listing card images, titles and buttons point to the matching record slug"
     expect(links.every((href) => href === url)).toBe(true);
     await titleLink.click();
     await expect(page).toHaveURL(url);
-    await expect(page.locator("[data-autovault-page]:visible")).toHaveAttribute(
-      "data-detail-slug",
-      record.slug,
-    );
+    await expect(
+      page.locator("[data-autovault-page]:visible [data-detail-slug]"),
+    ).toHaveAttribute("data-detail-slug", record.slug);
   }
 });
 

@@ -1,4 +1,11 @@
 /* Native CSS additions for the converted AutoVault template. */
+.detail-skeleton { min-height: 75vh; background: #f7f7f7; }
+.detail-skeleton-title { width: 65%; height: 48px; margin-bottom: 40px; border-radius: 8px; background: #e4e4e4; }
+.detail-skeleton-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 32px; }
+.detail-skeleton-image { min-height: 320px; border-radius: 12px; background: #e4e4e4; }
+.detail-skeleton-info div { height: 64px; margin-bottom: 24px; border-radius: 8px; background: #e4e4e4; }
+.detail-skeleton [role="status"] { margin-top: 24px; }
+@media (max-width: 767px) { .detail-skeleton-grid { grid-template-columns: 1fr; } .detail-skeleton-title { width: 90%; } }
 /* Keep callout text painted above the clipped background during footer reveal. */
 .cta-inner .title, .cta-inner .contact { transform: translateZ(0); }
 [hidden] { display: none !important; }
