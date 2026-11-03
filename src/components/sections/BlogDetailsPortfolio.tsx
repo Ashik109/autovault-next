@@ -1,4 +1,5 @@
 import type { DetailRecord } from "@/data/details";
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import BlogDetailsBlog from "@/components/sections/BlogDetailsBlog";
@@ -307,7 +308,10 @@ export default function BlogDetailsPortfolio({
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                          href={detailPath(
+                            "blog",
+                            "10-tips-for-first-time-car-what-you-need-to-know",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-01.webp"
@@ -321,7 +325,10 @@ export default function BlogDetailsPortfolio({
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                            href={detailPath(
+                              "blog",
+                              "10-tips-for-first-time-car-what-you-need-to-know",
+                            )}
                           >
                             {"10 Tips for First-Time Car What You Need to Know"}
                           </Link>
@@ -335,7 +342,10 @@ export default function BlogDetailsPortfolio({
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                          href={detailPath(
+                            "blog",
+                            "top-5-reasons-to-buy-a-for-pre-owned-vehicle",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-02.webp"
@@ -349,7 +359,10 @@ export default function BlogDetailsPortfolio({
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                            href={detailPath(
+                              "blog",
+                              "top-5-reasons-to-buy-a-for-pre-owned-vehicle",
+                            )}
                           >
                             {"Top 5 Reasons to Buy a for Pre-Owned Vehicle"}
                           </Link>
@@ -363,7 +376,10 @@ export default function BlogDetailsPortfolio({
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                          href={detailPath(
+                            "blog",
+                            "how-to-choose-the-perfect-car-for-your-lifestyle",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-03.webp"
@@ -377,7 +393,10 @@ export default function BlogDetailsPortfolio({
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                            href={detailPath(
+                              "blog",
+                              "how-to-choose-the-perfect-car-for-your-lifestyle",
+                            )}
                           >
                             {"How to Choose the Perfect Car for Your Lifestyle"}
                           </Link>

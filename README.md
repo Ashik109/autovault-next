@@ -34,14 +34,14 @@ Broken source-template links to `portfolio-two`, `portfolio-three`, `single-prod
 
 All five detail layouts load records from `src/data/detail-catalog.json`:
 
-- `/portfolio-details/[slug]` and `/portfolio-details-2/[slug]`: two car layouts.
-- `/blog-details/[slug]`: articles.
-- `/car-dealer-details/[slug]`: dealers.
-- `/shop-details/[slug]`: products, including the sample cart products.
+- `/car/[slug]` and `/car-two/[slug]`: two car layouts.
+- `/blog/[slug]`: articles.
+- `/dealer/[slug]`: dealers.
+- `/product/[slug]`: products, including the sample cart products.
 
 The catalog contains 8 cars, 16 articles, 9 dealers and 10 products. Pages use `generateStaticParams`, await route params, load the matching record, and generate record-specific metadata/canonical URLs. Titles, main images/galleries, prices and vehicle specs come from the selected record, retaining the original layouts and template body copy. Edit the catalog to change records; update the corresponding listing cards alongside it. `src/lib/detail-paths.ts` provides path and slug helpers.
 
-The former bare detail URLs permanently redirect to their default record from `src/data/detail-defaults.json`. Unknown slugs return HTTP 404; `src/proxy.ts` validates records before streamed rendering begins. Listing images, titles, buttons, related cards, cart items and saved cars use slug URLs.
+As in Jobpath and Touriza, listing images, titles, buttons, related cards, cart items and saved cars use the shared `detailPath` helper and clean entity URLs. The former `*-details/[slug]` URLs permanently redirect to the corresponding clean URL, and bare detail URLs redirect to their default record from `src/data/detail-defaults.json`. Unknown slugs return HTTP 404; `src/proxy.ts` validates records before streamed rendering begins.
 
 ## Interactions and backend scope
 

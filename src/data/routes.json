@@ -15,7 +15,7 @@
     "bodyClass": "with-sidebar"
   },
   {
-    "route": "/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+    "route": "/blog/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
     "title": "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly",
     "bodyClass": "with-sidebar"
   },
@@ -30,7 +30,7 @@
     "bodyClass": "with-sidebar"
   },
   {
-    "route": "/car-dealer-details/car-toys",
+    "route": "/dealer/car-toys",
     "title": "Car Toys",
     "bodyClass": "with-sidebar"
   },
@@ -110,12 +110,12 @@
     "bodyClass": "with-sidebar"
   },
   {
-    "route": "/portfolio-details-2/mercedes-benz-e-class",
+    "route": "/car-two/mercedes-benz-e-class",
     "title": "Mercedes-Benz E-Class",
     "bodyClass": "with-sidebar"
   },
   {
-    "route": "/portfolio-details/mercedes-benz-e-class",
+    "route": "/car/mercedes-benz-e-class",
     "title": "Mercedes-Benz E-Class",
     "bodyClass": "with-sidebar"
   },
@@ -150,7 +150,7 @@
     "bodyClass": "with-sidebar"
   },
   {
-    "route": "/shop-details/power-steering-pump",
+    "route": "/product/power-steering-pump",
     "title": "Power Steering Pump",
     "bodyClass": "with-sidebar"
   },

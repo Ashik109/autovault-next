@@ -31,6 +31,12 @@ const bases = {
   dealer: "car-dealer-details",
   product: "shop-details",
 };
+const canonicalBases = {
+  car: "car",
+  blog: "blog",
+  dealer: "dealer",
+  product: "product",
+};
 const kindFor = (href) =>
   /blog-details/.test(href)
     ? "blog"
@@ -230,7 +236,13 @@ export async function migrateDetails(source) {
   for (const entry of inventory) {
     const kind = kindFor(entry.route);
     if (kind) {
-      entry.route += "/" + defaults[kind];
+      entry.route =
+        "/" +
+        (entry.route === "/portfolio-details-2"
+          ? "car-two"
+          : canonicalBases[kind]) +
+        "/" +
+        defaults[kind];
       entry.title = catalog[kind][defaults[kind]].title;
     }
   }
@@ -339,6 +351,23 @@ export async function migrateDetails(source) {
             : "";
         const kind = kindFor(url);
         if (
+          url === "#" &&
+          attrValue(node, "className") === "current" &&
+          /Details(?:2)?Breadcrumb/.test(section.file)
+        ) {
+          const listing = section.file.includes("CarDealerDetails")
+            ? "/car-dealer"
+            : section.file.includes("PortfolioDetails2")
+              ? "/portfolio-2"
+              : "/portfolio";
+          edit(section, href.initializer, q(listing));
+          if (node.tagName.getText() === "a") {
+            edit(section, node.tagName, "Link");
+            if (ts.isJsxElement(node.parent))
+              edit(section, node.parent.closingElement.tagName, "Link");
+          }
+        }
+        if (
           kind &&
           Object.values(bases)
             .concat("portfolio-details-2")
@@ -348,15 +377,14 @@ export async function migrateDetails(source) {
           const [actualKind, record] = card
             ? recordForCard(card, kind)
             : [kind, undefined];
-          const base =
-            actualKind === "car" && url === "/portfolio-details-2"
-              ? "portfolio-details-2"
-              : bases[actualKind];
+          const alternate =
+            actualKind === "car" && url === "/portfolio-details-2";
           edit(
             section,
             href.initializer,
-            q(`/${base}/${record?.slug || defaults[actualKind]}`),
+            `{detailPath(${q(actualKind)}, ${q(record?.slug || defaults[actualKind])}${alternate ? ", true" : ""})}`,
           );
+          section.linkHelper = true;
         }
       }
       ts.forEachChild(node, visit);
@@ -519,6 +547,12 @@ export async function migrateDetails(source) {
     }
   }
   for (const [name, section] of modules) {
+    if (section.linkHelper)
+      section.edits.push({
+        start: 0,
+        end: 0,
+        value: 'import { detailPath } from "@/lib/detail-paths";\n',
+      });
     if (section.dynamic) {
       const fn = descendants(
         section.tree,
@@ -556,6 +590,8 @@ export async function migrateDetails(source) {
     if (section.edits.length) await write(section.file, content);
   }
   for (const template of templates) {
+    const alternate = template.base === "portfolio-details-2";
+    const canonicalBase = alternate ? "car-two" : canonicalBases[template.kind];
     const filename = `src/app/${template.base}/page.tsx`;
     let content = fs.readFileSync(filename, "utf8");
     content = content.replace(
@@ -568,7 +604,7 @@ export async function migrateDetails(source) {
     );
     content = content.replace(
       /export default function (\w+)\(\) \{/,
-      `type Props = { params: Promise<{ slug: string }> };\nexport function generateStaticParams() { return getDetails(${q(template.kind)}).map(({slug}) => ({slug})); }\nexport async function generateMetadata({params}: Props): Promise<Metadata> { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound(); return {title: record.title + " | AutoVault", description: record.description, alternates: {canonical: ${q("/" + template.base + "/")} + record.slug}}; }\nexport default async function $1({params}: Props) { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound();`,
+      `type Props = { params: Promise<{ slug: string }> };\nexport function generateStaticParams() { return getDetails(${q(template.kind)}).map(({slug}) => ({slug})); }\nexport async function generateMetadata({params}: Props): Promise<Metadata> { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound(); return {title: record.title + " | AutoVault", description: record.description, alternates: {canonical: ${q("/" + canonicalBase + "/")} + record.slug}}; }\nexport default async function $1({params}: Props) { const {slug} = await params; const record = getDetail(${q(template.kind)}, slug); if (!record) notFound();`,
     );
     for (const [name, section] of modules)
       if (section.dynamic)
@@ -580,11 +616,20 @@ export async function migrateDetails(source) {
       "<div data-autovault-page>",
       "<div data-autovault-page data-detail-kind={record.kind} data-detail-slug={record.slug}>",
     );
-    await write(`src/app/${template.base}/[slug]/page.tsx`, content);
+    await write(`src/app/${canonicalBase}/[slug]/page.tsx`, content);
+    await write(
+      `src/app/${template.base}/[slug]/page.tsx`,
+      `import { notFound, permanentRedirect } from "next/navigation";\nimport { getDetail, getDetails } from "@/data/details";\nimport { detailPath } from "@/lib/detail-paths";\ntype Props = {params: Promise<{slug:string}>};\nexport function generateStaticParams(){return getDetails(${q(template.kind)}).map(({slug})=>({slug}));}\nexport default async function Page({params}:Props){ const {slug}=await params; if(!getDetail(${q(template.kind)},slug))notFound(); permanentRedirect(detailPath(${q(template.kind)},slug,${alternate})); }`,
+    );
     await write(
       filename,
-      `import { permanentRedirect } from "next/navigation";\nexport default function Page(){permanentRedirect(${q("/" + template.base + "/" + defaults[template.kind])});}`,
+      `import { permanentRedirect } from "next/navigation";\nexport default function Page(){permanentRedirect(${q("/" + canonicalBase + "/" + defaults[template.kind])});}`,
     );
+    if (canonicalBase !== "blog")
+      await write(
+        `src/app/${canonicalBase}/page.tsx`,
+        `import { redirect } from "next/navigation";\nexport default function Page(){redirect(${q({ car: "/portfolio", "car-two": "/portfolio-2", dealer: "/car-dealer", product: "/shop" }[canonicalBase])});}`,
+      );
   }
   console.log(
     "Slug catalogs:",

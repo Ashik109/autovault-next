@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 export default function Portfolio3Portfolio() {
@@ -488,7 +489,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/honda-civic-hatchback"
+                    href={detailPath("car", "honda-civic-hatchback")}
                   >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
@@ -502,7 +503,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                     >
                       {"Honda Civic Hatchback"}
                     </Link>
@@ -539,7 +540,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -552,7 +553,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mercedes-benz-e-class"
+                    href={detailPath("car", "mercedes-benz-e-class")}
                   >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
@@ -566,7 +567,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                     >
                       {"Mercedes-Benz E-Class"}
                     </Link>
@@ -603,7 +604,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -616,7 +617,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mazda-mx-5-miata"
+                    href={detailPath("car", "mazda-mx-5-miata")}
                   >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
@@ -630,7 +631,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                     >
                       {"Mazda MX-5 Miata"}
                     </Link>
@@ -667,7 +668,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -680,7 +681,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/honda-civic-hatchback"
+                    href={detailPath("car", "honda-civic-hatchback")}
                   >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
@@ -694,7 +695,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                     >
                       {"Honda Civic Hatchback"}
                     </Link>
@@ -731,7 +732,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -744,7 +745,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mercedes-benz-e-class"
+                    href={detailPath("car", "mercedes-benz-e-class")}
                   >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
@@ -758,7 +759,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                     >
                       {"Mercedes-Benz E-Class"}
                     </Link>
@@ -795,7 +796,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -808,7 +809,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mazda-mx-5-miata"
+                    href={detailPath("car", "mazda-mx-5-miata")}
                   >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
@@ -822,7 +823,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                     >
                       {"Mazda MX-5 Miata"}
                     </Link>
@@ -859,7 +860,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -872,7 +873,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/honda-civic-hatchback"
+                    href={detailPath("car", "honda-civic-hatchback")}
                   >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
@@ -886,7 +887,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                     >
                       {"Honda Civic Hatchback"}
                     </Link>
@@ -923,7 +924,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -936,7 +937,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mercedes-benz-e-class"
+                    href={detailPath("car", "mercedes-benz-e-class")}
                   >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
@@ -950,7 +951,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                     >
                       {"Mercedes-Benz E-Class"}
                     </Link>
@@ -987,7 +988,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -1000,7 +1001,7 @@ export default function Portfolio3Portfolio() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/portfolio-details/mazda-mx-5-miata"
+                    href={detailPath("car", "mazda-mx-5-miata")}
                   >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
@@ -1014,7 +1015,7 @@ export default function Portfolio3Portfolio() {
                   <h6 className="title">
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                     >
                       {"Mazda MX-5 Miata"}
                     </Link>
@@ -1051,7 +1052,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}

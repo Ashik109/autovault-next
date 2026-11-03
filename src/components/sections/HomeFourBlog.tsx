@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HomeFourBlog() {
   return (
@@ -25,7 +26,10 @@ export default function HomeFourBlog() {
                 <div className="image-area">
                   <Link
                     prefetch={false}
-                    href="/blog-details/braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system"
+                    href={detailPath(
+                      "blog",
+                      "braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system",
+                    )}
                   >
                     <img src="/assets/images/blog/05.webp" alt="" />
                   </Link>
@@ -37,7 +41,10 @@ export default function HomeFourBlog() {
                   <h5>
                     <Link
                       prefetch={false}
-                      href="/blog-details/braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system"
+                      href={detailPath(
+                        "blog",
+                        "braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system",
+                      )}
                     >
                       {
                         "Braking It Down Understanding the Key Parts of Your Car's Brake Parts System "
@@ -54,7 +61,10 @@ export default function HomeFourBlog() {
                   <div className="image-area">
                     <Link
                       prefetch={false}
-                      href="/blog-details/a-beginner-s-guide-to-understanding-your-car-s-engine-components"
+                      href={detailPath(
+                        "blog",
+                        "a-beginner-s-guide-to-understanding-your-car-s-engine-components",
+                      )}
                     >
                       <img
                         src="/assets/images/blog/03.webp"
@@ -70,7 +80,10 @@ export default function HomeFourBlog() {
                     <h6>
                       <Link
                         prefetch={false}
-                        href="/blog-details/a-beginner-s-guide-to-understanding-your-car-s-engine-components"
+                        href={detailPath(
+                          "blog",
+                          "a-beginner-s-guide-to-understanding-your-car-s-engine-components",
+                        )}
                       >
                         {
                           "A Beginner's Guide to Understanding Your Car's Engine Components"
@@ -86,7 +99,10 @@ export default function HomeFourBlog() {
                   <div className="image-area">
                     <Link
                       prefetch={false}
-                      href="/blog-details/the-ultimate-guide-to-car-suspension-what-you-need-to-know"
+                      href={detailPath(
+                        "blog",
+                        "the-ultimate-guide-to-car-suspension-what-you-need-to-know",
+                      )}
                     >
                       <img
                         src="/assets/images/blog/04.webp"
@@ -102,7 +118,10 @@ export default function HomeFourBlog() {
                     <h6>
                       <Link
                         prefetch={false}
-                        href="/blog-details/the-ultimate-guide-to-car-suspension-what-you-need-to-know"
+                        href={detailPath(
+                          "blog",
+                          "the-ultimate-guide-to-car-suspension-what-you-need-to-know",
+                        )}
                       >
                         {
                           "The Ultimate Guide to Car Suspension: What You Need to Know"

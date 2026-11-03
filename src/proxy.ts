@@ -3,6 +3,11 @@ import { getDetail } from "@/data/details";
 import type { DetailKind } from "@/lib/detail-paths";
 
 const families: Record<string, DetailKind> = {
+  car: "car",
+  "car-two": "car",
+  blog: "blog",
+  dealer: "dealer",
+  product: "product",
   "portfolio-details": "car",
   "portfolio-details-2": "car",
   "blog-details": "blog",
@@ -31,6 +36,11 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
+    "/car/:path*",
+    "/car-two/:path*",
+    "/blog/:path*",
+    "/dealer/:path*",
+    "/product/:path*",
     "/portfolio-details/:path*",
     "/portfolio-details-2/:path*",
     "/blog-details/:path*",

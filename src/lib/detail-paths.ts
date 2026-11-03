@@ -1,9 +1,9 @@
 export type DetailKind = "car" | "blog" | "dealer" | "product";
 export const detailBases: Record<DetailKind, string> = {
-  car: "portfolio-details",
-  blog: "blog-details",
-  dealer: "car-dealer-details",
-  product: "shop-details",
+  car: "car",
+  blog: "blog",
+  dealer: "dealer",
+  product: "product",
 };
 export function slugFromTitle(title: string) {
   return title
@@ -19,5 +19,5 @@ export function detailPath(
   slug: string,
   alternateCarLayout = false,
 ) {
-  return `/${kind === "car" && alternateCarLayout ? "portfolio-details-2" : detailBases[kind]}/${slug}`;
+  return `/${kind === "car" && alternateCarLayout ? "car-two" : detailBases[kind]}/${slug}`;
 }

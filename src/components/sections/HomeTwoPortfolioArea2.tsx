@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HomeTwoPortfolioArea2() {
   return (
@@ -117,7 +118,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         <img src="/assets/images/portfolio/04.webp" alt="" />
                       </Link>
@@ -143,7 +144,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           {"Thunderbolt Car"}
                         </Link>
@@ -180,7 +181,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -195,7 +196,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         <img src="/assets/images/portfolio/05.webp" alt="" />
                       </Link>
@@ -221,7 +222,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           {"Mercedes-Benz E-Class"}
                         </Link>
@@ -258,7 +259,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -273,7 +274,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/ford-mustang-convertible"
+                        href={detailPath("car", "ford-mustang-convertible")}
                       >
                         <img src="/assets/images/portfolio/06.webp" alt="" />
                       </Link>
@@ -299,7 +300,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                         >
                           {"Ford Mustang Convertible"}
                         </Link>
@@ -336,7 +337,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -351,7 +352,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         <img src="/assets/images/portfolio/07.webp" alt="" />
                       </Link>
@@ -377,7 +378,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                         >
                           {"Mazda MX-5 Miata"}
                         </Link>
@@ -414,7 +415,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -429,7 +430,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         <img src="/assets/images/portfolio/08.webp" alt="" />
                       </Link>
@@ -455,7 +456,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                         >
                           {"Honda Civic Hatchback"}
                         </Link>
@@ -492,7 +493,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -507,7 +508,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         <img src="/assets/images/portfolio/09.webp" alt="" />
                       </Link>
@@ -533,7 +534,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                         >
                           {"Hyundai Veloster"}
                         </Link>
@@ -570,7 +571,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -594,7 +595,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         <img src="/assets/images/portfolio/04.webp" alt="" />
                       </Link>
@@ -620,7 +621,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           {"Thunderbolt Car"}
                         </Link>
@@ -657,7 +658,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -672,7 +673,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         <img src="/assets/images/portfolio/05.webp" alt="" />
                       </Link>
@@ -698,7 +699,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           {"Mercedes-Benz E-Class"}
                         </Link>
@@ -735,7 +736,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -750,7 +751,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/ford-mustang-convertible"
+                        href={detailPath("car", "ford-mustang-convertible")}
                       >
                         <img src="/assets/images/portfolio/06.webp" alt="" />
                       </Link>
@@ -776,7 +777,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                         >
                           {"Ford Mustang Convertible"}
                         </Link>
@@ -813,7 +814,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -828,7 +829,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         <img src="/assets/images/portfolio/07.webp" alt="" />
                       </Link>
@@ -840,7 +841,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                         >
                           {"Mazda MX-5 Miata"}
                         </Link>
@@ -877,7 +878,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -892,7 +893,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         <img src="/assets/images/portfolio/08.webp" alt="" />
                       </Link>
@@ -918,7 +919,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                         >
                           {"Honda Civic Hatchback"}
                         </Link>
@@ -955,7 +956,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -970,7 +971,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         <img src="/assets/images/portfolio/09.webp" alt="" />
                       </Link>
@@ -996,7 +997,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                         >
                           {"Hyundai Veloster"}
                         </Link>
@@ -1033,7 +1034,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1057,7 +1058,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         <img src="/assets/images/portfolio/07.webp" alt="" />
                       </Link>
@@ -1083,7 +1084,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                         >
                           {"Mazda MX-5 Miata"}
                         </Link>
@@ -1120,7 +1121,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1135,7 +1136,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         <img src="/assets/images/portfolio/08.webp" alt="" />
                       </Link>
@@ -1161,7 +1162,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                         >
                           {"Honda Civic Hatchback"}
                         </Link>
@@ -1198,7 +1199,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1213,7 +1214,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         <img src="/assets/images/portfolio/09.webp" alt="" />
                       </Link>
@@ -1239,7 +1240,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                         >
                           {"Hyundai Veloster"}
                         </Link>
@@ -1276,7 +1277,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1291,7 +1292,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         <img src="/assets/images/portfolio/04.webp" alt="" />
                       </Link>
@@ -1317,7 +1318,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           {"Thunderbolt Car"}
                         </Link>
@@ -1354,7 +1355,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1369,7 +1370,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         <img src="/assets/images/portfolio/05.webp" alt="" />
                       </Link>
@@ -1395,7 +1396,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           {"Mercedes-Benz E-Class"}
                         </Link>
@@ -1432,7 +1433,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1447,7 +1448,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/ford-mustang-convertible"
+                        href={detailPath("car", "ford-mustang-convertible")}
                       >
                         <img src="/assets/images/portfolio/06.webp" alt="" />
                       </Link>
@@ -1473,7 +1474,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                         >
                           {"Ford Mustang Convertible"}
                         </Link>
@@ -1510,7 +1511,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1534,7 +1535,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         <img src="/assets/images/portfolio/04.webp" alt="" />
                       </Link>
@@ -1546,7 +1547,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           {"Thunderbolt Car"}
                         </Link>
@@ -1583,7 +1584,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1598,7 +1599,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         <img src="/assets/images/portfolio/05.webp" alt="" />
                       </Link>
@@ -1624,7 +1625,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           {"Mercedes-Benz E-Class"}
                         </Link>
@@ -1661,7 +1662,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1676,7 +1677,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/ford-mustang-convertible"
+                        href={detailPath("car", "ford-mustang-convertible")}
                       >
                         <img src="/assets/images/portfolio/06.webp" alt="" />
                       </Link>
@@ -1702,7 +1703,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                         >
                           {"Ford Mustang Convertible"}
                         </Link>
@@ -1739,7 +1740,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1754,7 +1755,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         <img src="/assets/images/portfolio/07.webp" alt="" />
                       </Link>
@@ -1780,7 +1781,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                         >
                           {"Mazda MX-5 Miata"}
                         </Link>
@@ -1817,7 +1818,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1832,7 +1833,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         <img src="/assets/images/portfolio/08.webp" alt="" />
                       </Link>
@@ -1858,7 +1859,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                         >
                           {"Honda Civic Hatchback"}
                         </Link>
@@ -1895,7 +1896,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1910,7 +1911,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         <img src="/assets/images/portfolio/09.webp" alt="" />
                       </Link>
@@ -1936,7 +1937,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                         >
                           {"Hyundai Veloster"}
                         </Link>
@@ -1973,7 +1974,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -1997,7 +1998,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         <img src="/assets/images/portfolio/07.webp" alt="" />
                       </Link>
@@ -2023,7 +2024,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                         >
                           {"Mazda MX-5 Miata"}
                         </Link>
@@ -2060,7 +2061,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mazda-mx-5-miata"
+                          href={detailPath("car", "mazda-mx-5-miata")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -2075,7 +2076,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         <img src="/assets/images/portfolio/08.webp" alt="" />
                       </Link>
@@ -2101,7 +2102,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                         >
                           {"Honda Civic Hatchback"}
                         </Link>
@@ -2138,7 +2139,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/honda-civic-hatchback"
+                          href={detailPath("car", "honda-civic-hatchback")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -2153,7 +2154,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         <img src="/assets/images/portfolio/09.webp" alt="" />
                       </Link>
@@ -2179,7 +2180,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                         >
                           {"Hyundai Veloster"}
                         </Link>
@@ -2216,7 +2217,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/hyundai-veloster"
+                          href={detailPath("car", "hyundai-veloster")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -2231,7 +2232,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         <img src="/assets/images/portfolio/04.webp" alt="" />
                       </Link>
@@ -2257,7 +2258,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           {"Thunderbolt Car"}
                         </Link>
@@ -2294,7 +2295,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -2309,7 +2310,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         <img src="/assets/images/portfolio/05.webp" alt="" />
                       </Link>
@@ -2335,7 +2336,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           {"Mercedes-Benz E-Class"}
                         </Link>
@@ -2372,7 +2373,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}
@@ -2387,7 +2388,7 @@ export default function HomeTwoPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/ford-mustang-convertible"
+                        href={detailPath("car", "ford-mustang-convertible")}
                       >
                         <img src="/assets/images/portfolio/06.webp" alt="" />
                       </Link>
@@ -2413,7 +2414,7 @@ export default function HomeTwoPortfolioArea2() {
                       <h6 className="title cw">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                         >
                           {"Ford Mustang Convertible"}
                         </Link>
@@ -2450,7 +2451,7 @@ export default function HomeTwoPortfolioArea2() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/ford-mustang-convertible"
+                          href={detailPath("car", "ford-mustang-convertible")}
                           className="rts-btn btn-primary radius-small"
                         >
                           {"View Details"}

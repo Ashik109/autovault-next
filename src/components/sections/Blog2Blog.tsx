@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 export default function Blog2Blog() {
@@ -13,7 +14,10 @@ export default function Blog2Blog() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                        href={detailPath(
+                          "blog",
+                          "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                        )}
                       >
                         <img src="/assets/images/blog/01.webp" alt="" />
                       </Link>
@@ -25,7 +29,10 @@ export default function Blog2Blog() {
                       <h5>
                         <Link
                           prefetch={false}
-                          href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                          href={detailPath(
+                            "blog",
+                            "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                          )}
                         >
                           {
                             "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly"
@@ -50,7 +57,10 @@ export default function Blog2Blog() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                        href={detailPath(
+                          "blog",
+                          "how-regular-maintenance-can-save-you-thousands-in-repairs",
+                        )}
                       >
                         <img src="/assets/images/blog/02.webp" alt="" />
                       </Link>
@@ -62,7 +72,10 @@ export default function Blog2Blog() {
                       <h5>
                         <Link
                           prefetch={false}
-                          href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                          href={detailPath(
+                            "blog",
+                            "how-regular-maintenance-can-save-you-thousands-in-repairs",
+                          )}
                         >
                           {
                             "How Regular Maintenance Can Save You Thousands in Repairs"
@@ -87,7 +100,10 @@ export default function Blog2Blog() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/blog-details/top-5-reasons-to-buy-a-certified-pre-owned-vehicle"
+                        href={detailPath(
+                          "blog",
+                          "top-5-reasons-to-buy-a-certified-pre-owned-vehicle",
+                        )}
                       >
                         <img src="/assets/images/blog/02.webp" alt="" />
                       </Link>
@@ -99,7 +115,10 @@ export default function Blog2Blog() {
                       <h5>
                         <Link
                           prefetch={false}
-                          href="/blog-details/top-5-reasons-to-buy-a-certified-pre-owned-vehicle"
+                          href={detailPath(
+                            "blog",
+                            "top-5-reasons-to-buy-a-certified-pre-owned-vehicle",
+                          )}
                         >
                           {"Top 5 Reasons to Buy a Certified Pre-Owned Vehicle"}
                         </Link>
@@ -122,7 +141,10 @@ export default function Blog2Blog() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/blog-details/what-to-expect-during-your-next-test-drive"
+                        href={detailPath(
+                          "blog",
+                          "what-to-expect-during-your-next-test-drive",
+                        )}
                       >
                         <img src="/assets/images/blog/06.webp" alt="" />
                       </Link>
@@ -134,7 +156,10 @@ export default function Blog2Blog() {
                       <h5>
                         <Link
                           prefetch={false}
-                          href="/blog-details/what-to-expect-during-your-next-test-drive"
+                          href={detailPath(
+                            "blog",
+                            "what-to-expect-during-your-next-test-drive",
+                          )}
                         >
                           {"What to Expect During Your Next Test Drive"}
                         </Link>
@@ -249,7 +274,10 @@ export default function Blog2Blog() {
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                          href={detailPath(
+                            "blog",
+                            "10-tips-for-first-time-car-what-you-need-to-know",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-01.webp"
@@ -263,7 +291,10 @@ export default function Blog2Blog() {
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                            href={detailPath(
+                              "blog",
+                              "10-tips-for-first-time-car-what-you-need-to-know",
+                            )}
                           >
                             {"10 Tips for First-Time Car What You Need to Know"}
                           </Link>
@@ -277,7 +308,10 @@ export default function Blog2Blog() {
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                          href={detailPath(
+                            "blog",
+                            "top-5-reasons-to-buy-a-for-pre-owned-vehicle",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-02.webp"
@@ -291,7 +325,10 @@ export default function Blog2Blog() {
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                            href={detailPath(
+                              "blog",
+                              "top-5-reasons-to-buy-a-for-pre-owned-vehicle",
+                            )}
                           >
                             {"Top 5 Reasons to Buy a for Pre-Owned Vehicle"}
                           </Link>
@@ -305,7 +342,10 @@ export default function Blog2Blog() {
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                          href={detailPath(
+                            "blog",
+                            "how-to-choose-the-perfect-car-for-your-lifestyle",
+                          )}
                         >
                           <img
                             src="/assets/images/blog/sm-03.webp"
@@ -319,7 +359,10 @@ export default function Blog2Blog() {
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                            href={detailPath(
+                              "blog",
+                              "how-to-choose-the-perfect-car-for-your-lifestyle",
+                            )}
                           >
                             {"How to Choose the Perfect Car for Your Lifestyle"}
                           </Link>

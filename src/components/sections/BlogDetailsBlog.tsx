@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function BlogDetailsBlog() {
   return (
@@ -10,7 +11,10 @@ export default function BlogDetailsBlog() {
             <div className="image-area">
               <Link
                 prefetch={false}
-                href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                href={detailPath(
+                  "blog",
+                  "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                )}
               >
                 <img src="/assets/images/blog/01.webp" alt="" />
               </Link>
@@ -22,7 +26,10 @@ export default function BlogDetailsBlog() {
               <h6>
                 <Link
                   prefetch={false}
-                  href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                  href={detailPath(
+                    "blog",
+                    "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                  )}
                 >
                   {
                     "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly"
@@ -47,7 +54,10 @@ export default function BlogDetailsBlog() {
             <div className="image-area">
               <Link
                 prefetch={false}
-                href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                href={detailPath(
+                  "blog",
+                  "how-regular-maintenance-can-save-you-thousands-in-repairs",
+                )}
               >
                 <img src="/assets/images/blog/02.webp" alt="" />
               </Link>
@@ -59,7 +69,10 @@ export default function BlogDetailsBlog() {
               <h6>
                 <Link
                   prefetch={false}
-                  href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                  href={detailPath(
+                    "blog",
+                    "how-regular-maintenance-can-save-you-thousands-in-repairs",
+                  )}
                 >
                   {"How Regular Maintenance Can Save You Thousands in Repairs"}
                 </Link>

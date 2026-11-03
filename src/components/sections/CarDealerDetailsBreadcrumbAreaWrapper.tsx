@@ -13,9 +13,9 @@ export default function CarDealerDetailsBreadcrumbAreaWrapper({
             {"Home"}
           </Link>
 
-          <a href="#" className="current">
+          <Link href="/car-dealer" className="current">
             {"Dealar"}
-          </a>
+          </Link>
         </div>
 
         <h1 className="title">{record.title}</h1>

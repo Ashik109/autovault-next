@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function MobileMenu() {
   return (
@@ -137,7 +138,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/portfolio-details/mercedes-benz-e-class"
+                    href={detailPath("car", "mercedes-benz-e-class")}
                   >
                     {"Car Single"}
                   </Link>
@@ -147,7 +148,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/portfolio-details-2/mercedes-benz-e-class"
+                    href={detailPath("car", "mercedes-benz-e-class", true)}
                   >
                     {"Car Single Two"}
                   </Link>
@@ -206,7 +207,10 @@ export default function MobileMenu() {
                 <li>
                   <Link
                     prefetch={false}
-                    href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                    href={detailPath(
+                      "blog",
+                      "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                    )}
                   >
                     {"Blog Single"}
                   </Link>
@@ -260,7 +264,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/shop-details/power-steering-pump"
+                    href={detailPath("product", "power-steering-pump")}
                   >
                     {"Shop Single"}
                   </Link>

@@ -32,10 +32,10 @@ const catalog = JSON.parse(
   fs.readFileSync("src/data/detail-catalog.json", "utf8"),
 );
 const detailBases = {
-  car: ["portfolio-details", "portfolio-details-2"],
-  blog: ["blog-details"],
-  dealer: ["car-dealer-details"],
-  product: ["shop-details"],
+  car: ["car", "car-two", "portfolio-details", "portfolio-details-2"],
+  blog: ["blog", "blog-details"],
+  dealer: ["dealer", "car-dealer-details"],
+  product: ["product", "shop-details"],
 };
 for (const [kind, records] of Object.entries(catalog))
   for (const record of Object.values(records))
@@ -70,6 +70,39 @@ for (const file of sourceFiles.filter((file) => file.endsWith(".tsx"))) {
     ts.ScriptKind.TSX,
   );
   function visit(node) {
+    if (
+      ts.isJsxAttribute(node) &&
+      node.name.getText(tree) === "href" &&
+      node.initializer &&
+      ts.isJsxExpression(node.initializer)
+    ) {
+      const call = node.initializer.expression;
+      if (
+        call &&
+        ts.isCallExpression(call) &&
+        call.expression.getText(tree) === "detailPath"
+      ) {
+        const [kind, slug, alternate] = call.arguments;
+        if (
+          kind &&
+          slug &&
+          ts.isStringLiteral(kind) &&
+          ts.isStringLiteral(slug)
+        ) {
+          const record = catalog[kind.text]?.[slug.text];
+          if (!record)
+            errors.add(
+              `${file}: missing detail record ${kind.text}/${slug.text}`,
+            );
+          const base =
+            detailBases[kind.text]?.[
+              alternate?.kind === ts.SyntaxKind.TrueKeyword ? 1 : 0
+            ];
+          if (!routes.has(`/${base}/${slug.text}`))
+            errors.add(`${file}: invalid detail helper target`);
+        }
+      }
+    }
     if (
       ts.isJsxAttribute(node) &&
       node.initializer &&

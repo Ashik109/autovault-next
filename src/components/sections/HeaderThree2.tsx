@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HeaderThree2() {
   return (
@@ -164,7 +165,10 @@ export default function HeaderThree2() {
                             <li>
                               <Link
                                 prefetch={false}
-                                href="/portfolio-details/mercedes-benz-e-class"
+                                href={detailPath(
+                                  "car",
+                                  "mercedes-benz-e-class",
+                                )}
                               >
                                 {"Car Single"}
                               </Link>
@@ -173,7 +177,11 @@ export default function HeaderThree2() {
                             <li>
                               <Link
                                 prefetch={false}
-                                href="/portfolio-details-2/mercedes-benz-e-class"
+                                href={detailPath(
+                                  "car",
+                                  "mercedes-benz-e-class",
+                                  true,
+                                )}
                               >
                                 {"Car Single Two"}
                               </Link>
@@ -220,7 +228,10 @@ export default function HeaderThree2() {
                             <li>
                               <Link
                                 prefetch={false}
-                                href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                                href={detailPath(
+                                  "blog",
+                                  "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+                                )}
                               >
                                 {"Blog Single"}
                               </Link>
@@ -291,7 +302,10 @@ export default function HeaderThree2() {
                             <li>
                               <Link
                                 prefetch={false}
-                                href="/shop-details/power-steering-pump"
+                                href={detailPath(
+                                  "product",
+                                  "power-steering-pump",
+                                )}
                               >
                                 {"Shop Single"}
                               </Link>

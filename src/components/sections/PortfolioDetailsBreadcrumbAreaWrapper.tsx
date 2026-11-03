@@ -38,9 +38,9 @@ export default function PortfolioDetailsBreadcrumbAreaWrapper({
           {"Home"}
         </Link>
 
-        <a href="#" className="current">
+        <Link href="/portfolio" className="current">
           {"Cars"}
-        </a>
+        </Link>
       </div>
     </div>
   );

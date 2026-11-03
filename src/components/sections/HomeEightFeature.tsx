@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HomeEightFeature() {
   return (
@@ -41,7 +42,7 @@ export default function HomeEightFeature() {
                     <h6 className="title">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/thunderbolt-car"
+                        href={detailPath("car", "thunderbolt-car")}
                       >
                         {"Thunderbolt Car"}
                       </Link>
@@ -75,7 +76,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/thunderbolt-car"
+                      href={detailPath("car", "thunderbolt-car")}
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -106,7 +107,7 @@ export default function HomeEightFeature() {
                     <h6 className="title">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mazda-mx-5-miata"
+                        href={detailPath("car", "mazda-mx-5-miata")}
                       >
                         {"Mazda MX-5 Miata"}
                       </Link>
@@ -140,7 +141,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mazda-mx-5-miata"
+                      href={detailPath("car", "mazda-mx-5-miata")}
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -171,7 +172,7 @@ export default function HomeEightFeature() {
                     <h6 className="title">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/mercedes-benz-e-class"
+                        href={detailPath("car", "mercedes-benz-e-class")}
                       >
                         {"Mercedes-Benz E-Class"}
                       </Link>
@@ -205,7 +206,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/mercedes-benz-e-class"
+                      href={detailPath("car", "mercedes-benz-e-class")}
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -236,7 +237,7 @@ export default function HomeEightFeature() {
                     <h6 className="title">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/honda-civic-hatchback"
+                        href={detailPath("car", "honda-civic-hatchback")}
                       >
                         {"Honda Civic Hatchback"}
                       </Link>
@@ -270,7 +271,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/honda-civic-hatchback"
+                      href={detailPath("car", "honda-civic-hatchback")}
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -301,7 +302,7 @@ export default function HomeEightFeature() {
                     <h6 className="title">
                       <Link
                         prefetch={false}
-                        href="/portfolio-details/hyundai-veloster"
+                        href={detailPath("car", "hyundai-veloster")}
                       >
                         {"Hyundai Veloster"}
                       </Link>
@@ -335,7 +336,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details/hyundai-veloster"
+                      href={detailPath("car", "hyundai-veloster")}
                       className="rts-btn radius-big"
                     >
                       {"View Details"}

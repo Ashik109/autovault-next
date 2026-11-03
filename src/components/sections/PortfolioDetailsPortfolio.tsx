@@ -1,4 +1,5 @@
 import type { DetailRecord } from "@/data/details";
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import CarDealerDetailsVideo from "@/components/sections/CarDealerDetailsVideo";
@@ -540,7 +541,7 @@ export default function PortfolioDetailsPortfolio({
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/thunderbolt-car"
+                          href={detailPath("car", "thunderbolt-car")}
                         >
                           <img src="/assets/images/portfolio/04.webp" alt="" />
                         </Link>
@@ -566,7 +567,7 @@ export default function PortfolioDetailsPortfolio({
                         <h6 className="title ">
                           <Link
                             prefetch={false}
-                            href="/portfolio-details/thunderbolt-car"
+                            href={detailPath("car", "thunderbolt-car")}
                           >
                             {"Thunderbolt Car"}
                           </Link>
@@ -603,7 +604,7 @@ export default function PortfolioDetailsPortfolio({
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details/thunderbolt-car"
+                            href={detailPath("car", "thunderbolt-car")}
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}
@@ -618,7 +619,7 @@ export default function PortfolioDetailsPortfolio({
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/portfolio-details/mercedes-benz-e-class"
+                          href={detailPath("car", "mercedes-benz-e-class")}
                         >
                           <img src="/assets/images/portfolio/05.webp" alt="" />
                         </Link>
@@ -644,7 +645,7 @@ export default function PortfolioDetailsPortfolio({
                         <h6 className="title ">
                           <Link
                             prefetch={false}
-                            href="/portfolio-details/mercedes-benz-e-class"
+                            href={detailPath("car", "mercedes-benz-e-class")}
                           >
                             {"Mercedes-Benz E-Class"}
                           </Link>
@@ -681,7 +682,7 @@ export default function PortfolioDetailsPortfolio({
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details/mercedes-benz-e-class"
+                            href={detailPath("car", "mercedes-benz-e-class")}
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}

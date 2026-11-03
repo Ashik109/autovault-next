@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HomeEightBlog() {
   return (
@@ -56,7 +57,10 @@ export default function HomeEightBlog() {
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/review-the-latest-car-models-and-compare-them-with-similar-car-vehicles"
+                          href={detailPath(
+                            "blog",
+                            "review-the-latest-car-models-and-compare-them-with-similar-car-vehicles",
+                          )}
                         >
                           <img src="/assets/images/blog/01.webp" alt="" />
                         </Link>
@@ -68,7 +72,10 @@ export default function HomeEightBlog() {
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/review-the-latest-car-models-and-compare-them-with-similar-car-vehicles"
+                            href={detailPath(
+                              "blog",
+                              "review-the-latest-car-models-and-compare-them-with-similar-car-vehicles",
+                            )}
                           >
                             {
                               "Review the Latest Car Models And Compare Them With Similar Car Vehicles"
@@ -84,7 +91,10 @@ export default function HomeEightBlog() {
                       <div className="image-area">
                         <Link
                           prefetch={false}
-                          href="/blog-details/focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars"
+                          href={detailPath(
+                            "blog",
+                            "focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars",
+                          )}
                         >
                           <img src="/assets/images/blog/02.webp" alt="" />
                         </Link>
@@ -96,7 +106,10 @@ export default function HomeEightBlog() {
                         <h6>
                           <Link
                             prefetch={false}
-                            href="/blog-details/focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars"
+                            href={detailPath(
+                              "blog",
+                              "focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars",
+                            )}
                           >
                             {
                               "Focus on the rapidly growing market for electric vehicles and green cars."

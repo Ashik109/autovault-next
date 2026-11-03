@@ -6,6 +6,7 @@ import { detailPath, type DetailKind } from "../src/lib/detail-paths";
 const families: {
   kind: DetailKind;
   base: string;
+  legacy: string;
   list: string;
   card: string;
   heading: string;
@@ -13,7 +14,8 @@ const families: {
 }[] = [
   {
     kind: "car",
-    base: "portfolio-details",
+    base: "car",
+    legacy: "portfolio-details",
     list: "/portfolio",
     card: ".project-wrapper2",
     heading: "h1",
@@ -21,7 +23,8 @@ const families: {
   },
   {
     kind: "blog",
-    base: "blog-details",
+    base: "blog",
+    legacy: "blog-details",
     list: "/blog",
     card: ".blog-wrapper",
     heading: "h1",
@@ -29,7 +32,8 @@ const families: {
   },
   {
     kind: "dealer",
-    base: "car-dealer-details",
+    base: "dealer",
+    legacy: "car-dealer-details",
     list: "/car-dealer",
     card: ".dealer-wrapper",
     heading: "h1",
@@ -37,7 +41,8 @@ const families: {
   },
   {
     kind: "product",
-    base: "shop-details",
+    base: "product",
+    legacy: "shop-details",
     list: "/shop",
     card: ".project-wrapper4",
     heading: ".ms-single-product_title",
@@ -48,9 +53,9 @@ const families: {
 test("every catalog slug renders its record and unknown slugs return HTTP 404", async ({
   request,
 }) => {
-  for (const { kind, base } of [
+  for (const { kind, base, legacy: legacyBase } of [
     ...families,
-    { ...families[0], base: "portfolio-details-2" },
+    { ...families[0], base: "car-two", legacy: "portfolio-details-2" },
   ]) {
     for (const record of Object.values(catalog[kind])) {
       const url = `/${base}/${record.slug}`;
@@ -59,13 +64,18 @@ test("every catalog slug renders its record and unknown slugs return HTTP 404", 
       const html = await response.text();
       expect(html, url).toContain(`data-detail-slug="${record.slug}"`);
       expect(html, url).toContain(`data-detail-kind="${kind}"`);
+      const alias = await request.get(`/${legacyBase}/${record.slug}`, {
+        maxRedirects: 0,
+      });
+      expect(alias.status()).toBe(308);
+      expect(alias.headers().location).toBe(url);
     }
     for (const slug of ["this-item-does-not-exist", "constructor", "__proto__"])
       expect(
         (await request.get(`/${base}/${slug}`)).status(),
         `${base}/${slug}`,
       ).toBe(404);
-    const legacy = await request.get(`/${base}`, { maxRedirects: 0 });
+    const legacy = await request.get(`/${legacyBase}`, { maxRedirects: 0 });
     expect(legacy.status()).toBe(308);
     expect(legacy.headers().location).toBe(`/${base}/${defaults[kind]}`);
   }
@@ -112,6 +122,7 @@ test("listing card images, titles and buttons point to the matching record slug"
 }) => {
   for (const { kind, base, list, card } of families) {
     await page.goto(list);
+    await expect(page.locator('a[href*="-details/"]')).toHaveCount(0);
     const first = page.locator(card).first();
     const titleLink = first
       .locator(`h1 a, h2 a, h3 a, h4 a, h5 a, h6 a`)
@@ -133,6 +144,35 @@ test("listing card images, titles and buttons point to the matching record slug"
       "data-detail-slug",
       record.slug,
     );
+  }
+});
+
+test("details breadcrumbs and related cards use clean record links", async ({
+  page,
+  request,
+}) => {
+  for (const family of families.filter(({ kind }) => kind !== "product")) {
+    const record = Object.values(catalog[family.kind])[0];
+    await page.goto(`/${family.base}/${record.slug}`);
+    const root = page.locator("[data-autovault-page]:visible");
+    await expect(root.locator('a[href*="-details/"]')).toHaveCount(0);
+    if (family.kind === "car" || family.kind === "dealer") {
+      await expect(
+        root.locator(".nav-bread-crumb a.current").first(),
+      ).toHaveAttribute(
+        "href",
+        family.kind === "car" ? "/portfolio" : "/car-dealer",
+      );
+    }
+    const related = await root
+      .locator(
+        '.rts-portfolio-area a[href^="/car/"], .rts-portfolio-area a[href^="/blog/"]',
+      )
+      .evaluateAll((links) => links.map((link) => link.getAttribute("href")!));
+    const unique = [...new Set(related)];
+    expect(unique.length).toBeGreaterThanOrEqual(2);
+    for (const url of unique)
+      expect((await request.get(url)).status(), url).toBe(200);
   }
 });
 

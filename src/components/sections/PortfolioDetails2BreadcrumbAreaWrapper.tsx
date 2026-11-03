@@ -13,9 +13,9 @@ export default function PortfolioDetails2BreadcrumbAreaWrapper({
             {"Home"}
           </Link>
 
-          <a href="#" className="current">
+          <Link href="/portfolio-2" className="current">
             {"Cars"}
-          </a>
+          </Link>
         </div>
 
         <h1 className="title">{record.title}</h1>

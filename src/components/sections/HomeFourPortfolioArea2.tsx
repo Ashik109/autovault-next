@@ -1,3 +1,4 @@
+import { detailPath } from "@/lib/detail-paths";
 import Link from "next/link";
 export default function HomeFourPortfolioArea2() {
   return (
@@ -72,7 +73,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-parts-gears-and-equipment"
+                        href={detailPath(
+                          "product",
+                          "car-parts-gears-and-equipment",
+                        )}
                       >
                         <img src="/assets/images/portfolio/11.webp" alt="" />
                       </Link>
@@ -104,7 +108,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-parts-gears-and-equipment"
+                          href={detailPath(
+                            "product",
+                            "car-parts-gears-and-equipment",
+                          )}
                         >
                           {"Car Parts Gears and Equipment"}
                         </Link>
@@ -164,7 +171,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/power-steering-pump"
+                        href={detailPath("product", "power-steering-pump")}
                       >
                         <img src="/assets/images/portfolio/12.webp" alt="" />
                       </Link>
@@ -198,7 +205,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/power-steering-pump"
+                          href={detailPath("product", "power-steering-pump")}
                         >
                           {"Power Steering Pump"}
                         </Link>
@@ -258,7 +265,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/high-performance-tires"
+                        href={detailPath("product", "high-performance-tires")}
                       >
                         <img src="/assets/images/portfolio/13.webp" alt="" />
                       </Link>
@@ -290,7 +297,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/high-performance-tires"
+                          href={detailPath("product", "high-performance-tires")}
                         >
                           {"High-Performance Tires"}
                         </Link>
@@ -350,7 +357,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/micrometer-with-check-ring"
+                        href={detailPath(
+                          "product",
+                          "micrometer-with-check-ring",
+                        )}
                       >
                         <img src="/assets/images/portfolio/14.webp" alt="" />
                       </Link>
@@ -382,7 +392,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/micrometer-with-check-ring"
+                          href={detailPath(
+                            "product",
+                            "micrometer-with-check-ring",
+                          )}
                         >
                           {"Micrometer with check ring"}
                         </Link>
@@ -442,7 +455,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-parts-mufflers-and-pipes"
+                        href={detailPath(
+                          "product",
+                          "car-parts-mufflers-and-pipes",
+                        )}
                       >
                         <img src="/assets/images/portfolio/15.webp" alt="" />
                       </Link>
@@ -474,7 +490,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-parts-mufflers-and-pipes"
+                          href={detailPath(
+                            "product",
+                            "car-parts-mufflers-and-pipes",
+                          )}
                         >
                           {"Car Parts Mufflers And Pipes"}
                         </Link>
@@ -534,7 +553,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-gears-machine-part"
+                        href={detailPath("product", "car-gears-machine-part")}
                       >
                         <img src="/assets/images/portfolio/16.webp" alt="" />
                       </Link>
@@ -566,7 +585,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-gears-machine-part"
+                          href={detailPath("product", "car-gears-machine-part")}
                         >
                           {"Car Gears Machine part"}
                         </Link>
@@ -635,7 +654,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/micrometer-with-check-ring"
+                        href={detailPath(
+                          "product",
+                          "micrometer-with-check-ring",
+                        )}
                       >
                         <img src="/assets/images/portfolio/14.webp" alt="" />
                       </Link>
@@ -667,7 +689,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/micrometer-with-check-ring"
+                          href={detailPath(
+                            "product",
+                            "micrometer-with-check-ring",
+                          )}
                         >
                           {"Micrometer with check ring"}
                         </Link>
@@ -727,7 +752,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-parts-mufflers-and-pipes"
+                        href={detailPath(
+                          "product",
+                          "car-parts-mufflers-and-pipes",
+                        )}
                       >
                         <img src="/assets/images/portfolio/15.webp" alt="" />
                       </Link>
@@ -759,7 +787,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-parts-mufflers-and-pipes"
+                          href={detailPath(
+                            "product",
+                            "car-parts-mufflers-and-pipes",
+                          )}
                         >
                           {"Car Parts Mufflers And Pipes"}
                         </Link>
@@ -819,7 +850,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-gears-machine-part"
+                        href={detailPath("product", "car-gears-machine-part")}
                       >
                         <img src="/assets/images/portfolio/16.webp" alt="" />
                       </Link>
@@ -851,7 +882,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-gears-machine-part"
+                          href={detailPath("product", "car-gears-machine-part")}
                         >
                           {"Car Gears Machine part"}
                         </Link>
@@ -911,7 +942,10 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/car-parts-gears-and-equipment"
+                        href={detailPath(
+                          "product",
+                          "car-parts-gears-and-equipment",
+                        )}
                       >
                         <img src="/assets/images/portfolio/11.webp" alt="" />
                       </Link>
@@ -943,7 +977,10 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/car-parts-gears-and-equipment"
+                          href={detailPath(
+                            "product",
+                            "car-parts-gears-and-equipment",
+                          )}
                         >
                           {"Car Parts Gears and Equipment"}
                         </Link>
@@ -1003,7 +1040,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/power-steering-pump"
+                        href={detailPath("product", "power-steering-pump")}
                       >
                         <img src="/assets/images/portfolio/12.webp" alt="" />
                       </Link>
@@ -1037,7 +1074,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/power-steering-pump"
+                          href={detailPath("product", "power-steering-pump")}
                         >
                           {"Power Steering Pump"}
                         </Link>
@@ -1097,7 +1134,7 @@ export default function HomeFourPortfolioArea2() {
                     <div className="image-area">
                       <Link
                         prefetch={false}
-                        href="/shop-details/high-performance-tires"
+                        href={detailPath("product", "high-performance-tires")}
                       >
                         <img src="/assets/images/portfolio/13.webp" alt="" />
                       </Link>
@@ -1129,7 +1166,7 @@ export default function HomeFourPortfolioArea2() {
                       <h6 className="title ">
                         <Link
                           prefetch={false}
-                          href="/shop-details/high-performance-tires"
+                          href={detailPath("product", "high-performance-tires")}
                         >
                           {"High-Performance Tires"}
                         </Link>
