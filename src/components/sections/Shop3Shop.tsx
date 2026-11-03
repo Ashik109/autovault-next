@@ -488,7 +488,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/car-parts-gears-and-equipment"
+                      >
                         <img src="/assets/images/portfolio/11.webp" alt="" />
                       </Link>
                     </div>
@@ -517,7 +520,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/car-parts-gears-and-equipment"
+                        >
                           {"Car Parts Gears and Equipment"}
                         </Link>
                       </h6>
@@ -574,7 +580,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/power-steering-pump"
+                      >
                         <img src="/assets/images/portfolio/12.webp" alt="" />
                       </Link>
                     </div>
@@ -605,7 +614,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/power-steering-pump"
+                        >
                           {"Power Steering Pump"}
                         </Link>
                       </h6>
@@ -662,7 +674,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/high-performance-tires"
+                      >
                         <img src="/assets/images/portfolio/13.webp" alt="" />
                       </Link>
                     </div>
@@ -691,7 +706,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/high-performance-tires"
+                        >
                           {"High-Performance Tires"}
                         </Link>
                       </h6>
@@ -748,7 +766,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/micrometer-with-check-ring"
+                      >
                         <img src="/assets/images/portfolio/14.webp" alt="" />
                       </Link>
                     </div>
@@ -777,7 +798,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/micrometer-with-check-ring"
+                        >
                           {"Micrometer with check ring"}
                         </Link>
                       </h6>
@@ -834,7 +858,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/car-parts-mufflers-and-pipes"
+                      >
                         <img src="/assets/images/portfolio/15.webp" alt="" />
                       </Link>
                     </div>
@@ -863,7 +890,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/car-parts-mufflers-and-pipes"
+                        >
                           {"Car Parts Mufflers And Pipes"}
                         </Link>
                       </h6>
@@ -920,7 +950,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/car-gears-machine-part"
+                      >
                         <img src="/assets/images/portfolio/16.webp" alt="" />
                       </Link>
                     </div>
@@ -949,7 +982,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/car-gears-machine-part"
+                        >
                           {"Car Gears Machine part"}
                         </Link>
                       </h6>
@@ -1006,7 +1042,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/car-parts-gears-and-equipment"
+                      >
                         <img src="/assets/images/portfolio/11.webp" alt="" />
                       </Link>
                     </div>
@@ -1035,7 +1074,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/car-parts-gears-and-equipment"
+                        >
                           {"Car Parts Gears and Equipment"}
                         </Link>
                       </h6>
@@ -1092,7 +1134,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/power-steering-pump"
+                      >
                         <img src="/assets/images/portfolio/12.webp" alt="" />
                       </Link>
                     </div>
@@ -1123,7 +1168,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/power-steering-pump"
+                        >
                           {"Power Steering Pump"}
                         </Link>
                       </h6>
@@ -1180,7 +1228,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/car-parts-gears-and-equipment"
+                      >
                         <img src="/assets/images/portfolio/11.webp" alt="" />
                       </Link>
                     </div>
@@ -1209,7 +1260,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/car-parts-gears-and-equipment"
+                        >
                           {"Car Parts Gears and Equipment"}
                         </Link>
                       </h6>
@@ -1266,7 +1320,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/power-steering-pump"
+                      >
                         <img src="/assets/images/portfolio/12.webp" alt="" />
                       </Link>
                     </div>
@@ -1297,7 +1354,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/power-steering-pump"
+                        >
                           {"Power Steering Pump"}
                         </Link>
                       </h6>
@@ -1354,7 +1414,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/high-performance-tires"
+                      >
                         <img src="/assets/images/portfolio/13.webp" alt="" />
                       </Link>
                     </div>
@@ -1383,7 +1446,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/high-performance-tires"
+                        >
                           {"High-Performance Tires"}
                         </Link>
                       </h6>
@@ -1440,7 +1506,10 @@ export default function Shop3Shop() {
                 <div className="col-lg-6 col-md-6">
                   <div className="project-wrapper4">
                     <div className="image-area">
-                      <Link prefetch={false} href="/shop-details">
+                      <Link
+                        prefetch={false}
+                        href="/shop-details/micrometer-with-check-ring"
+                      >
                         <img src="/assets/images/portfolio/14.webp" alt="" />
                       </Link>
                     </div>
@@ -1469,7 +1538,10 @@ export default function Shop3Shop() {
                       </ul>
 
                       <h6 className="title ">
-                        <Link prefetch={false} href="/shop-details">
+                        <Link
+                          prefetch={false}
+                          href="/shop-details/micrometer-with-check-ring"
+                        >
                           {"Micrometer with check ring"}
                         </Link>
                       </h6>

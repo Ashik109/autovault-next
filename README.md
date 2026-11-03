@@ -30,6 +30,19 @@ Other pages include `/about`, `/service`, `/pricing`, `/faq`, `/team`, `/contact
 
 Broken source-template links to `portfolio-two`, `portfolio-three`, `single-product` and `service-details` now point to the corresponding existing Next.js pages. The source's wishlist placeholder has a working saved-cars page.
 
+## Slug-based details
+
+All five detail layouts load records from `src/data/detail-catalog.json`:
+
+- `/portfolio-details/[slug]` and `/portfolio-details-2/[slug]`: two car layouts.
+- `/blog-details/[slug]`: articles.
+- `/car-dealer-details/[slug]`: dealers.
+- `/shop-details/[slug]`: products, including the sample cart products.
+
+The catalog contains 8 cars, 16 articles, 9 dealers and 10 products. Pages use `generateStaticParams`, await route params, load the matching record, and generate record-specific metadata/canonical URLs. Titles, main images/galleries, prices and vehicle specs come from the selected record, retaining the original layouts and template body copy. Edit the catalog to change records; update the corresponding listing cards alongside it. `src/lib/detail-paths.ts` provides path and slug helpers.
+
+The former bare detail URLs permanently redirect to their default record from `src/data/detail-defaults.json`. Unknown slugs return HTTP 404; `src/proxy.ts` validates records before streamed rendering begins. Listing images, titles, buttons, related cards, cart items and saved cars use slug URLs.
+
 ## Interactions and backend scope
 
 Sliders, synchronized galleries, media popups, mobile navigation, search, tabs, accordions, price-range controls, counters and scroll controls initialize on client navigation and clean up when leaving a page. Nice Select uses the original dropdown styling, supports keyboard access and keeps the underlying form fields synchronized. Jarallax restores desktop background parallax; mobile and reduced-motion layouts keep static backgrounds. Both plugins initialize within the active route and are destroyed on navigation. The loan calculator includes a loan term, zero-interest handling and down-payment validation.

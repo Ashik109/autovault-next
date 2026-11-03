@@ -1,29 +1,34 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
-export default function PortfolioDetailsBreadcrumbAreaWrapper() {
+export default function PortfolioDetailsBreadcrumbAreaWrapper({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="breadcrumb-area-wrapper">
       <div className="left">
-        <h1 className="title">{"Mercedes-Benz E-Class"}</h1>
+        <h1 className="title">{record.title}</h1>
 
         <ul className="feature-area">
           <li>
             <img src="/assets/images/portfolio/feature-icon/05.svg" alt="" />
-            {" 100 Miles "}
+            {record.mileage}
           </li>
 
           <li>
             <img src="/assets/images/portfolio/feature-icon/06.svg" alt="" />
-            {" Petrol "}
+            {record.fuel}
           </li>
 
           <li>
             <img src="/assets/images/portfolio/feature-icon/07.svg" alt="" />
-            {" Autometic "}
+            {record.transmission}
           </li>
 
           <li>
             <img src="/assets/images/portfolio/feature-icon/08.svg" alt="" />
-            {" Person "}
+            {record.seats}
           </li>
         </ul>
       </div>

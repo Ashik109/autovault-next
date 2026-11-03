@@ -110,7 +110,10 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link
+                  prefetch={false}
+                  href="/shop-details/car-parts-gears-and-equipment"
+                >
                   <img src="/assets/images/portfolio/11.webp" alt="" />
                 </Link>
               </div>
@@ -139,7 +142,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/car-parts-gears-and-equipment"
+                  >
                     {"Car Parts Gears and Equipment"}
                   </Link>
                 </h6>
@@ -149,7 +155,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/car-parts-gears-and-equipment"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}
@@ -192,7 +198,7 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link prefetch={false} href="/shop-details/power-steering-pump">
                   <img src="/assets/images/portfolio/12.webp" alt="" />
                 </Link>
               </div>
@@ -223,7 +229,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/power-steering-pump"
+                  >
                     {"Power Steering Pump"}
                   </Link>
                 </h6>
@@ -233,7 +242,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/power-steering-pump"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}
@@ -276,7 +285,10 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link
+                  prefetch={false}
+                  href="/shop-details/high-performance-tires"
+                >
                   <img src="/assets/images/portfolio/13.webp" alt="" />
                 </Link>
               </div>
@@ -305,7 +317,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/high-performance-tires"
+                  >
                     {"High-Performance Tires"}
                   </Link>
                 </h6>
@@ -315,7 +330,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/high-performance-tires"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}
@@ -358,7 +373,10 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link
+                  prefetch={false}
+                  href="/shop-details/micrometer-with-check-ring"
+                >
                   <img src="/assets/images/portfolio/14.webp" alt="" />
                 </Link>
               </div>
@@ -387,7 +405,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/micrometer-with-check-ring"
+                  >
                     {"Micrometer with check ring"}
                   </Link>
                 </h6>
@@ -397,7 +418,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/micrometer-with-check-ring"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}
@@ -440,7 +461,10 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link
+                  prefetch={false}
+                  href="/shop-details/car-parts-mufflers-and-pipes"
+                >
                   <img src="/assets/images/portfolio/15.webp" alt="" />
                 </Link>
               </div>
@@ -469,7 +493,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/car-parts-mufflers-and-pipes"
+                  >
                     {"Car Parts Mufflers And Pipes"}
                   </Link>
                 </h6>
@@ -479,7 +506,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/car-parts-mufflers-and-pipes"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}
@@ -522,7 +549,10 @@ export default function ShopCopyShop() {
           <div className="col-lg-4 col-md-6">
             <div className="project-wrapper4">
               <div className="image-area">
-                <Link prefetch={false} href="/portfolio-details">
+                <Link
+                  prefetch={false}
+                  href="/shop-details/car-gears-machine-part"
+                >
                   <img src="/assets/images/portfolio/16.webp" alt="" />
                 </Link>
               </div>
@@ -551,7 +581,10 @@ export default function ShopCopyShop() {
                 </ul>
 
                 <h6 className="title ">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/shop-details/car-gears-machine-part"
+                  >
                     {"Car Gears Machine part"}
                   </Link>
                 </h6>
@@ -561,7 +594,7 @@ export default function ShopCopyShop() {
 
                   <Link
                     prefetch={false}
-                    href="/portfolio-details"
+                    href="/shop-details/car-gears-machine-part"
                     className="rts-btn btn-primary radius-big icon"
                   >
                     {" Add To Cart "}

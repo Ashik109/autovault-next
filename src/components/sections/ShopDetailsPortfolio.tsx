@@ -1,7 +1,12 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import QuantityInput from "@/components/QuantityInput";
-export default function ShopDetailsPortfolio() {
+export default function ShopDetailsPortfolio({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="rts-portfolio-area shop-single inner rts-section-gapTop">
       <div className="container">
@@ -12,19 +17,28 @@ export default function ShopDetailsPortfolio() {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <div className="image">
-                      <img src="/assets/images/portfolio/36.webp" alt="" />
+                      <img
+                        src={record.gallery[0 % record.gallery.length]}
+                        alt={record.title}
+                      />
                     </div>
                   </div>
 
                   <div className="swiper-slide">
                     <div className="image">
-                      <img src="/assets/images/portfolio/37.webp" alt="" />
+                      <img
+                        src={record.gallery[1 % record.gallery.length]}
+                        alt={record.title}
+                      />
                     </div>
                   </div>
 
                   <div className="swiper-slide">
                     <div className="image">
-                      <img src="/assets/images/portfolio/38.webp" alt="" />
+                      <img
+                        src={record.gallery[2 % record.gallery.length]}
+                        alt={record.title}
+                      />
                     </div>
                   </div>
                 </div>
@@ -42,18 +56,16 @@ export default function ShopDetailsPortfolio() {
                 <Link prefetch={false} href="/">
                   {"Home"}
                 </Link>
-                {" Power Steering Pump"}
+                {record.title}
               </p>
 
-              <h3 className="ms-single-product_title">
-                {"Power Steering Pump"}
-              </h3>
+              <h3 className="ms-single-product_title">{record.title}</h3>
 
               <div className="woocommerce-product-details__short-description">
                 <p>
-                  {
-                    "At Autovault Repair, the goal is to provide top-notch automotive to keep your vehicle running smoothly. Whether it’s a routine oil change, brake replacement, or complex engine repair, the skilled technicians at Max Auto are equipped with the latest tools and knowledge to vehicles, from sedans to SUVs. "
-                  }
+                  {record.description +
+                    " " +
+                    "At Autovault Repair, the goal is to provide top-notch automotive to keep your vehicle running smoothly. Whether it’s a routine oil change, brake replacement, or complex engine repair, the skilled technicians at Max Auto are equipped with the latest tools and knowledge to vehicles, from sedans to SUVs."}
                 </p>
               </div>
 
@@ -94,7 +106,7 @@ export default function ShopDetailsPortfolio() {
                   <span className="woocommerce-Price-currencySymbol">
                     {"$"}
                   </span>
-                  {"599"}
+                  {record.price.toLocaleString("en-US")}
                 </bdi>
               </div>
 

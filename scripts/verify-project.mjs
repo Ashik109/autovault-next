@@ -27,10 +27,34 @@ const routes = new Set(
     ),
 );
 const errors = new Set();
+for (const route of routes) if (route.includes("[")) routes.delete(route);
+const catalog = JSON.parse(
+  fs.readFileSync("src/data/detail-catalog.json", "utf8"),
+);
+const detailBases = {
+  car: ["portfolio-details", "portfolio-details-2"],
+  blog: ["blog-details"],
+  dealer: ["car-dealer-details"],
+  product: ["shop-details"],
+};
+for (const [kind, records] of Object.entries(catalog))
+  for (const record of Object.values(records))
+    for (const base of detailBases[kind]) routes.add(`/${base}/${record.slug}`);
 const asset = (url, from) => {
   if (url.startsWith("/assets/") && !exactAssets.has(url.split(/[?#]/)[0]))
     errors.add(`${from}: missing asset ${url}`);
 };
+for (const [kind, records] of Object.entries(catalog))
+  for (const [slug, record] of Object.entries(records)) {
+    if (
+      record.kind !== kind ||
+      record.slug !== slug ||
+      !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)
+    )
+      errors.add(`Invalid detail record: ${kind}/${slug}`);
+    asset(record.image, `${kind}/${slug}`);
+    record.gallery.forEach((image) => asset(image, `${kind}/${slug}`));
+  }
 for (const file of [...sourceFiles, ...assets])
   if (/\.html?$/i.test(file))
     errors.add(`HTML file must not be shipped: ${file}`);

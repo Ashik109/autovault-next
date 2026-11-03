@@ -1,14 +1,15 @@
-export default function BlogDetailsBreadcrumbAreaWrapper() {
+import type { DetailRecord } from "@/data/details";
+export default function BlogDetailsBreadcrumbAreaWrapper({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="breadcrumb-area-wrapper">
       <div className="left">
         <p>{"Dealership events"}</p>
 
-        <h1 className="title">
-          {"Seasonal Car Care Tips to Keep Your "}
-          <br />
-          {" Vehicle Best Running Smoothly"}
-        </h1>
+        <h1 className="title">{record.title}</h1>
 
         <div className="author-area">
           <div className="image">
@@ -16,9 +17,9 @@ export default function BlogDetailsBreadcrumbAreaWrapper() {
           </div>
 
           <ul>
-            <li>{"Jack Alexander "}</li>
+            <li>{record.author}</li>
 
-            <li>{"March 26, 2024"}</li>
+            <li>{record.date}</li>
           </ul>
         </div>
       </div>

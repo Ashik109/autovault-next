@@ -99,7 +99,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -108,7 +111,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -141,7 +147,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -153,7 +159,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -162,7 +171,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -195,7 +207,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -207,7 +219,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -216,7 +231,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -249,7 +267,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -261,7 +279,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -270,7 +291,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -303,7 +327,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -315,7 +339,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -324,7 +351,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -357,7 +387,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -369,7 +399,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -378,7 +411,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -411,7 +447,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -438,7 +474,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -447,7 +486,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -480,7 +522,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -492,7 +534,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -501,7 +546,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -534,7 +582,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -546,7 +594,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -555,7 +606,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -588,7 +642,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -600,7 +654,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -609,7 +666,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -642,7 +702,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -654,7 +714,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -663,7 +726,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -696,7 +762,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -708,7 +774,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -717,7 +786,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -750,7 +822,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -777,7 +849,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -786,7 +861,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -819,7 +897,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -831,7 +909,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -840,7 +921,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -873,7 +957,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -885,7 +969,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -894,7 +981,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -935,7 +1025,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -947,7 +1037,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -956,7 +1049,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -989,7 +1085,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1001,7 +1097,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -1010,7 +1109,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -1051,7 +1153,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1063,7 +1165,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -1072,7 +1177,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -1105,7 +1213,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1132,7 +1240,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -1141,7 +1252,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -1174,7 +1288,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1186,7 +1300,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -1195,7 +1312,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -1236,7 +1356,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1248,7 +1368,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -1257,7 +1380,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -1290,7 +1416,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1302,7 +1428,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/01.webp" alt="" />
                         </Link>
                       </div>
@@ -1311,7 +1440,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h5>
@@ -1344,7 +1476,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/thunderbolt-car"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1356,7 +1488,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volvo-1927"
+                        >
                           <img src="/assets/images/portfolio/02.webp" alt="" />
                         </Link>
                       </div>
@@ -1365,7 +1500,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volvo-1927"
+                          >
                             {"Volvo. 1927"}
                           </Link>
                         </h5>
@@ -1406,7 +1544,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volvo-1927"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}
@@ -1418,7 +1556,10 @@ export default function HomeEightPortfolio() {
                   <div className="swiper-slide">
                     <div className="project-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/volkswagen-1938"
+                        >
                           <img src="/assets/images/portfolio/03.webp" alt="" />
                         </Link>
                       </div>
@@ -1427,7 +1568,10 @@ export default function HomeEightPortfolio() {
 
                       <div className="content-area">
                         <h5 className="title">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/volkswagen-1938"
+                          >
                             {"Volkswagen. 1938"}
                           </Link>
                         </h5>
@@ -1460,7 +1604,7 @@ export default function HomeEightPortfolio() {
 
                         <Link
                           prefetch={false}
-                          href="/portfolio-details"
+                          href="/portfolio-details/volkswagen-1938"
                           className="rts-btn btn-primary radius-big"
                         >
                           {"View Details"}

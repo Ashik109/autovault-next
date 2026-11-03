@@ -11,7 +11,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                      >
                         <img src="/assets/images/blog/01.webp" alt="" />
                       </Link>
                     </div>
@@ -20,7 +23,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Dealership events"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                        >
                           {
                             "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly"
                           }
@@ -42,7 +48,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                      >
                         <img src="/assets/images/blog/02.webp" alt="" />
                       </Link>
                     </div>
@@ -51,7 +60,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"March 26, 2024"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                        >
                           {
                             "How Regular Maintenance Can Save You Thousands in Repairs"
                           }
@@ -73,7 +85,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/top-5-reasons-to-buy-a-certified-pre-owned-vehicle"
+                      >
                         <img src="/assets/images/blog/02.webp" alt="" />
                       </Link>
                     </div>
@@ -82,7 +97,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Car detailing tips"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/top-5-reasons-to-buy-a-certified-pre-owned-vehicle"
+                        >
                           {"Top 5 Reasons to Buy a Certified Pre-Owned Vehicle"}
                         </Link>
                       </h6>
@@ -102,7 +120,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/what-to-expect-during-your-next-test-drive"
+                      >
                         <img src="/assets/images/blog/06.webp" alt="" />
                       </Link>
                     </div>
@@ -111,7 +132,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Upcoming releases"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/what-to-expect-during-your-next-test-drive"
+                        >
                           {"What to Expect During Your Next Test Drive"}
                         </Link>
                       </h6>
@@ -131,7 +155,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/the-best-cars-for-road-trips-comfort-safety-and-reliability"
+                      >
                         <img src="/assets/images/blog/07.webp" alt="" />
                       </Link>
                     </div>
@@ -140,7 +167,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Family Cars"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/the-best-cars-for-road-trips-comfort-safety-and-reliability"
+                        >
                           {
                             "The Best Cars for Road Trips: Comfort, Safety, and Reliability"
                           }
@@ -162,7 +192,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/certified-pre-owned-vs-used-cars-what-s-the-difference"
+                      >
                         <img src="/assets/images/blog/08.webp" alt="" />
                       </Link>
                     </div>
@@ -171,7 +204,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Luxury Cars"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/certified-pre-owned-vs-used-cars-what-s-the-difference"
+                        >
                           {
                             "Certified Pre-Owned vs. Used Cars: What's the Difference"
                           }
@@ -193,7 +229,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/leasing-vs-buying-which-option-is-right-for-you"
+                      >
                         <img src="/assets/images/blog/09.webp" alt="" />
                       </Link>
                     </div>
@@ -202,7 +241,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Trade-In Value"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/leasing-vs-buying-which-option-is-right-for-you"
+                        >
                           {"Leasing vs. Buying: Which Option is Right for You"}
                         </Link>
                       </h6>
@@ -222,7 +264,10 @@ export default function BlogBlog() {
                 <div className="col-lg-6">
                   <div className="blog-wrapper">
                     <div className="image-area">
-                      <Link prefetch={false} href="/blog-details">
+                      <Link
+                        prefetch={false}
+                        href="/blog-details/the-latest-trends-in-car-you-should-know-about"
+                      >
                         <img src="/assets/images/blog/10.webp" alt="" />
                       </Link>
                     </div>
@@ -231,7 +276,10 @@ export default function BlogBlog() {
                       <p className="blog-meta">{"Hybrid Vehicles"}</p>
 
                       <h6>
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/the-latest-trends-in-car-you-should-know-about"
+                        >
                           {"The Latest Trends in Car You Should Know About"}
                         </Link>
                       </h6>
@@ -343,7 +391,10 @@ export default function BlogBlog() {
                   <ul className="blog-list">
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                        >
                           <img
                             src="/assets/images/blog/sm-01.webp"
                             width="100"
@@ -354,7 +405,10 @@ export default function BlogBlog() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                          >
                             {"10 Tips for First-Time Car What You Need to Know"}
                           </Link>
                         </h6>
@@ -365,7 +419,10 @@ export default function BlogBlog() {
 
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                        >
                           <img
                             src="/assets/images/blog/sm-02.webp"
                             width="100"
@@ -376,7 +433,10 @@ export default function BlogBlog() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                          >
                             {"Top 5 Reasons to Buy a for Pre-Owned Vehicle"}
                           </Link>
                         </h6>
@@ -387,7 +447,10 @@ export default function BlogBlog() {
 
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                        >
                           <img
                             src="/assets/images/blog/sm-03.webp"
                             width="100"
@@ -398,7 +461,10 @@ export default function BlogBlog() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                          >
                             {"How to Choose the Perfect Car for Your Lifestyle"}
                           </Link>
                         </h6>

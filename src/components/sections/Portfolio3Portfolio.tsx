@@ -486,7 +486,10 @@ export default function Portfolio3Portfolio() {
             <div className="right">
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/honda-civic-hatchback"
+                  >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
                       height="206"
@@ -497,7 +500,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/honda-civic-hatchback"
+                    >
                       {"Honda Civic Hatchback"}
                     </Link>
                   </h6>
@@ -533,7 +539,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/honda-civic-hatchback"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -544,7 +550,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mercedes-benz-e-class"
+                  >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
                       height="206"
@@ -555,7 +564,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mercedes-benz-e-class"
+                    >
                       {"Mercedes-Benz E-Class"}
                     </Link>
                   </h6>
@@ -591,7 +603,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mercedes-benz-e-class"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -602,7 +614,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mazda-mx-5-miata"
+                  >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
                       height="206"
@@ -613,7 +628,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mazda-mx-5-miata"
+                    >
                       {"Mazda MX-5 Miata"}
                     </Link>
                   </h6>
@@ -649,7 +667,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mazda-mx-5-miata"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -660,7 +678,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/honda-civic-hatchback"
+                  >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
                       height="206"
@@ -671,7 +692,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/honda-civic-hatchback"
+                    >
                       {"Honda Civic Hatchback"}
                     </Link>
                   </h6>
@@ -707,7 +731,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/honda-civic-hatchback"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -718,7 +742,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mercedes-benz-e-class"
+                  >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
                       height="206"
@@ -729,7 +756,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mercedes-benz-e-class"
+                    >
                       {"Mercedes-Benz E-Class"}
                     </Link>
                   </h6>
@@ -765,7 +795,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mercedes-benz-e-class"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -776,7 +806,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mazda-mx-5-miata"
+                  >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
                       height="206"
@@ -787,7 +820,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mazda-mx-5-miata"
+                    >
                       {"Mazda MX-5 Miata"}
                     </Link>
                   </h6>
@@ -823,7 +859,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mazda-mx-5-miata"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -834,7 +870,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/honda-civic-hatchback"
+                  >
                     <img
                       src="/assets/images/portfolio/08-sm.webp"
                       height="206"
@@ -845,7 +884,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/honda-civic-hatchback"
+                    >
                       {"Honda Civic Hatchback"}
                     </Link>
                   </h6>
@@ -881,7 +923,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/honda-civic-hatchback"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -892,7 +934,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style mb--30">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mercedes-benz-e-class"
+                  >
                     <img
                       src="/assets/images/portfolio/05-sm.webp"
                       height="206"
@@ -903,7 +948,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mercedes-benz-e-class"
+                    >
                       {"Mercedes-Benz E-Class"}
                     </Link>
                   </h6>
@@ -939,7 +987,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mercedes-benz-e-class"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}
@@ -950,7 +998,10 @@ export default function Portfolio3Portfolio() {
 
               <div className="project-wrapper2 list-style">
                 <div className="image-area">
-                  <Link prefetch={false} href="/portfolio-details">
+                  <Link
+                    prefetch={false}
+                    href="/portfolio-details/mazda-mx-5-miata"
+                  >
                     <img
                       src="/assets/images/portfolio/07-sm.webp"
                       height="206"
@@ -961,7 +1012,10 @@ export default function Portfolio3Portfolio() {
 
                 <div className="content-area">
                   <h6 className="title">
-                    <Link prefetch={false} href="/portfolio-details">
+                    <Link
+                      prefetch={false}
+                      href="/portfolio-details/mazda-mx-5-miata"
+                    >
                       {"Mazda MX-5 Miata"}
                     </Link>
                   </h6>
@@ -997,7 +1051,7 @@ export default function Portfolio3Portfolio() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mazda-mx-5-miata"
                       className="rts-btn btn-primary radius-small"
                     >
                       {"View Details"}

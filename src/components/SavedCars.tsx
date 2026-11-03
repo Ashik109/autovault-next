@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useSavedCars, toggleSavedCar } from "@/lib/saved-cars";
+import { detailPath, slugFromTitle } from "@/lib/detail-paths";
 export default function SavedCars() {
   const cars = useSavedCars();
   return (
@@ -12,7 +13,7 @@ export default function SavedCars() {
             {cars.map((car) => (
               <div className="col-lg-4 col-md-6" key={car.id}>
                 <article className="saved-car">
-                  <Link href="/portfolio-details">
+                  <Link href={detailPath("car", slugFromTitle(car.title))}>
                     <img src={car.image} alt={car.title} />
                     <h3>{car.title}</h3>
                   </Link>

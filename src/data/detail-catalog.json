@@ -1,0 +1,883 @@
+{
+  "car": {
+    "thunderbolt-car": {
+      "kind": "car",
+      "slug": "thunderbolt-car",
+      "title": "Thunderbolt Car",
+      "image": "/assets/images/portfolio/04.webp",
+      "gallery": [
+        "/assets/images/portfolio/04.webp",
+        "/assets/images/portfolio/01.webp",
+        "/assets/images/feature/slider-01.webp",
+        "/assets/images/portfolio/04-big.webp",
+        "/assets/images/portfolio/06-big.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Thunderbolt Car. 100 Miles, Petrol, Autometic.",
+      "make": "Thunderbolt",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "mercedes-benz-e-class": {
+      "kind": "car",
+      "slug": "mercedes-benz-e-class",
+      "title": "Mercedes-Benz E-Class",
+      "image": "/assets/images/portfolio/05.webp",
+      "gallery": [
+        "/assets/images/portfolio/05.webp",
+        "/assets/images/feature/slider-03.webp",
+        "/assets/images/portfolio/05-sm.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Mercedes-Benz E-Class. 100 Miles, Petrol, Autometic.",
+      "make": "Mercedes-Benz",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "ford-mustang-convertible": {
+      "kind": "car",
+      "slug": "ford-mustang-convertible",
+      "title": "Ford Mustang Convertible",
+      "image": "/assets/images/portfolio/06.webp",
+      "gallery": [
+        "/assets/images/portfolio/06.webp",
+        "/assets/images/portfolio/06-big.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Ford Mustang Convertible. 100 Miles, Petrol, Autometic.",
+      "make": "Ford",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "mazda-mx-5-miata": {
+      "kind": "car",
+      "slug": "mazda-mx-5-miata",
+      "title": "Mazda MX-5 Miata",
+      "image": "/assets/images/portfolio/07.webp",
+      "gallery": [
+        "/assets/images/portfolio/07.webp",
+        "/assets/images/feature/slider-02.webp",
+        "/assets/images/portfolio/07-sm.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Mazda MX-5 Miata. 100 Miles, Petrol, Autometic.",
+      "make": "Mazda",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "honda-civic-hatchback": {
+      "kind": "car",
+      "slug": "honda-civic-hatchback",
+      "title": "Honda Civic Hatchback",
+      "image": "/assets/images/portfolio/08.webp",
+      "gallery": [
+        "/assets/images/portfolio/08.webp",
+        "/assets/images/feature/slider-04.webp",
+        "/assets/images/portfolio/08-sm.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Honda Civic Hatchback. 100 Miles, Petrol, Autometic.",
+      "make": "Honda",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "hyundai-veloster": {
+      "kind": "car",
+      "slug": "hyundai-veloster",
+      "title": "Hyundai Veloster",
+      "image": "/assets/images/portfolio/09.webp",
+      "gallery": [
+        "/assets/images/portfolio/09.webp",
+        "/assets/images/feature/slider-05.webp"
+      ],
+      "price": 14000,
+      "priceLabel": "$14,000",
+      "description": "Hyundai Veloster. 100 Miles, Petrol, Autometic.",
+      "make": "Hyundai",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "volvo-1927": {
+      "kind": "car",
+      "slug": "volvo-1927",
+      "title": "Volvo. 1927",
+      "image": "/assets/images/portfolio/02.webp",
+      "gallery": [
+        "/assets/images/portfolio/02.webp"
+      ],
+      "price": 14300,
+      "priceLabel": "$14,300",
+      "description": "Volvo. 1927. 105 Miles, Petrol, Autometic.",
+      "make": "Volvo.",
+      "mileage": "105 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "volkswagen-1938": {
+      "kind": "car",
+      "slug": "volkswagen-1938",
+      "title": "Volkswagen. 1938",
+      "image": "/assets/images/portfolio/03.webp",
+      "gallery": [
+        "/assets/images/portfolio/03.webp"
+      ],
+      "price": 14500,
+      "priceLabel": "$14,500",
+      "description": "Volkswagen. 1938. 110 Miles, Petrol, Autometic.",
+      "make": "Volkswagen",
+      "mileage": "110 Miles",
+      "fuel": "Petrol",
+      "transmission": "Autometic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    }
+  },
+  "blog": {
+    "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly": {
+      "kind": "blog",
+      "slug": "seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly",
+      "title": "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly",
+      "image": "/assets/images/blog/01.webp",
+      "gallery": [
+        "/assets/images/blog/01.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly",
+      "make": "Seasonal",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "how-regular-maintenance-can-save-you-thousands-in-repairs": {
+      "kind": "blog",
+      "slug": "how-regular-maintenance-can-save-you-thousands-in-repairs",
+      "title": "How Regular Maintenance Can Save You Thousands in Repairs",
+      "image": "/assets/images/blog/02.webp",
+      "gallery": [
+        "/assets/images/blog/02.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "How Regular Maintenance Can Save You Thousands in Repairs",
+      "make": "How",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "top-5-reasons-to-buy-a-certified-pre-owned-vehicle": {
+      "kind": "blog",
+      "slug": "top-5-reasons-to-buy-a-certified-pre-owned-vehicle",
+      "title": "Top 5 Reasons to Buy a Certified Pre-Owned Vehicle",
+      "image": "/assets/images/blog/02.webp",
+      "gallery": [
+        "/assets/images/blog/02.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Top 5 Reasons to Buy a Certified Pre-Owned Vehicle",
+      "make": "Top",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "what-to-expect-during-your-next-test-drive": {
+      "kind": "blog",
+      "slug": "what-to-expect-during-your-next-test-drive",
+      "title": "What to Expect During Your Next Test Drive",
+      "image": "/assets/images/blog/06.webp",
+      "gallery": [
+        "/assets/images/blog/06.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "What to Expect During Your Next Test Drive",
+      "make": "What",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "the-best-cars-for-road-trips-comfort-safety-and-reliability": {
+      "kind": "blog",
+      "slug": "the-best-cars-for-road-trips-comfort-safety-and-reliability",
+      "title": "The Best Cars for Road Trips: Comfort, Safety, and Reliability",
+      "image": "/assets/images/blog/07.webp",
+      "gallery": [
+        "/assets/images/blog/07.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "The Best Cars for Road Trips: Comfort, Safety, and Reliability",
+      "make": "The",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "certified-pre-owned-vs-used-cars-what-s-the-difference": {
+      "kind": "blog",
+      "slug": "certified-pre-owned-vs-used-cars-what-s-the-difference",
+      "title": "Certified Pre-Owned vs. Used Cars: What's the Difference",
+      "image": "/assets/images/blog/08.webp",
+      "gallery": [
+        "/assets/images/blog/08.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Certified Pre-Owned vs. Used Cars: What's the Difference",
+      "make": "Certified",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "leasing-vs-buying-which-option-is-right-for-you": {
+      "kind": "blog",
+      "slug": "leasing-vs-buying-which-option-is-right-for-you",
+      "title": "Leasing vs. Buying: Which Option is Right for You",
+      "image": "/assets/images/blog/09.webp",
+      "gallery": [
+        "/assets/images/blog/09.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Leasing vs. Buying: Which Option is Right for You",
+      "make": "Leasing",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "the-latest-trends-in-car-you-should-know-about": {
+      "kind": "blog",
+      "slug": "the-latest-trends-in-car-you-should-know-about",
+      "title": "The Latest Trends in Car You Should Know About",
+      "image": "/assets/images/blog/10.webp",
+      "gallery": [
+        "/assets/images/blog/10.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "The Latest Trends in Car You Should Know About",
+      "make": "The",
+      "mileage": "100 Miles",
+      "fuel": "Hybrid",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "10-tips-for-first-time-car-what-you-need-to-know": {
+      "kind": "blog",
+      "slug": "10-tips-for-first-time-car-what-you-need-to-know",
+      "title": "10 Tips for First-Time Car What You Need to Know",
+      "image": "/assets/images/blog/sm-01.webp",
+      "gallery": [
+        "/assets/images/blog/sm-01.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "10 Tips for First-Time Car What You Need to Know",
+      "make": "10",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "May 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "top-5-reasons-to-buy-a-for-pre-owned-vehicle": {
+      "kind": "blog",
+      "slug": "top-5-reasons-to-buy-a-for-pre-owned-vehicle",
+      "title": "Top 5 Reasons to Buy a for Pre-Owned Vehicle",
+      "image": "/assets/images/blog/sm-02.webp",
+      "gallery": [
+        "/assets/images/blog/sm-02.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Top 5 Reasons to Buy a for Pre-Owned Vehicle",
+      "make": "Top",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "May 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "how-to-choose-the-perfect-car-for-your-lifestyle": {
+      "kind": "blog",
+      "slug": "how-to-choose-the-perfect-car-for-your-lifestyle",
+      "title": "How to Choose the Perfect Car for Your Lifestyle",
+      "image": "/assets/images/blog/sm-03.webp",
+      "gallery": [
+        "/assets/images/blog/sm-03.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "How to Choose the Perfect Car for Your Lifestyle",
+      "make": "How",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "May 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "review-the-latest-car-models-and-compare-them-with-similar-car-vehicles": {
+      "kind": "blog",
+      "slug": "review-the-latest-car-models-and-compare-them-with-similar-car-vehicles",
+      "title": "Review the Latest Car Models And Compare Them With Similar Car Vehicles",
+      "image": "/assets/images/blog/01.webp",
+      "gallery": [
+        "/assets/images/blog/01.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Review the Latest Car Models And Compare Them With Similar Car Vehicles",
+      "make": "Review",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars": {
+      "kind": "blog",
+      "slug": "focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars",
+      "title": "Focus on the rapidly growing market for electric vehicles and green cars.",
+      "image": "/assets/images/blog/02.webp",
+      "gallery": [
+        "/assets/images/blog/02.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Focus on the rapidly growing market for electric vehicles and green cars.",
+      "make": "Focus",
+      "mileage": "100 Miles",
+      "fuel": "electric",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system": {
+      "kind": "blog",
+      "slug": "braking-it-down-understanding-the-key-parts-of-your-car-s-brake-parts-system",
+      "title": "Braking It Down Understanding the Key Parts of Your Car's Brake Parts System",
+      "image": "/assets/images/blog/05.webp",
+      "gallery": [
+        "/assets/images/blog/05.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Braking It Down Understanding the Key Parts of Your Car's Brake Parts System",
+      "make": "Braking",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "a-beginner-s-guide-to-understanding-your-car-s-engine-components": {
+      "kind": "blog",
+      "slug": "a-beginner-s-guide-to-understanding-your-car-s-engine-components",
+      "title": "A Beginner's Guide to Understanding Your Car's Engine Components",
+      "image": "/assets/images/blog/03.webp",
+      "gallery": [
+        "/assets/images/blog/03.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "A Beginner's Guide to Understanding Your Car's Engine Components",
+      "make": "A",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    },
+    "the-ultimate-guide-to-car-suspension-what-you-need-to-know": {
+      "kind": "blog",
+      "slug": "the-ultimate-guide-to-car-suspension-what-you-need-to-know",
+      "title": "The Ultimate Guide to Car Suspension: What You Need to Know",
+      "image": "/assets/images/blog/04.webp",
+      "gallery": [
+        "/assets/images/blog/04.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "The Ultimate Guide to Car Suspension: What You Need to Know",
+      "make": "The",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "March 26, 2024",
+      "author": "Jack Alexander"
+    }
+  },
+  "dealer": {
+    "car-toys": {
+      "kind": "dealer",
+      "slug": "car-toys",
+      "title": "Car Toys",
+      "image": "/assets/images/brand/08.webp",
+      "gallery": [
+        "/assets/images/brand/08.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Car Toys",
+      "make": "Car",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "club-car": {
+      "kind": "dealer",
+      "slug": "club-car",
+      "title": "Club Car",
+      "image": "/assets/images/brand/09.webp",
+      "gallery": [
+        "/assets/images/brand/09.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Club Car",
+      "make": "Club",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "car-next": {
+      "kind": "dealer",
+      "slug": "car-next",
+      "title": "Car Next",
+      "image": "/assets/images/brand/10.webp",
+      "gallery": [
+        "/assets/images/brand/10.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Car Next",
+      "make": "Car",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "ford-mustang": {
+      "kind": "dealer",
+      "slug": "ford-mustang",
+      "title": "Ford Mustang",
+      "image": "/assets/images/brand/11.webp",
+      "gallery": [
+        "/assets/images/brand/11.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Ford Mustang",
+      "make": "Ford",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "nissan-car": {
+      "kind": "dealer",
+      "slug": "nissan-car",
+      "title": "Nissan Car",
+      "image": "/assets/images/brand/12.webp",
+      "gallery": [
+        "/assets/images/brand/12.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Nissan Car",
+      "make": "Nissan",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "ticket-car-accor-service": {
+      "kind": "dealer",
+      "slug": "ticket-car-accor-service",
+      "title": "Ticket Car Accor Service",
+      "image": "/assets/images/brand/13.webp",
+      "gallery": [
+        "/assets/images/brand/13.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Ticket Car Accor Service",
+      "make": "Ticket",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "be-car-care-aware": {
+      "kind": "dealer",
+      "slug": "be-car-care-aware",
+      "title": "Be Car Care Aware",
+      "image": "/assets/images/brand/14.webp",
+      "gallery": [
+        "/assets/images/brand/14.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Be Car Care Aware",
+      "make": "Be",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "neptuno-car-s-l": {
+      "kind": "dealer",
+      "slug": "neptuno-car-s-l",
+      "title": "Neptuno Car S.L",
+      "image": "/assets/images/brand/15.webp",
+      "gallery": [
+        "/assets/images/brand/15.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Neptuno Car S.L",
+      "make": "Neptuno",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "audi-car": {
+      "kind": "dealer",
+      "slug": "audi-car",
+      "title": "Audi Car",
+      "image": "/assets/images/brand/16.webp",
+      "gallery": [
+        "/assets/images/brand/16.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Audi Car",
+      "make": "Audi",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    }
+  },
+  "product": {
+    "power-steering-pump": {
+      "kind": "product",
+      "slug": "power-steering-pump",
+      "title": "Power Steering Pump",
+      "image": "/assets/images/portfolio/36.webp",
+      "gallery": [
+        "/assets/images/portfolio/36.webp",
+        "/assets/images/portfolio/12.webp"
+      ],
+      "price": 599,
+      "priceLabel": "$599",
+      "description": "Power Steering Pump. Automotive parts and equipment from AutoVault.",
+      "make": "Power",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "run-max-88": {
+      "kind": "product",
+      "slug": "run-max-88",
+      "title": "Run Max 88",
+      "image": "/assets/images/portfolio/01.webp",
+      "gallery": [
+        "/assets/images/portfolio/01.webp"
+      ],
+      "price": 120,
+      "priceLabel": "$120",
+      "description": "Run Max 88",
+      "make": "Run",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "workout-revolution-2": {
+      "kind": "product",
+      "slug": "workout-revolution-2",
+      "title": "Workout Revolution 2",
+      "image": "/assets/images/portfolio/02.webp",
+      "gallery": [
+        "/assets/images/portfolio/02.webp"
+      ],
+      "price": 180,
+      "priceLabel": "$180",
+      "description": "Workout Revolution 2",
+      "make": "Workout",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "kl-17-bs": {
+      "kind": "product",
+      "slug": "kl-17-bs",
+      "title": "KL 17 BS",
+      "image": "/assets/images/portfolio/03.webp",
+      "gallery": [
+        "/assets/images/portfolio/03.webp"
+      ],
+      "price": 80,
+      "priceLabel": "$80",
+      "description": "KL 17 BS",
+      "make": "KL",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "flex-armour": {
+      "kind": "product",
+      "slug": "flex-armour",
+      "title": "Flex Armour",
+      "image": "/assets/images/portfolio/04.webp",
+      "gallery": [
+        "/assets/images/portfolio/04.webp"
+      ],
+      "price": 139,
+      "priceLabel": "$139",
+      "description": "Flex Armour",
+      "make": "Flex",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "car-parts-gears-and-equipment": {
+      "kind": "product",
+      "slug": "car-parts-gears-and-equipment",
+      "title": "Car Parts Gears and Equipment",
+      "image": "/assets/images/portfolio/11.webp",
+      "gallery": [
+        "/assets/images/portfolio/11.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Car Parts Gears and Equipment",
+      "make": "Car",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "high-performance-tires": {
+      "kind": "product",
+      "slug": "high-performance-tires",
+      "title": "High-Performance Tires",
+      "image": "/assets/images/portfolio/13.webp",
+      "gallery": [
+        "/assets/images/portfolio/13.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "High-Performance Tires",
+      "make": "High-Performance",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "micrometer-with-check-ring": {
+      "kind": "product",
+      "slug": "micrometer-with-check-ring",
+      "title": "Micrometer with check ring",
+      "image": "/assets/images/portfolio/14.webp",
+      "gallery": [
+        "/assets/images/portfolio/14.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Micrometer with check ring",
+      "make": "Micrometer",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "car-parts-mufflers-and-pipes": {
+      "kind": "product",
+      "slug": "car-parts-mufflers-and-pipes",
+      "title": "Car Parts Mufflers And Pipes",
+      "image": "/assets/images/portfolio/15.webp",
+      "gallery": [
+        "/assets/images/portfolio/15.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Car Parts Mufflers And Pipes",
+      "make": "Car",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    },
+    "car-gears-machine-part": {
+      "kind": "product",
+      "slug": "car-gears-machine-part",
+      "title": "Car Gears Machine part",
+      "image": "/assets/images/portfolio/16.webp",
+      "gallery": [
+        "/assets/images/portfolio/16.webp"
+      ],
+      "price": 0,
+      "priceLabel": "Contact for price",
+      "description": "Car Gears Machine part",
+      "make": "Car",
+      "mileage": "100 Miles",
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "seats": "Person",
+      "location": "280 Augusta Avenue, M5T 2L9 Toronto, Canada",
+      "date": "Feb 23, 2025",
+      "author": "AutoVault"
+    }
+  }
+}

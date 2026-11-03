@@ -1,5 +1,10 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
-export default function CarDealerDetailsBreadcrumbAreaWrapper() {
+export default function CarDealerDetailsBreadcrumbAreaWrapper({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="breadcrumb-area-wrapper">
       <div className="left">
@@ -13,7 +18,7 @@ export default function CarDealerDetailsBreadcrumbAreaWrapper() {
           </a>
         </div>
 
-        <h1 className="title">{"Car Toys"}</h1>
+        <h1 className="title">{record.title}</h1>
 
         <ul className="feature-area dealer">
           <li>

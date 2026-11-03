@@ -1,7 +1,12 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import CarDealerDetailsVideo from "@/components/sections/CarDealerDetailsVideo";
-export default function PortfolioDetailsPortfolio() {
+export default function PortfolioDetailsPortfolio({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="rts-portfolio-area inner rts-section-gapNew">
       <div className="container">
@@ -13,73 +18,109 @@ export default function PortfolioDetailsPortfolio() {
                   <div className="swiper-wrapper">
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/30.webp" alt="" />
+                        <img
+                          src={record.gallery[0 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/31.webp" alt="" />
+                        <img
+                          src={record.gallery[1 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/32.webp" alt="" />
+                        <img
+                          src={record.gallery[2 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/33.webp" alt="" />
+                        <img
+                          src={record.gallery[3 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/34.webp" alt="" />
+                        <img
+                          src={record.gallery[4 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/35.webp" alt="" />
+                        <img
+                          src={record.gallery[5 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/30.webp" alt="" />
+                        <img
+                          src={record.gallery[0 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/31.webp" alt="" />
+                        <img
+                          src={record.gallery[1 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/32.webp" alt="" />
+                        <img
+                          src={record.gallery[2 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/33.webp" alt="" />
+                        <img
+                          src={record.gallery[3 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/34.webp" alt="" />
+                        <img
+                          src={record.gallery[4 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
 
                     <div className="swiper-slide">
                       <div className="image">
-                        <img src="/assets/images/portfolio/35.webp" alt="" />
+                        <img
+                          src={record.gallery[5 % record.gallery.length]}
+                          alt={record.title}
+                        />
                       </div>
                     </div>
                   </div>
@@ -92,8 +133,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/30.webp"
-                              alt=""
+                              src={record.gallery[0 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -103,8 +144,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/31.webp"
-                              alt=""
+                              src={record.gallery[1 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -114,8 +155,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/32.webp"
-                              alt=""
+                              src={record.gallery[2 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -125,8 +166,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/33.webp"
-                              alt=""
+                              src={record.gallery[3 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -136,8 +177,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/34.webp"
-                              alt=""
+                              src={record.gallery[4 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -147,8 +188,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/35.webp"
-                              alt=""
+                              src={record.gallery[5 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -158,8 +199,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/30.webp"
-                              alt=""
+                              src={record.gallery[0 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -169,8 +210,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/31.webp"
-                              alt=""
+                              src={record.gallery[1 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -180,8 +221,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/32.webp"
-                              alt=""
+                              src={record.gallery[2 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -191,8 +232,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/33.webp"
-                              alt=""
+                              src={record.gallery[3 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -202,8 +243,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/34.webp"
-                              alt=""
+                              src={record.gallery[4 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -213,8 +254,8 @@ export default function PortfolioDetailsPortfolio() {
                         <div className="single-thumb">
                           <div className="thumbnail">
                             <img
-                              src="/assets/images/portfolio/35.webp"
-                              alt=""
+                              src={record.gallery[5 % record.gallery.length]}
+                              alt={record.title}
                             />
                           </div>
                         </div>
@@ -237,9 +278,9 @@ export default function PortfolioDetailsPortfolio() {
               <h2 className="mb--30">{"Car Description"}</h2>
 
               <p className="mb--30">
-                {
-                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."
-                }
+                {record.description +
+                  " " +
+                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."}
               </p>
 
               <p>
@@ -497,7 +538,10 @@ export default function PortfolioDetailsPortfolio() {
                   <div className="col-lg-6">
                     <div className="project-wrapper2">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/04.webp" alt="" />
                         </Link>
 
@@ -520,7 +564,10 @@ export default function PortfolioDetailsPortfolio() {
 
                       <div className="content-area">
                         <h6 className="title ">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h6>
@@ -556,7 +603,7 @@ export default function PortfolioDetailsPortfolio() {
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details"
+                            href="/portfolio-details/thunderbolt-car"
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}
@@ -569,7 +616,10 @@ export default function PortfolioDetailsPortfolio() {
                   <div className="col-lg-6">
                     <div className="project-wrapper2">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/mercedes-benz-e-class"
+                        >
                           <img src="/assets/images/portfolio/05.webp" alt="" />
                         </Link>
 
@@ -592,7 +642,10 @@ export default function PortfolioDetailsPortfolio() {
 
                       <div className="content-area">
                         <h6 className="title ">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/mercedes-benz-e-class"
+                          >
                             {"Mercedes-Benz E-Class"}
                           </Link>
                         </h6>
@@ -628,7 +681,7 @@ export default function PortfolioDetailsPortfolio() {
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details"
+                            href="/portfolio-details/mercedes-benz-e-class"
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}
@@ -646,7 +699,7 @@ export default function PortfolioDetailsPortfolio() {
             <div className="sticky-top">
               <div className="left-side-bar">
                 <div className="price-area side-box">
-                  <h5>{"$1200,00"}</h5>
+                  <h5>{record.priceLabel}</h5>
 
                   <ul className="price-meta">
                     <li>
@@ -685,7 +738,7 @@ export default function PortfolioDetailsPortfolio() {
                       <div className="text">
                         <p>{" Car Type "}</p>
 
-                        <p>{" Mercedes - Benz "}</p>
+                        <p>{record.make}</p>
                       </div>
                     </li>
 
@@ -698,7 +751,7 @@ export default function PortfolioDetailsPortfolio() {
                       <div className="text">
                         <p>{" Mileage "}</p>
 
-                        <p>{" 100 Miles "}</p>
+                        <p>{record.mileage}</p>
                       </div>
                     </li>
 
@@ -711,7 +764,7 @@ export default function PortfolioDetailsPortfolio() {
                       <div className="text">
                         <p>{" Fuel Type "}</p>
 
-                        <p>{" Petrol "}</p>
+                        <p>{record.fuel}</p>
                       </div>
                     </li>
 
@@ -724,7 +777,7 @@ export default function PortfolioDetailsPortfolio() {
                       <div className="text">
                         <p>{" Transmission "}</p>
 
-                        <p>{" Autometic "}</p>
+                        <p>{record.transmission}</p>
                       </div>
                     </li>
 
@@ -735,7 +788,7 @@ export default function PortfolioDetailsPortfolio() {
                       />
 
                       <div className="text">
-                        <p>{" Person "}</p>
+                        <p>{record.seats}</p>
 
                         <p>{" 5 Person "}</p>
                       </div>

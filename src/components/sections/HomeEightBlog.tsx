@@ -54,7 +54,10 @@ export default function HomeEightBlog() {
                   <div className="col-lg-6">
                     <div className="blog-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/review-the-latest-car-models-and-compare-them-with-similar-car-vehicles"
+                        >
                           <img src="/assets/images/blog/01.webp" alt="" />
                         </Link>
                       </div>
@@ -63,7 +66,10 @@ export default function HomeEightBlog() {
                         <p className="blog-meta">{"March 26, 2024"}</p>
 
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/review-the-latest-car-models-and-compare-them-with-similar-car-vehicles"
+                          >
                             {
                               "Review the Latest Car Models And Compare Them With Similar Car Vehicles"
                             }
@@ -76,7 +82,10 @@ export default function HomeEightBlog() {
                   <div className="col-lg-6">
                     <div className="blog-wrapper">
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars"
+                        >
                           <img src="/assets/images/blog/02.webp" alt="" />
                         </Link>
                       </div>
@@ -85,7 +94,10 @@ export default function HomeEightBlog() {
                         <p className="blog-meta">{"March 26, 2024"}</p>
 
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/focus-on-the-rapidly-growing-market-for-electric-vehicles-and-green-cars"
+                          >
                             {
                               "Focus on the rapidly growing market for electric vehicles and green cars."
                             }

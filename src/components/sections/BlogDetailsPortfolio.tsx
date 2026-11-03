@@ -1,7 +1,12 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import BlogDetailsBlog from "@/components/sections/BlogDetailsBlog";
-export default function BlogDetailsPortfolio() {
+export default function BlogDetailsPortfolio({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="rts-portfolio-area inner rts-section-gapTop">
       <div className="container">
@@ -9,15 +14,15 @@ export default function BlogDetailsPortfolio() {
           <div className="col-lg-8">
             <div className="portfolio-details-area">
               <div className="image mb--40">
-                <img src="/assets/images/portfolio/24.webp" alt="" />
+                <img src={record.image} alt={record.title} />
               </div>
 
               <h2 className="mb--30">{"Car Description"}</h2>
 
               <p className="mb--30">
-                {
-                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."
-                }
+                {record.description +
+                  " " +
+                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."}
               </p>
 
               <p>
@@ -300,7 +305,10 @@ export default function BlogDetailsPortfolio() {
                   <ul className="blog-list">
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                        >
                           <img
                             src="/assets/images/blog/sm-01.webp"
                             width="100"
@@ -311,7 +319,10 @@ export default function BlogDetailsPortfolio() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/10-tips-for-first-time-car-what-you-need-to-know"
+                          >
                             {"10 Tips for First-Time Car What You Need to Know"}
                           </Link>
                         </h6>
@@ -322,7 +333,10 @@ export default function BlogDetailsPortfolio() {
 
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                        >
                           <img
                             src="/assets/images/blog/sm-02.webp"
                             width="100"
@@ -333,7 +347,10 @@ export default function BlogDetailsPortfolio() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/top-5-reasons-to-buy-a-for-pre-owned-vehicle"
+                          >
                             {"Top 5 Reasons to Buy a for Pre-Owned Vehicle"}
                           </Link>
                         </h6>
@@ -344,7 +361,10 @@ export default function BlogDetailsPortfolio() {
 
                     <li>
                       <div className="image-area">
-                        <Link prefetch={false} href="/blog-details">
+                        <Link
+                          prefetch={false}
+                          href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                        >
                           <img
                             src="/assets/images/blog/sm-03.webp"
                             width="100"
@@ -355,7 +375,10 @@ export default function BlogDetailsPortfolio() {
 
                       <div className="content">
                         <h6>
-                          <Link prefetch={false} href="/blog-details">
+                          <Link
+                            prefetch={false}
+                            href="/blog-details/how-to-choose-the-perfect-car-for-your-lifestyle"
+                          >
                             {"How to Choose the Perfect Car for Your Lifestyle"}
                           </Link>
                         </h6>

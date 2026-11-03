@@ -37,14 +37,14 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/car-toys">
                   <img src="/assets/images/brand/08.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link prefetch={false} href="/car-dealer-details/car-toys">
                     {"Car Toys"}
                   </Link>
                 </h6>
@@ -58,7 +58,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/car-toys"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -71,14 +71,14 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/club-car">
                   <img src="/assets/images/brand/09.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link prefetch={false} href="/car-dealer-details/club-car">
                     {"Club Car"}
                   </Link>
                 </h6>
@@ -92,7 +92,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/club-car"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -105,14 +105,14 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/car-next">
                   <img src="/assets/images/brand/10.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link prefetch={false} href="/car-dealer-details/car-next">
                     {"Car Next"}
                   </Link>
                 </h6>
@@ -126,7 +126,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/car-next"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -139,14 +139,17 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/ford-mustang">
                   <img src="/assets/images/brand/11.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link
+                    prefetch={false}
+                    href="/car-dealer-details/ford-mustang"
+                  >
                     {"Ford Mustang"}
                   </Link>
                 </h6>
@@ -160,7 +163,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/ford-mustang"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -173,14 +176,14 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/nissan-car">
                   <img src="/assets/images/brand/12.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link prefetch={false} href="/car-dealer-details/nissan-car">
                     {"Nissan Car"}
                   </Link>
                 </h6>
@@ -194,7 +197,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/nissan-car"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -207,14 +210,20 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link
+                  prefetch={false}
+                  href="/car-dealer-details/ticket-car-accor-service"
+                >
                   <img src="/assets/images/brand/13.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link
+                    prefetch={false}
+                    href="/car-dealer-details/ticket-car-accor-service"
+                  >
                     {"Ticket Car Accor Service"}
                   </Link>
                 </h6>
@@ -228,7 +237,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/ticket-car-accor-service"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -241,14 +250,20 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link
+                  prefetch={false}
+                  href="/car-dealer-details/be-car-care-aware"
+                >
                   <img src="/assets/images/brand/14.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link
+                    prefetch={false}
+                    href="/car-dealer-details/be-car-care-aware"
+                  >
                     {"Be Car Care Aware"}
                   </Link>
                 </h6>
@@ -262,7 +277,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/be-car-care-aware"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -275,14 +290,20 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link
+                  prefetch={false}
+                  href="/car-dealer-details/neptuno-car-s-l"
+                >
                   <img src="/assets/images/brand/15.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link
+                    prefetch={false}
+                    href="/car-dealer-details/neptuno-car-s-l"
+                  >
                     {"Neptuno Car S.L"}
                   </Link>
                 </h6>
@@ -296,7 +317,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/neptuno-car-s-l"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}
@@ -309,14 +330,14 @@ export default function CarDealerShop() {
           <div className="col-lg-4 col-md-6">
             <div className="dealer-wrapper">
               <div className="image-area">
-                <Link prefetch={false} href="/car-dealer-details">
+                <Link prefetch={false} href="/car-dealer-details/audi-car">
                   <img src="/assets/images/brand/16.webp" alt="" />
                 </Link>
               </div>
 
               <div className="content-area">
                 <h6 className="title ">
-                  <Link prefetch={false} href="/car-dealer-details">
+                  <Link prefetch={false} href="/car-dealer-details/audi-car">
                     {"Audi Car"}
                   </Link>
                 </h6>
@@ -330,7 +351,7 @@ export default function CarDealerShop() {
                 <div className="button-area">
                   <Link
                     prefetch={false}
-                    href="/car-dealer-details"
+                    href="/car-dealer-details/audi-car"
                     className="rts-btn btn-primary radius-small"
                   >
                     {" View Details "}

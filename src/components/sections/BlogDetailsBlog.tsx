@@ -8,7 +8,10 @@ export default function BlogDetailsBlog() {
         <div className="col-lg-6">
           <div className="blog-wrapper">
             <div className="image-area">
-              <Link prefetch={false} href="/blog-details">
+              <Link
+                prefetch={false}
+                href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+              >
                 <img src="/assets/images/blog/01.webp" alt="" />
               </Link>
             </div>
@@ -17,7 +20,10 @@ export default function BlogDetailsBlog() {
               <p className="blog-meta">{"Dealership events"}</p>
 
               <h6>
-                <Link prefetch={false} href="/blog-details">
+                <Link
+                  prefetch={false}
+                  href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                >
                   {
                     "Seasonal Car Care Tips to Keep Your Vehicle Running Smoothly"
                   }
@@ -39,7 +45,10 @@ export default function BlogDetailsBlog() {
         <div className="col-lg-6">
           <div className="blog-wrapper">
             <div className="image-area">
-              <Link prefetch={false} href="/blog-details">
+              <Link
+                prefetch={false}
+                href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+              >
                 <img src="/assets/images/blog/02.webp" alt="" />
               </Link>
             </div>
@@ -48,7 +57,10 @@ export default function BlogDetailsBlog() {
               <p className="blog-meta">{"March 26, 2024"}</p>
 
               <h6>
-                <Link prefetch={false} href="/blog-details">
+                <Link
+                  prefetch={false}
+                  href="/blog-details/how-regular-maintenance-can-save-you-thousands-in-repairs"
+                >
                   {"How Regular Maintenance Can Save You Thousands in Repairs"}
                 </Link>
               </h6>

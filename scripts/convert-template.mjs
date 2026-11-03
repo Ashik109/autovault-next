@@ -5,6 +5,7 @@ import { parseDocument } from "htmlparser2";
 import { getOuterHTML, textContent } from "domutils";
 import prettier from "prettier";
 import ts from "typescript";
+import { migrateDetails } from "./migrate-detail-routes.mjs";
 
 // Run only when intentionally regenerating the editable TSX sections.
 // The application never reads the source template at runtime.
@@ -539,3 +540,4 @@ await write(
 console.log(
   `Converted ${files.length} pages into native routes and ${components.size} reusable TSX sections.`,
 );
+await migrateDetails(source);

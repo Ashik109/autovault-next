@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useCart, setQuantity, removeCartItem, formatMoney } from "@/lib/cart";
 import QuantityInput from "./QuantityInput";
+import { detailPath, slugFromTitle } from "@/lib/detail-paths";
 
 export default function ShoppingCart() {
   const items = useCart();
@@ -47,7 +48,12 @@ export default function ShoppingCart() {
                           </button>
                         </td>
                         <td className="product-thumbnail">
-                          <Link href="/shop-details">
+                          <Link
+                            href={detailPath(
+                              "product",
+                              slugFromTitle(item.title),
+                            )}
+                          >
                             <img
                               src={item.image}
                               alt={item.title}
@@ -57,7 +63,14 @@ export default function ShoppingCart() {
                           </Link>
                         </td>
                         <td className="product-name" data-title="Product">
-                          <Link href="/shop-details">{item.title}</Link>
+                          <Link
+                            href={detailPath(
+                              "product",
+                              slugFromTitle(item.title),
+                            )}
+                          >
+                            {item.title}
+                          </Link>
                         </td>
                         <td className="product-price" data-title="Price">
                           {formatMoney(item.price)}

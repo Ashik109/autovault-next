@@ -200,7 +200,10 @@ export default function HeaderTwo() {
                             </li>
 
                             <li>
-                              <Link prefetch={false} href="/portfolio-details">
+                              <Link
+                                prefetch={false}
+                                href="/portfolio-details/mercedes-benz-e-class"
+                              >
                                 {"Car Single"}
                               </Link>
                             </li>
@@ -208,7 +211,7 @@ export default function HeaderTwo() {
                             <li>
                               <Link
                                 prefetch={false}
-                                href="/portfolio-details-2"
+                                href="/portfolio-details-2/mercedes-benz-e-class"
                               >
                                 {"Car Single Two"}
                               </Link>
@@ -253,7 +256,10 @@ export default function HeaderTwo() {
                             </li>
 
                             <li>
-                              <Link prefetch={false} href="/blog-details">
+                              <Link
+                                prefetch={false}
+                                href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                              >
                                 {"Blog Single"}
                               </Link>
                             </li>
@@ -289,7 +295,10 @@ export default function HeaderTwo() {
                             </li>
 
                             <li>
-                              <Link prefetch={false} href="/car-dealer-details">
+                              <Link
+                                prefetch={false}
+                                href="/car-dealer-details/car-toys"
+                              >
                                 {"Dealer Single"}
                               </Link>
                             </li>
@@ -333,7 +342,10 @@ export default function HeaderTwo() {
                             </li>
 
                             <li>
-                              <Link prefetch={false} href="/shop-details">
+                              <Link
+                                prefetch={false}
+                                href="/shop-details/power-steering-pump"
+                              >
                                 {"Shop Single"}
                               </Link>
                             </li>

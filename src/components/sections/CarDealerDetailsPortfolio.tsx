@@ -1,22 +1,27 @@
+import type { DetailRecord } from "@/data/details";
 import Link from "next/link";
 import TemplateForm from "@/components/TemplateForm";
 import CarDealerDetailsBreadcrumb from "@/components/sections/CarDealerDetailsBreadcrumb";
 import CarDealerDetailsVideo from "@/components/sections/CarDealerDetailsVideo";
-export default function CarDealerDetailsPortfolio() {
+export default function CarDealerDetailsPortfolio({
+  record,
+}: {
+  record: DetailRecord;
+}) {
   return (
     <div className="rts-portfolio-area inner pt--80">
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            <CarDealerDetailsBreadcrumb />
+            <CarDealerDetailsBreadcrumb record={record} />
 
             <div className="portfolio-details-area">
               <h2 className="mb--30">{"Company Description"}</h2>
 
               <p className="mb--30">
-                {
-                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."
-                }
+                {record.description +
+                  " " +
+                  "A car is a motorized vehicle designed primarily for the transportation of passengers, typically seating between one to eight people. It consists of a metal or composite body structure mounted on a set of wheels, usually four, and is powered by an internal combustion engine, an electric motor, or a hybrid system that combines both. The car’s it is main components include the engine, transmission, drivetrain, suspension, and braking system, all of which work together to provide motion and control."}
               </p>
 
               <p>
@@ -274,7 +279,10 @@ export default function CarDealerDetailsPortfolio() {
                   <div className="col-lg-6">
                     <div className="project-wrapper2">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/thunderbolt-car"
+                        >
                           <img src="/assets/images/portfolio/04.webp" alt="" />
                         </Link>
 
@@ -297,7 +305,10 @@ export default function CarDealerDetailsPortfolio() {
 
                       <div className="content-area">
                         <h6 className="title ">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/thunderbolt-car"
+                          >
                             {"Thunderbolt Car"}
                           </Link>
                         </h6>
@@ -333,7 +344,7 @@ export default function CarDealerDetailsPortfolio() {
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details"
+                            href="/portfolio-details/thunderbolt-car"
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}
@@ -346,7 +357,10 @@ export default function CarDealerDetailsPortfolio() {
                   <div className="col-lg-6">
                     <div className="project-wrapper2">
                       <div className="image-area">
-                        <Link prefetch={false} href="/portfolio-details">
+                        <Link
+                          prefetch={false}
+                          href="/portfolio-details/mercedes-benz-e-class"
+                        >
                           <img src="/assets/images/portfolio/05.webp" alt="" />
                         </Link>
 
@@ -369,7 +383,10 @@ export default function CarDealerDetailsPortfolio() {
 
                       <div className="content-area">
                         <h6 className="title ">
-                          <Link prefetch={false} href="/portfolio-details">
+                          <Link
+                            prefetch={false}
+                            href="/portfolio-details/mercedes-benz-e-class"
+                          >
                             {"Mercedes-Benz E-Class"}
                           </Link>
                         </h6>
@@ -405,7 +422,7 @@ export default function CarDealerDetailsPortfolio() {
 
                           <Link
                             prefetch={false}
-                            href="/portfolio-details"
+                            href="/portfolio-details/mercedes-benz-e-class"
                             className="rts-btn btn-primary radius-small"
                           >
                             {"View Details"}

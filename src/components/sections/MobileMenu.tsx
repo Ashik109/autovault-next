@@ -137,7 +137,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/portfolio-details"
+                    href="/portfolio-details/mercedes-benz-e-class"
                   >
                     {"Car Single"}
                   </Link>
@@ -147,7 +147,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/portfolio-details-2"
+                    href="/portfolio-details-2/mercedes-benz-e-class"
                   >
                     {"Car Single Two"}
                   </Link>
@@ -204,7 +204,10 @@ export default function MobileMenu() {
                 </li>
 
                 <li>
-                  <Link prefetch={false} href="/blog-details">
+                  <Link
+                    prefetch={false}
+                    href="/blog-details/seasonal-car-care-tips-to-keep-your-vehicle-running-smoothly"
+                  >
                     {"Blog Single"}
                   </Link>
                 </li>
@@ -257,7 +260,7 @@ export default function MobileMenu() {
                   <Link
                     prefetch={false}
                     className="mobile-menu-link"
-                    href="/shop-details"
+                    href="/shop-details/power-steering-pump"
                   >
                     {"Shop Single"}
                   </Link>

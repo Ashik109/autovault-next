@@ -39,7 +39,10 @@ export default function HomeEightFeature() {
                     <span className="dot"></span>
 
                     <h6 className="title">
-                      <Link prefetch={false} href="/portfolio-details">
+                      <Link
+                        prefetch={false}
+                        href="/portfolio-details/thunderbolt-car"
+                      >
                         {"Thunderbolt Car"}
                       </Link>
                     </h6>
@@ -72,7 +75,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/thunderbolt-car"
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -101,7 +104,10 @@ export default function HomeEightFeature() {
                     <span className="dot"></span>
 
                     <h6 className="title">
-                      <Link prefetch={false} href="/portfolio-details">
+                      <Link
+                        prefetch={false}
+                        href="/portfolio-details/mazda-mx-5-miata"
+                      >
                         {"Mazda MX-5 Miata"}
                       </Link>
                     </h6>
@@ -134,7 +140,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mazda-mx-5-miata"
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -163,7 +169,10 @@ export default function HomeEightFeature() {
                     <span className="dot"></span>
 
                     <h6 className="title">
-                      <Link prefetch={false} href="/portfolio-details">
+                      <Link
+                        prefetch={false}
+                        href="/portfolio-details/mercedes-benz-e-class"
+                      >
                         {"Mercedes-Benz E-Class"}
                       </Link>
                     </h6>
@@ -196,7 +205,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/mercedes-benz-e-class"
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -225,7 +234,10 @@ export default function HomeEightFeature() {
                     <span className="dot"></span>
 
                     <h6 className="title">
-                      <Link prefetch={false} href="/portfolio-details">
+                      <Link
+                        prefetch={false}
+                        href="/portfolio-details/honda-civic-hatchback"
+                      >
                         {"Honda Civic Hatchback"}
                       </Link>
                     </h6>
@@ -258,7 +270,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/honda-civic-hatchback"
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
@@ -287,7 +299,10 @@ export default function HomeEightFeature() {
                     <span className="dot"></span>
 
                     <h6 className="title">
-                      <Link prefetch={false} href="/portfolio-details">
+                      <Link
+                        prefetch={false}
+                        href="/portfolio-details/hyundai-veloster"
+                      >
                         {"Hyundai Veloster"}
                       </Link>
                     </h6>
@@ -320,7 +335,7 @@ export default function HomeEightFeature() {
 
                     <Link
                       prefetch={false}
-                      href="/portfolio-details"
+                      href="/portfolio-details/hyundai-veloster"
                       className="rts-btn radius-big"
                     >
                       {"View Details"}
